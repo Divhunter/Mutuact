@@ -1,0 +1,203 @@
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 767px ****************************************/
+
+@media screen and (min-width: 768px) {
+
+    /**********************************************************************************************/
+    /********************************************* about ******************************************/
+    /**********************************************************************************************/
+
+    .button {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 1.4vw 2.2vw 1.4vw 2.2vw;
+        font-size: 2vw;
+    }
+
+    .containerAbout {
+        display: inline-block;
+        width: auto;
+        height: 85vw;
+        margin-left: -5vw;
+        background-image: linear-gradient(rgb(14, 78, 68), rgb(29, 156, 135));
+        overflow: hidden;
+    }
+
+    .containerAbout>p {
+        font-size: 1.6vw;
+        line-height: 2.2vw;
+        letter-spacing: normal;
+    }
+
+    .containerAbout__text {
+        display: inline-block;
+        width: 30.15vw;
+        margin: 2.4vw 4.375vw 3.375vw 2.575vw;
+        font-size: 1.2vw;
+    }
+
+    .containerAbout__text__header {
+        font-size: 2.4vw;
+        font-weight: 600;
+        line-height: 2.8vw;
+    }
+
+    .containerAbout__bloc {
+        position: absolute;
+        display: inline-block;
+        left: auto;
+        right: 0;
+    }
+
+    .containerAbout__bloc__handshake {
+        margin-right: -5vw;
+        width: 56.7vw;
+        height: auto;
+        filter: brightness(50%);
+    }
+
+    .containerAbout__bloc__square {
+        position: absolute;
+        top: 35.7vw;
+        left: -1vw;
+        padding-right: 29vw;
+        height: 7.1vw;
+        border: .175vw solid rgb(255, 191, 0);
+    }
+
+    .containerAbout__bloc__pub {
+        position: absolute;
+        top: 34.5vw;
+        margin-left: 2.625vw;
+        margin-right: 2.625vw;
+        font-family: 'Helvetica';
+        font-weight: 800;
+        font-size: 2.5vw;
+        line-height: 2.8vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 991px ****************************************/
+
+@media screen and (min-width: 992px) {
+
+    /**********************************************************************************************/
+    /********************************************* about ******************************************/
+    /**********************************************************************************************/
+
+    .button {
+        padding: 1.312vw 2.187vw 1.312vw 2.187vw;
+        font-size: 1.75vw;
+        border-radius: .87vw;
+        letter-spacing: .0237vw;
+    }
+
+    .containerAbout {
+        display: inline-block;
+        width: auto;
+        height: 85vw;
+        margin-left: 0;
+        height: 70.087vw;
+    }
+
+    .containerAbout>p {
+        font-size: 1.5vw;
+        line-height: 1.95vw;
+    }
+
+    .containerAbout__text {
+        display: inline-block;
+        width: 30.15vw;
+        margin: 4vw 4.375vw 3.375vw 2.575vw;
+        font-size: 1.2vw;
+    }
+
+    .containerAbout__text__header {
+        font-size: 2.4vw;
+        line-height: 2.5vw;
+    }
+
+    .containerAbout__bloc {
+        position: absolute;
+        display: inline-block;
+        right: 0;
+    }
+
+    .containerAbout__bloc__handshake {
+        width: 46.725vw;
+        margin-right: 0;
+    }
+
+    .containerAbout__bloc__square {
+        top: 29.75vw;
+        left: -1.75vw;
+        padding-right: 29.7vw;
+        height: 7.1vw;
+    }
+
+    .containerAbout__bloc__pub {
+        top: 28.437vw;
+        margin-left: 2.625vw;
+        margin-right: 2.625vw;
+        font-size: 2.5vw;
+        line-height: 2.8vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 1199px ****************************************/
+
+@media screen and (min-width: 1200px) {
+
+    /**********************************************************************************************/
+    /********************************************* about ******************************************/
+    /**********************************************************************************************/
+
+    .button {
+        padding: 1.095vw 1.825vw 1.095vw 1.825vw;
+        font-size: 1.46vw;
+        border-radius: .73vw;
+        letter-spacing: .0365vw;
+        box-shadow: rgba(0, 0, 0, 0.24) 0 .219vw .584vw;
+    }
+
+    .containerAbout {
+        height: 58.473vw;
+    }
+
+    .containerAbout>p {
+        font-size: 1.28vw;
+        line-height: 1.96vw;
+    }
+
+    .containerAbout__text {
+        width: 38.668vw;
+        margin: 4.38vw 3.65vw 3.65vw 3.65vw;
+        font-size: 1.168vw;
+    }
+
+    .containerAbout__text__header {
+        font-size: 2.044vw;
+        line-height: 2.555vw;
+    }
+
+    .containerAbout__bloc__handshake {
+        width: 38.982vw;
+    }
+
+    .containerAbout__bloc__square {
+        top: 24.82vw;
+        left: -1.46vw;
+        padding-right: 29vw;
+        height: 7.592vw;
+    }
+
+    .containerAbout__bloc__pub {
+        top: 23.725vw;
+        margin-left: 2.19vw;
+        margin-right: 2.19vw;
+        font-size: 2.555vw;
+        line-height: 2.92vw;
+    }
+}

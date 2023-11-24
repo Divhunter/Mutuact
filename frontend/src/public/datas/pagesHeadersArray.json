@@ -1,0 +1,52 @@
+[
+    {	
+        "title": "1",
+        "titleCol1": "Qui nous sommes",
+        "subTitle1": "Une équipe d'experts pour piloter vos chantiers : tarifs des fournitures & main d'oeuvre, artisans tout corps d'état, devis sur mesure",
+        "subTitle2": "CONSEILS - ARCHITECTURE - RÉNOVATION - CONSTRUCTION - PISCINE",
+        "button": "",
+        "text1": ""
+    },
+	{	
+        "title": "2",
+		"titleCol1": "Nos prestations",
+        "subTitle1": "Nous fédérons tous les corps de métier nécessaires à la réalisation de vos travaux de construction et de rénovation",
+        "subTitle2": "MAÇONNERIE - ÉLECTRICITÉ - MENUISERIE - PLOMBERIE - CHAUFFAGERIE - REVÊTEMENTS MURAL ET SOL ...",
+        "text1": ""
+    },
+    {
+        "title": "3",
+		"titleCol1": "Nos réalisations",
+        "subTitle1": "Nous vous invitons à explorer notre galerie de productions pour découvrir nos differentes réalisations",
+        "subTitle2": "MAISON NEUVE - RÉNOVATION - TRAVAUX DE RAFRAICHISSEMENT - CHARPENTE SUR MESURE - PISCINE ...",
+        "text1": ""
+    },
+    {
+        "title": "4",
+		"titleCol1": "Nos agences",
+        "subTitle1": "Prenez rendez-vous, nous vous accueillons dans nos locaux pour vous conseiller au mieux sur les composantes de votre pojet",
+        "subTitle2": "NOS CHARGÉS D'AFFAIRES SONT DISPONIBLES DURANT TOUTE LA DURÉE DU PROCESSUS DE RÉALISATION",
+        "text1": ""
+	},
+    {	
+        "title": "5",
+		"titleCol1": "Contact",
+        "subTitle1": "Nous vous invitons à remplir le formulaire de contact en nous fournissant autant de détails que possible sur votre projet.",
+        "subTitle2": "NOUS REVIENDRONS VERS VOUS DANS LES MEILLEURS DÉLAIS POUR VOUS FOURNIR UN DEVIS PERSONNALISÉ",
+        "text1": ""
+	},
+    {	
+        "title": "6",
+		"titleCol1": "Galerie",
+        "subTitle1": "Plus de 50 réalisations par an et 20 années d'expérience.",
+        "subTitle2": "NOS COLLABORATEURS REALISENT LES INTERVENTIONS SOUS LE CONTRÔLE DU CHARGÉ D'AFFAIRE",
+        "text1": ""
+	},
+    {	
+        "title": "7",
+		"titleCol1": "Images de nos chantiers",
+        "subTitle1": "Plus de 50 réalisations par an et 20 années d'expérience.",
+        "subTitle2": "NOS COLLABORATEURS REALISENT LES INTERVENTIONS SOUS LE CONTRÔLE DU CHARGÉ D'AFFAIRE",
+        "text1": ""
+	}
+]

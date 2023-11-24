@@ -1,0 +1,189 @@
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 767px ****************************************/
+
+@media screen and (min-width: 768px) {
+
+    /**********************************************************************************************/
+    /********************************************* header *****************************************/
+    /**********************************************************************************************/
+	.navbar-closed {
+		height: 10.5vw;
+	}
+	
+	.navbar-open {
+		height: 56.43vw;
+	}
+
+	.navbar__logo-2br {
+		top: 3vw;
+		margin-left: 3.937vw;
+		width: 17vw;
+	}
+
+	.navbar__button-x {
+		top: 4.55vw;
+		right: 4.2vw;
+		font-size: 2.624vw;
+	}
+	
+	.navbar__button-bars {
+		top: 4.725vw;
+		right: 4.2vw;
+		font-size: 2.1vw;
+	}
+	
+	menu {
+		width: 52.5vw;
+		margin: 0;
+	}
+	
+	.navbar__menu {
+		margin-left: .437vw;
+	}
+	
+	.navbar__menu-open {
+		top: 5.25vw;
+		height: 40.187vw;
+		padding-top: 4.3vw;
+		padding-bottom: 1.75vw;
+	}
+	
+	.nav__menu__link {
+		line-height: 2.625vw;
+		padding-top: .875vw;
+		padding-left: 6.125vw;
+		padding-bottom: 1.8vw;
+		letter-spacing: .175vw;
+		font-size: 2.5vw;
+	}
+	
+	.nav__menu__link:hover {
+		padding-left: 7vw;
+		font-size: 2.7vw;
+	}
+    
+    .nav__menu__link-header {
+        margin-top: 4.6vw;
+		font-size: 2vw;
+        letter-spacing: .087vw;
+    }
+
+    .actu {
+        margin-right: 8.75vw;
+    }
+
+    .actu:hover {
+        text-decoration-thickness: .17vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 991px ****************************************/
+
+@media screen and (min-width: 992px) {
+
+    /**********************************************************************************************/
+    /********************************************* header *****************************************/
+    /**********************************************************************************************/
+
+	.navbar__logo-2br {
+		width: 16vw;
+	}
+
+	.navbar__button-x {
+		right: 3.5vw;
+		font-size: 2.187vw;
+	}
+	
+	.navbar__button-bars {
+		right: 3.5vw;
+		font-size: 1.75vw;
+	}
+
+	.nav__menu__link-header {
+		margin-top: 4.6vw;
+		font-size: 1.8vw;
+    }
+
+	.actu:hover {
+        text-decoration-thickness: .14vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 1199px ****************************************/
+
+@media screen and (min-width: 1200px) {
+
+    /**********************************************************************************************/
+    /********************************************* header *****************************************/
+    /**********************************************************************************************/
+	.navbar-closed {
+		height: 8.76vw;
+	}
+	
+	.padding-open {
+		height: 47.085vw;
+	}
+
+	.navbar__logo-2br {
+		top: 2.7vw;
+		margin-left: 3.285vw;
+		width: 15vw;
+	}
+
+	.navbar__button-x {
+		top: 3.796vw;
+		right: 2.92vw;
+		font-size: 1.825vw;
+	}
+	
+	.navbar__button-bars {
+		top: 3.942vw;
+		right: 2.92vw;
+		font-size: 1.46vw;
+	}
+	
+	menu {
+		width: 43.8vw;
+	}
+	
+	.navbar__menu {
+		margin-left: .365vw;
+	}
+	
+	.navbar__menu-open {
+		top: 4.38vw;
+		height: 28.8vw;
+		padding-top: 3vw;
+		padding-bottom: 1.46vw;
+	}
+	
+	.nav__menu__link {
+		line-height: 2.19vw;
+		padding-top: .73vw;
+		padding-left: 5.11vw;
+		padding-bottom: .9vw;
+		letter-spacing: .146vw;
+		font-size: 1.8vw;
+	}
+	
+	.nav__menu__link:hover {
+		padding-left: 5.84vw;
+		font-size: 1.95vw;
+	}
+    
+    .nav__menu__link-header {
+        margin-top: 3.95vw;
+		font-size: 1.314vw;
+        letter-spacing: .073vw;
+    }
+
+    .actu {
+        margin-right: 7.3vw;
+    }
+
+    .actu:hover {
+        text-decoration-thickness: .1vw;
+    }
+}

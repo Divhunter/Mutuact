@@ -1,0 +1,319 @@
+/**********************************************************************************************/
+/********************************************* header *****************************************/
+/**********************************************************************************************/
+
+.navbar {
+	position: relative;
+    width: auto;
+	background: transparent;
+	transition: background-color 2s;
+	z-index: 1;
+}
+
+.navbar-open {
+	height: 126.4vw;
+	transition: height .4s, background-color 1.5s;
+}
+
+.navbar-closed {
+	height: 27vw;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transition: height .3s, background-color .8s;
+}
+
+.navbar__logo-2br {
+	position: relative;
+	top: 8.3vw;
+	margin-left: 4.8vw;
+	width: 35vw;
+	height: auto;
+}
+
+.navbar__button-x {
+	position: absolute;
+    float: right;
+	top: 13.56vw;
+	right: 8.2vw;
+	font-size: 4.4vw;
+	color: white;
+	transition: color .4s;
+	cursor: pointer;
+	z-index: 500;
+}
+
+.navbar__button-x:hover {
+	color: rgb(204, 1, 1);
+	transition: color .4s;
+}
+
+.navbar__button-bars {
+	position: absolute;
+    float: right;
+	top: 13.56vw;
+	right: 8.2vw;
+	font-size: 4.4vw;
+	color: rgb(177, 148, 63);
+	cursor: pointer;
+	z-index: 500;
+}
+
+.closed {
+	display: none;
+}
+
+.open {
+	display: block;
+}
+
+menu {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(20, 109, 94, 0.7);
+	width: 70vw;
+	top: 15vw;
+	left: -5vw;
+	margin: 0;
+	overflow: hidden;
+}
+
+.navbar__menu {
+	margin-left: 1.5vw;
+}
+
+.navbar__menu-open {
+	top: 20vw;
+	height: 62.5vw;
+	padding-top: 5.3vw;
+	padding-bottom: 5vw;
+	transition-delay: .2s;
+	transition-duration: .35s;
+}
+
+.navbar__menu-closed {
+	height: 0;
+}
+
+.nav__menu__link {
+	position: relative;
+	width: auto;
+	line-height: 2vw;
+	padding-top: 2vw;
+	padding-left: 3vw;
+	padding-bottom: 5vw;
+	letter-spacing: .076vw;
+	font-size: 4.5vw;
+	font-weight: 500;
+	color: white;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.nav__menu__link:hover {
+	text-decoration: none;
+	padding-left: 6vw;
+	font-size: 4.8vw;
+	color: white;
+	transition: all .2s;
+}
+
+.nav__menu__link-header {
+	float: right;
+	margin-top: 13.6vw;
+	font-family: 'Open', sans-serif;
+	font-size: 4.5vw;
+	font-weight: 500;
+	letter-spacing: .075vw;
+	cursor: pointer;
+}
+
+.actu {
+	margin-right: 16vw;
+	font-weight: 400;
+	font-size: 4vw;
+}
+
+.actu:hover {
+	text-decoration: underline;
+	text-underline-position: under;
+	text-decoration-thickness: .175vw;
+}
+
+.white {
+	color: white !important;
+}
+
+.gold {
+	color: rgb(177, 148, 63) !important;
+}
+
+.actu-visible {
+	display: block;
+}
+
+.actu-hidden {
+	display: none;
+}
+
+.actu-container {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 30vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    max-width: 700px;
+    width: 90vw;
+    height: auto;
+    border-radius: 5vw;
+    background-color: white;
+	font-family: Open, sans-serif;
+    color: black;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    z-index: 5000;
+}
+
+.actu-container__closed {
+    position: absolute;
+    right: 5vw;
+    margin-top: 5vw;
+    font-size: 8vw;
+    cursor: pointer;
+	color: rgb(148, 148, 148);
+    transition: color .4s;
+}
+
+.actu-container__closed:hover {
+    color: rgb(204, 1, 1);
+    transition: color .4s;
+}
+
+.actu-container>header>h1 {
+    margin-top: 12vw;
+    text-align: center;
+    letter-spacing: .2vw;
+    font-size: 6vw;
+	font-weight: normal;
+	color: black;
+}
+
+.actu-container>h2 {
+	font-weight: normal;
+    color: black;
+}
+
+.actu-container>p {
+    position: relative;
+    margin-bottom: 8vw;
+    text-align: left;
+    font-size: 4.5vw;
+    line-height: 7vw;
+    letter-spacing: .2vw;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* actu ******************************************/
+    /**********************************************************************************************/
+	.actu-container {
+        top: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 30px;
+    }
+    
+    .actu-container__closed {
+        right: 25px;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .actu-container>header>h1 {
+        margin-top: 40px;
+        letter-spacing: 1px;
+        font-size: 22px;
+    }
+    
+    .actu-container>p {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+
+	.navbar-closed {
+		height: 16vw;
+	}
+	
+	.navbar-open {
+		height: 75.874vw;
+	}
+
+	.navbar__logo-2br {
+		top: 4.740vw;
+		margin-left: 2.844vw;
+		width: 20.740vw;
+	}
+
+	.navbar__button-x {
+		top: 8.035vw;
+		right: 2.488vw;
+		font-size: 2.607vw;
+	}
+	
+	.navbar__button-bars {
+		top: 8.035vw;
+		right: 2.488vw;
+		font-size: 2.607vw;
+	}
+	
+	menu {
+		width: 36.74vw;
+	}
+	
+	.navbar__menu {
+		margin-left: 0.888vw;
+	}
+	
+	.navbar__menu-open {
+		top: 11.851vw;
+		height: 37.067vw;
+		padding-top: 3.14vw;
+		padding-bottom: 2.962vw;
+	}
+	
+	.nav__menu__link {
+		line-height: 1.185vw;
+		padding-top: 1.185vw;
+		padding-left: 1.777vw;
+		padding-bottom: 2.962vw;
+		letter-spacing: .045vw;
+		font-size: 2.37vw;
+	}
+	
+	.nav__menu__link:hover {
+		padding-left: 3.555vw;
+		font-size: 2.548vw;
+	}
+
+	.nav__menu__link-header {
+        margin-top: 8.474vw;
+		font-size: 2.074vw;
+        letter-spacing: .059vw;
+    }
+
+	.actu {
+        margin-right: 7.111vw;
+    }
+
+    .actu:hover {
+        text-decoration-thickness: .175vw;
+    }
+}

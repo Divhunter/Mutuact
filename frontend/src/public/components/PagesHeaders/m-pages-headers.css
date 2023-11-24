@@ -1,0 +1,115 @@
+/**********************************************************************************************/
+/***************************************** pages-headers **************************************/
+/**********************************************************************************************/
+
+.title-container {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-family: 'Roboto+Mono', sans-serif;
+    background-color: white;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.header-rubrik {
+    height: auto;
+    padding-top: 0.875vw;
+    padding-bottom: 4.6vw;
+    background-color: white;
+}
+
+h2 {
+    position: relative;
+    font-size: 5.6vw;
+    letter-spacing: .0275vw;
+    color: rgb(18, 105, 92);
+    font-family: 'Open', sans-serif;
+}
+
+h3 {
+    display: inline-block;
+    margin-top: 6vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    width: auto;
+    font-family: 'Helvetica';
+    font-size: 6vw;
+    letter-spacing: .0437vw;
+    font-weight: 800;
+    color: rgb(168, 140, 57);
+}
+
+h4 {
+    display: inline-block;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    font-size: 4.5vw;
+    line-height: 5.4vw;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: black;
+}
+
+.paragraph {
+    position: relative;
+    text-align: left;
+    width: auto;
+    height: auto;
+    margin-top: .875vw;
+    margin-left: 9.45vw;
+    margin-right: 9.45vw;
+    margin-bottom: 4.8vw;
+    font-weight: 300;
+    font-size: 1.75vw;
+    line-height: 2.275vw;
+    letter-spacing: .0875vw;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /***************************************** pages-headers **************************************/
+    /**********************************************************************************************/
+    
+    .header-rubrik {
+        padding-top: 0.518vw;
+        padding-bottom: 2.726vw;
+    }
+
+    h2 {
+        font-size: 2.785vw;
+        letter-spacing: .0163vw;
+    }
+
+    h3 {
+        margin-top: 1.777vw;
+        padding-left: 4.148vw;
+        padding-right: 4.148vw;
+        font-size: 3.555vw;
+        letter-spacing: .0259vw;
+    }
+
+    h4 {
+        line-height: 3.2vw;
+        margin-left: 4.148vw;
+        margin-right: 4.148vw;
+        font-size: 2.666vw;
+    }
+
+    .paragraph {
+        margin-top: .518vw;
+        margin-left: 5.6vw;
+        margin-right: 5.6vw;
+        margin-bottom: 2.844vw;
+        font-size: 1.037vw;
+        line-height: 1.348vw;
+        letter-spacing: .0518vw;
+    }
+}

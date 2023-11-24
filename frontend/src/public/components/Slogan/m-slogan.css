@@ -1,0 +1,172 @@
+/**********************************************************************************************/
+/********************************************* slogan *******************************************/
+/**********************************************************************************************/
+
+.slogan {
+    position: relative;
+    left: -21.9vw;
+    width: auto;
+    height: auto;
+}
+
+.slogan__filtre {
+    margin-top: 0;
+    padding-top: 6vw;
+    padding-left: 22vw;
+    padding-right: 22vw;
+    width: 90vw;
+    height: 95vw;
+    font-family: 'Open', sans-serif;
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: 8vw;
+    align-items: center;
+    background-color: rgba(20, 109, 94, 0.7);
+}
+
+.slogan__filtre__arrow {
+    font-size: 4.5vw;
+    cursor: pointer;
+}
+
+.slogan__filtre__arrow:hover {
+    color:rgb(255, 191, 0);
+    transition: color .4s;
+}
+
+.slogan__filtre__arrow__left {
+    float: left;
+    margin-left: -2vw;
+}
+
+.slogan__filtre__arrow__right {
+    float: right;
+    margin-right: -18vw;
+}
+
+.slogan__filtre__text {
+    width: 54.5vw;
+    height: auto;
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+    line-height: 8vw;
+    color: rgb(255, 242, 204);
+}
+
+.slogan__filtre__more {
+    border: .146vw solid rgb(255, 191, 0);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1.575vw 2.187vw 1.575vw 2.187vw;
+    color: rgb(255, 242, 204);
+    font-size: 4.5vw;
+    font-weight: 600;
+    line-height: 0;
+    cursor: pointer;
+    transition: background-color .7s;
+}
+
+.slogan__filtre__more:hover {
+    background-color: rgb(255, 191, 0);
+    color: rgb(0, 0, 0);
+    transition: background-color .5s;
+}
+
+.slogan__filtre__container__dote {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 4vw;
+    bottom: 3.5vw;
+    width: 12vw;
+}
+
+.dot {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: rgb(255, 191, 0);
+    transition: background-color .5s;
+}
+
+.dot-active {
+    background-color: rgb(255, 191, 0);
+}
+
+.dot-inactive {
+    background-color: rgba(255, 242, 204, .3);
+}
+
+.text-visible {
+    display: inline-block;
+}
+
+.text-hidden {
+    display: none;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* slogan *******************************************/
+    /**********************************************************************************************/
+
+    .slogan {
+        left: -12.977vw;
+    }
+
+    .slogan__filtre {
+        margin-top: 0;
+        margin-bottom: 2.962vw;
+        padding-top: 3.555vw;
+        padding-left: 13.037vw;
+        padding-right: 13.037vw;
+        width: 54.518vw;
+        height: 53.333vw;
+        font-size: 4.148vw;
+        line-height: 4.74vw;
+    } 
+
+    .slogan__filtre__arrow {
+        font-size: 2.666vw;
+    }
+
+    .slogan__filtre__arrow__left {
+        margin-left: -1.185vw;
+    }
+
+    .slogan__filtre__arrow__right {
+        margin-right: -11.259vw;
+    }
+
+    .slogan__filtre__text {
+        width: 32.592vw;
+        margin-top: 5.925vw;
+        margin-bottom: 2.962vw;
+        line-height: 4.74vw;
+    } 
+
+    .slogan__filtre__more {
+        border: .086vw solid rgb(255, 191, 0);
+        padding: 0.933vw 1.296vw 0.933vw 1.296vw;
+        font-size: 2.6665vw;
+    }
+    
+    .slogan__filtre__container__dote {
+        right: 2.37vw;
+        bottom: 2.074vw;
+        width: 7.111vw;
+    }
+    
+    .dot {
+        width: 1.185vw;
+        height: 1.185vw;
+    }
+}

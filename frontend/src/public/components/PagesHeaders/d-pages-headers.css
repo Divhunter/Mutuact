@@ -1,0 +1,132 @@
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 767px ****************************************/
+
+@media screen and (min-width: 768px) {
+
+    /**********************************************************************************************/
+    /***************************************** pages-headers **************************************/
+    /**********************************************************************************************/
+    
+    .header-rubrik {
+        padding-top: 0;
+        padding-bottom: 5vw;
+    }
+    
+    h2 {
+        font-size: 2.6vw;
+        letter-spacing: .0275vw;
+    }
+
+    h3 {
+        margin-top: 3vw;
+        padding-left: 14vw;
+        padding-right: 14vw;
+        font-size: 3vw;
+        letter-spacing: .0437vw;
+    }
+
+    h4 {
+        font-size: 2vw;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        line-height: 3vw;
+    }
+
+    .paragraph {
+        margin-top: .875vw;
+        margin-left: 9.45vw;
+        margin-right: 9.45vw;
+        margin-bottom: 4.8vw;
+        font-weight: 300;
+        font-size: 1.75vw;
+        line-height: 2.275vw;
+        letter-spacing: .0875vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 991px ****************************************/
+
+@media screen and (min-width: 992px) {
+
+    /**********************************************************************************************/
+    /***************************************** pages-headers **************************************/
+    /**********************************************************************************************/
+
+    .header-rubrik {
+        padding-top: .875vw;
+        padding-bottom: 4.375vw;
+    }
+    
+    h2 {
+        font-size: 2.3vw;
+        letter-spacing: .0275vw;
+    }
+
+    h3 {
+        margin-top: 2vw;
+        padding-left: 14vw;
+        padding-right: 14vw;
+        font-size: 2.5vw;
+        letter-spacing: .0437vw;
+    }
+
+    h4 {
+        font-size: 1.5vw;
+    }
+
+    .paragraph {
+        margin-top: .875vw;
+        margin-left: 9.45vw;
+        margin-right: 9.45vw;
+        margin-bottom: 4.8vw;
+        font-size: 1.75vw;
+        line-height: 2.275vw;
+        letter-spacing: .0875vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 1199px ****************************************/
+
+@media screen and (min-width: 1200px) {
+
+    /**********************************************************************************************/
+    /***************************************** pages-headers **************************************/
+    /**********************************************************************************************/
+
+    .header-rubrik {
+        padding-top: .73vw;
+        padding-bottom: 3.65vw;
+    }
+    
+    h2 {
+        font-size: 2.4vw;
+        letter-spacing: .073vw;
+    }
+
+    h3 {
+        margin-top: .73vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        font-size: 2.774vw;
+        letter-spacing: .0365vw;
+        font-weight: 800;
+    }
+
+    h4 {
+        font-size: 1.46vw;
+        letter-spacing: .0365vw;
+    }
+
+    .paragraph {
+        margin-top: .73vw;
+        margin-left: 7.884vw;
+        margin-right: 7.884vw;
+        margin-bottom: 5vw;
+        font-weight: 300;
+        font-size: 1.46vw;
+        line-height: 1.898vw;
+        letter-spacing: .073vw;
+    }
+}
