@@ -14,9 +14,8 @@
 		height: 56.43vw;
 	}
 
-	.navbar__logo-2br {
+	.navbar__logoMutuactW {
 		top: 3vw;
-		margin-left: 3.937vw;
 		width: 17vw;
 	}
 
@@ -86,7 +85,7 @@
     /********************************************* header *****************************************/
     /**********************************************************************************************/
 
-	.navbar__logo-2br {
+	.navbar__logoMutuactW {
 		width: 16vw;
 	}
 
@@ -119,63 +118,101 @@
     /********************************************* header *****************************************/
     /**********************************************************************************************/
 	.navbar-closed {
-		height: 8.76vw;
+		height: 6vw;
 	}
 	
 	.padding-open {
 		height: 47.085vw;
 	}
 
-	.navbar__logo-2br {
+	.navbar__logoMutuactW {
 		top: 2.7vw;
-		margin-left: 3.285vw;
-		width: 15vw;
+		width: 12vw;
+	}
+
+	.navbar__separator {
+		margin-top: 4vw;
+		width: 100%;
+		height: 1px;
+		background-color: white;
+		opacity: .3;
+	}
+
+	.contact-hidden {
+		display: block;
+	}
+
+	.contact-visible {
+		display: block;
 	}
 
 	.navbar__button-x {
-		top: 3.796vw;
+		top: 2.296vw;
 		right: 2.92vw;
 		font-size: 1.825vw;
 	}
 	
 	.navbar__button-bars {
-		top: 3.942vw;
+		top: 2.542vw;
 		right: 2.92vw;
 		font-size: 1.46vw;
 	}
 	
 	menu {
-		width: 43.8vw;
+		position: absolute;
+		text-align: center;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		margin-top: 7vw;
+		padding: 0;
+		right: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		overflow: hidden;
 	}
 	
 	.navbar__menu {
-		margin-left: .365vw;
+		margin-left: 0;
 	}
 	
 	.navbar__menu-open {
 		top: 4.38vw;
-		height: 28.8vw;
-		padding-top: 3vw;
-		padding-bottom: 1.46vw;
+		height: auto;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	
 	.nav__menu__link {
 		line-height: 2.19vw;
-		padding-top: .73vw;
-		padding-left: 5.11vw;
-		padding-bottom: .9vw;
+		padding-top: 0;
+		padding-left: 0;
+		padding-bottom: 0;
 		letter-spacing: .146vw;
-		font-size: 1.8vw;
+		font-size: 35px;
+		color: rgb(252, 238, 161);
+		transition: color .4s;
 	}
 	
 	.nav__menu__link:hover {
-		padding-left: 5.84vw;
-		font-size: 1.95vw;
+		padding-left: 0;
+		font-size: 35px;
+		color: rgb(248, 221, 67);
+		transition: color .4s;
+	}
+
+	.nav__menu__text {
+		cursor: pointer;
+	}
+
+	.nav__menu__text:hover {
+		text-decoration: underline;
+		text-underline-position: under;
 	}
     
     .nav__menu__link-header {
-        margin-top: 3.95vw;
-		font-size: 1.314vw;
+        margin-top: 2.55vw;
+		font-size: 1.24vw;
         letter-spacing: .073vw;
     }
 

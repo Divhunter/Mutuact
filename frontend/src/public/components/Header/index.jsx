@@ -1,9 +1,9 @@
 import { Link } from 'react-scroll'
-import { Link as Home} from 'react-router-dom'
+import { Link as GoTo} from 'react-router-dom'
 import { useState } from 'react'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logo2br from '../../assets/pictures/logo-2br-2.png'
+import logoMutuactW from '../../assets/pictures/logo-mutuact-blanc.png'
 
 // styles
 import './m-header.css'
@@ -29,12 +29,16 @@ const Header = () => {
 				'navbar navbar-closed' 
 			}>
 
-				<Home to='https://www.2brealisation.com'>
+				<GoTo to='/'>
 					<img 
-						className='navbar__logo-2br' 
-						src={logo2br} alt='2br-icon' 
+						className={
+							isOpen ?
+							'navbar__logoMutuactW logo-visible':
+							'navbar__logoMutuactW logo-hidden'
+						} 
+						src={logoMutuactW} alt='logo Mutuact' 
 					/>
-				</Home>	
+				</GoTo>
 				
 				<div
 					className={
@@ -44,6 +48,9 @@ const Header = () => {
 				>
 					Nos actualités
 				</div>
+
+				<div className='navbar__separator'></div>	
+
 				<FontAwesomeIcon 
 					onClick={isOpenState} 
 					className={
@@ -60,6 +67,7 @@ const Header = () => {
 						'navbar__button-x closed'} 
 					icon={faXmark} 
 				/>
+
 				<menu className={
 						isOpen ?
 						'navbar__menu navbar__menu-open':
@@ -68,40 +76,46 @@ const Header = () => {
 				>
 					
 					<Link onClick={isOpenState} to='/'>
-						<div
-							className='nav__menu__link'>
-							Accueil
-						</div>
+						<FontAwesomeIcon 
+							className='nav__menu__link'
+							icon={faHandHoldingDollar} 
+						/>
+						<p className='nav__menu__text'>Epargne</p>
 					</Link>
 					<Link onClick={isOpenState} to='about'>
-						<div
-							className='nav__menu__link'>
-							Qui nous sommes
-						</div>
+						<FontAwesomeIcon 
+							className='nav__menu__link'
+							icon={faHandHoldingHand} 
+						/>
+						<p className='nav__menu__text'>Prévoyance</p>
 					</Link>
 					<Link onClick={isOpenState} to='prestations'>
-						<div 
-							className='nav__menu__link'>
-							Nos prestations
-						</div>
+						<FontAwesomeIcon 
+							className='nav__menu__link'
+							icon={faHandHoldingMedical} 
+						/>
+						<p className='nav__menu__text'>Santé</p>
 					</Link>
 					<Link onClick={isOpenState} to='realisations'>
-						<div
-							className='nav__menu__link'>
-							Nos réalisations
-						</div>
+						<FontAwesomeIcon 
+							className='nav__menu__link'
+							icon={faUserTie} 
+						/>
+						<p className='nav__menu__text'>Pro.</p>
 					</Link>
 					<Link onClick={isOpenState} to='agences'>
-						<div
-							className='nav__menu__link'>
-							Nos agences
-						</div>
+						<FontAwesomeIcon 
+							className='nav__menu__link'
+							icon={faHandHoldingHeart} 
+						/>
+						<p className='nav__menu__text'>Prêt</p>
 					</Link>
 					<Link onClick={isOpenState} to='contact'>
-						<div
-							className='nav__menu__link'>
-							Contact
-						</div>
+						<FontAwesomeIcon 
+							className='nav__menu__link'
+							icon={faCar} 
+						/>
+						<p className='nav__menu__text'>Auto</p>
 					</Link>
 				</menu> 
 			</nav>

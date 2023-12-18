@@ -10,7 +10,8 @@ import img12 from '../../assets/pictures/img1-2.jpg'
 import img22 from '../../assets/pictures/img2-2.jpg'
 import img32 from '../../assets/pictures/img3-2.jpg'
 import img42 from '../../assets/pictures/img4-2.jpg'
-import Slogan from '../Slogan'
+import logoMutuacFull from '../../assets/pictures/logo-mutuact-full.png'
+//import Slogan from '../Slogan'
 
 // styles
 import './m-banner.css'
@@ -110,10 +111,11 @@ const Banner = () => {
 						</div>
 					))}
 				</div>	
-				<div id='bannerPubSection' className='banner__pub-section'>
+				{/*<div id='bannerPubSection' className='banner__pub-section'>
 					<Slogan />
-				</div>
+				</div>*/}
 			</section>
+			<img className='banner__logo-mutuact' src={logoMutuacFull} alt='logo de mutuact'/>
 		</>
 	)
 }

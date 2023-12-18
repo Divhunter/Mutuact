@@ -17,17 +17,28 @@
 
 .navbar-closed {
 	height: 27vw;
-	background-color: white;
+	background-color: rgb(252, 238, 161);
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	transition: height .3s, background-color .8s;
 }
 
-.navbar__logo-2br {
+.navbar__logoMutuactW {
 	position: relative;
 	top: 8.3vw;
-	margin-left: 4.8vw;
+	left: 50%;
+	transform: translate(-50%, 0);
 	width: 35vw;
 	height: auto;
+}
+
+.logo-hidden {
+	opacity: 0;
+	transition: .8s;
+}
+
+.logo-visible {
+	opacity: 9;
+	transition: .8s;
 }
 
 .navbar__button-x {
@@ -53,7 +64,7 @@
 	top: 13.56vw;
 	right: 8.2vw;
 	font-size: 4.4vw;
-	color: rgb(177, 148, 63);
+	color: black;
 	cursor: pointer;
 	z-index: 500;
 }
@@ -66,17 +77,17 @@
 	display: block;
 }
 
-menu {
+/*menu {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(20, 109, 94, 0.7);
+	background-color: transparent;
 	width: 70vw;
 	top: 15vw;
 	left: -5vw;
 	margin: 0;
 	overflow: hidden;
-}
+}*/
 
 .navbar__menu {
 	margin-left: 1.5vw;
@@ -104,7 +115,6 @@ menu {
 	padding-bottom: 5vw;
 	letter-spacing: .076vw;
 	font-size: 4.5vw;
-	font-weight: 500;
 	color: white;
 	cursor: pointer;
 	transition: all .3s;
@@ -145,7 +155,7 @@ menu {
 }
 
 .gold {
-	color: rgb(177, 148, 63) !important;
+	color: black !important;
 }
 
 .actu-visible {
@@ -256,9 +266,8 @@ menu {
 		height: 75.874vw;
 	}
 
-	.navbar__logo-2br {
+	.navbar__logoMutuactW {
 		top: 4.740vw;
-		margin-left: 2.844vw;
 		width: 20.740vw;
 	}
 

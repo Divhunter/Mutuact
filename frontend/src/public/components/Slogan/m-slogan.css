@@ -21,7 +21,7 @@
     font-weight: 500;
     line-height: 8vw;
     align-items: center;
-    background-color: rgba(20, 109, 94, 0.7);
+    background-color:  rgba(20, 40, 221, 0.6);
 }
 
 .slogan__filtre__arrow {
@@ -30,7 +30,7 @@
 }
 
 .slogan__filtre__arrow:hover {
-    color:rgb(255, 191, 0);
+    color: rgba(0, 247, 255);
     transition: color .4s;
 }
 
@@ -89,12 +89,12 @@
 }
 
 .dot:hover {
-    background-color: rgb(255, 191, 0);
+    background-color: rgba(0, 247, 255);
     transition: background-color .5s;
 }
 
 .dot-active {
-    background-color: rgb(255, 191, 0);
+    background-color: rgba(0, 247, 255);
 }
 
 .dot-inactive {

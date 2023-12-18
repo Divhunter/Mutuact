@@ -105,8 +105,9 @@
     /**********************************************************************************************/
 
     .slogan__filtre {
+        border-radius: 0 0 10px 0;
         width: 58.4vw;
-        height: 40vw;
+        height: 35vw;
         padding-left: 5vw;
         padding-right: 5vw;
         font-size: 3.65vw;
