@@ -6,8 +6,8 @@ import Background from '../../public/components/Background'
 import Header from '../../public/components/Header'
 import Banner from '../../public/components/Banner'
 import About from '../../public/components/About'
-import Prestations from '../../public/components/Prestations'
-import Realisations from '../../public/components/Realisations'
+import Epargne from '../../public/components/Epargne'
+import Prevoyance from '../../public/components/Prevoyance'
 import Agences from '../../public/components/Agences'
 import Contact from '../../public/components/Contact'
 import Footer from '../../public/components/Footer'
@@ -51,11 +51,11 @@ const PublicContainer = () => {
     }, [])
 
     useEffect(() => {
-        slideInTop('#prestations')
+        slideInTop('#epargne')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#realisations')
+        slideInTop('#prevoyance')
     }, [])
 
 	useEffect(() => {
@@ -72,8 +72,8 @@ const PublicContainer = () => {
 				<Header />
 				<Banner />
 				<About />
-				<Prestations />
-				<Realisations />
+				<Epargne />
+				<Prevoyance />
 				<Agences />
 				<Contact />
 				<Footer />

@@ -26,13 +26,16 @@ h2 {
     position: relative;
     font-size: 5.6vw;
     letter-spacing: .0275vw;
-    color: rgb(18, 105, 92);
+    color: rgb(184, 145, 39);
     font-family: 'Open', sans-serif;
 }
 
 h3 {
     display: inline-block;
+    width: 100%;
     margin-top: 6vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
     padding-left: 7vw;
     padding-right: 7vw;
     width: auto;
@@ -40,7 +43,10 @@ h3 {
     font-size: 6vw;
     letter-spacing: .0437vw;
     font-weight: 800;
-    color: rgb(168, 140, 57);
+    color: white;
+    background-image: 
+    url("https://www.transparenttextures.com/patterns/light-wool.png"),
+    linear-gradient(to right, rgb(209, 190, 85), rgb(209, 165, 43));
 }
 
 h4 {

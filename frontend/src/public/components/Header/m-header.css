@@ -17,7 +17,7 @@
 
 .navbar-closed {
 	height: 27vw;
-	background-color: rgb(252, 238, 161);
+	background: linear-gradient(to right, rgb(233, 215, 116), rgb(209, 165, 43));
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	transition: height .3s, background-color .8s;
 }
@@ -25,20 +25,17 @@
 .navbar__logoMutuactW {
 	position: relative;
 	top: 8.3vw;
-	left: 50%;
-	transform: translate(-50%, 0);
+	left: 5vw;
 	width: 35vw;
 	height: auto;
 }
 
 .logo-hidden {
 	opacity: 0;
-	transition: .8s;
 }
 
 .logo-visible {
 	opacity: 9;
-	transition: .8s;
 }
 
 .navbar__button-x {
@@ -64,7 +61,7 @@
 	top: 13.56vw;
 	right: 8.2vw;
 	font-size: 4.4vw;
-	color: black;
+	color: white;
 	cursor: pointer;
 	z-index: 500;
 }
@@ -132,30 +129,18 @@
 	float: right;
 	margin-top: 13.6vw;
 	font-family: 'Open', sans-serif;
-	font-size: 4.5vw;
-	font-weight: 500;
+	font-size: 4vw;
+	font-weight: 400;
 	letter-spacing: .075vw;
 	cursor: pointer;
 }
 
 .actu {
 	margin-right: 16vw;
-	font-weight: 400;
-	font-size: 4vw;
 }
 
-.actu:hover {
-	text-decoration: underline;
-	text-underline-position: under;
-	text-decoration-thickness: .175vw;
-}
-
-.white {
-	color: white !important;
-}
-
-.gold {
-	color: black !important;
+.contact {
+	margin-right: 5vw;
 }
 
 .actu-visible {

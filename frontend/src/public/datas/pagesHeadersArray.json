@@ -1,29 +1,29 @@
 [
     {	
         "title": "1",
-        "titleCol1": "Qui nous sommes",
-        "subTitle1": "Une équipe d'experts pour piloter vos chantiers : tarifs des fournitures & main d'oeuvre, artisans tout corps d'état, devis sur mesure",
-        "subTitle2": "CONSEILS - ARCHITECTURE - RÉNOVATION - CONSTRUCTION - PISCINE",
+        "titleCol1": "À propos",
+        "subTitle1": "Depuis plus de 20 ans : une expertise qui vous garantie le meilleur comparatif d’assurances et de mutuelles adapté à vos besoins spécifiques",
+        "subTitle2": "EPARGNE - PREVOYANCE - COMPLÉMENTAIRE SANTÉ - PRO - ASSURANCE DE PRÊT - AUTO & MOTO ...",
         "button": "",
         "text1": ""
     },
 	{	
         "title": "2",
-		"titleCol1": "Nos prestations",
-        "subTitle1": "Nous fédérons tous les corps de métier nécessaires à la réalisation de vos travaux de construction et de rénovation",
-        "subTitle2": "MAÇONNERIE - ÉLECTRICITÉ - MENUISERIE - PLOMBERIE - CHAUFFAGERIE - REVÊTEMENTS MURAL ET SOL ...",
+		"titleCol1": "Epargne",
+        "subTitle1": "En tant qu'assureur chevronné, je comprends l'importance cruciale de préparer l'avenir financier de mes clients. C'est avec enthousiasme que je vous présente des solutions d'épargne conçues pour transformer vos rêves en réalité.",
+        "subTitle2": "ASSURANCE VIE - PLAN D'ÉPARGNE RETRAITE - ASSURANCE DÉCÉS - ASSURANCE DÉPENDANCE - RENTE ...",
         "text1": ""
     },
     {
         "title": "3",
-		"titleCol1": "Nos réalisations",
-        "subTitle1": "Nous vous invitons à explorer notre galerie de productions pour découvrir nos differentes réalisations",
-        "subTitle2": "MAISON NEUVE - RÉNOVATION - TRAVAUX DE RAFRAICHISSEMENT - CHARPENTE SUR MESURE - PISCINE ...",
+		"titleCol1": "Prévoyance",
+        "subTitle1": "Sécuriser votre avenir et celui de vos proches est une priorité. Imaginez une solution sur mesure qui va au-delà de la simple protection, qui anticipe les aléas de la vie liés à la personne, tant dans votre sphère privée que professionnelle.",
+        "subTitle2": "RENTE ÉDUCATION - CAPITAL ACCIDENT - GARANTIE REVENU - ASSURANCE DÉPENSE - OBSÈQUE ...",
         "text1": ""
     },
     {
         "title": "4",
-		"titleCol1": "Nos agences",
+		"titleCol1": "Santé",
         "subTitle1": "Prenez rendez-vous, nous vous accueillons dans nos locaux pour vous conseiller au mieux sur les composantes de votre pojet",
         "subTitle2": "NOS CHARGÉS D'AFFAIRES SONT DISPONIBLES DURANT TOUTE LA DURÉE DU PROCESSUS DE RÉALISATION",
         "text1": ""

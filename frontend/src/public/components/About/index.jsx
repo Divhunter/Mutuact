@@ -1,7 +1,8 @@
 import { Link } from 'react-scroll'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
-import handshake from '../../assets/pictures/handshake.jpg'
+import coupleSenior from '../../assets/pictures/coupleSenior.jpg'
+import logoMutuactP from '../../assets/pictures/logo-mutuact-blanc-solo.png'
 
 // styles
 import './m-about.css'
@@ -21,40 +22,55 @@ const About = () => {
             {aboutHeaderArray.map((item, index) => (
                 <PagesHeaders 
                     key={index}
-                    titleCol1={item.titleCol1}
+                    titleCol1={
+                        <div>
+                            {item.titleCol1 }
+                            <br/>
+                            <br/>
+                            <img
+                                className='about__logo' 
+                                src={logoMutuactP} 
+                                alt='logo mutuact planet' 
+                            />
+                        </div>
+                    }
                     subTitle1={item.subTitle1}
                     subTitle2={item.subTitle2}
                     button={
-                        <Link to='agences'>
-                            <p className='button'>Suivez nos conseils</p>
+                        <Link to='contact'>
+                            <p className='button'>Suivez votre conseil</p>
                         </Link>
                     }
                     text1={
                         <div id='containerAbout' className='containerAbout'>
                             <p className='containerAbout__text' >
                                 <span className='containerAbout__text__header'>
-                                    Notre expertise au service de vos projets
+                                    Assurement votre
                                 </span>
                                 <br/><br/>
-                                La création de 2B REALISATION, basée sur Toulouse est une nouvelle étape dans notre développement : l'extension de notre périmètre d'intervention et la création d'une nouvelle antenne pour mieux vous accompagner. Grâce à notre engagement constant envers l'excellence et notre volonté d'aller toujours plus loin, nous sommes désormais en mesure d'étendre notre présence géographique afin de répondre aux besoins croissants de nos clients.
+                                Fort de plus de deux décennies d'expérience en tant qu'assureur établi dans la pittoresque région du Sud-Ouest, je me consacre à offrir à mes nombreux clients une tranquillité d'esprit inégalée. Ma mission est claire : garantir le meilleur comparatif d'assurances et de mutuelles, sur mesure pour répondre à leurs besoins spécifiques.
                                 <br/><br/>
-                                Que vous ayez un projet de construction neuve, de rénovation, d'agrandissement ou de réhabilitation, notre équipe d'experts qualifiés est là pour vous accompagner à chaque étape du processus.  
+                                Au fil des années, j'ai établi des relations solides avec une clientèle diversifiée, et la satisfaction de mes clients demeure ma priorité absolue. Je comprends l'importance de fournir des solutions d'assurance fiables et adaptées, tout en simplifiant le processus pour mes clients.
                                 <br/><br/>
-                                Nous accordons une grande importance à la qualité de notre travail, en utilisant des matériaux de premier choix, en respectant les normes de sécurité les plus strictes et en adoptant les techniques les plus avancées.
+                                Ma devise est bien plus qu'une simple phrase : c'est un engagement envers l'excellence et l'intégrité. Je m'efforce constamment de rester à l'avant-garde des évolutions du secteur de l'assurance, afin de garantir à mes clients les options les plus avantageuses et les plus actuelles.
                                 <br/><br/>
-                                Nous sommes également attentifs aux délais et au respect des budgets convenus, afin de garantir une expérience sans souci pour nos clients.
+                                Que vous soyez un particulier à la recherche d'une couverture complète pour votre famille ou une entreprise cherchant à sécuriser son avenir, je suis là pour vous guider à travers les méandres parfois complexes de l'assurance. Avec moi, vous bénéficiez non seulement d'une expertise approfondie, mais également d'un service personnalisé qui fait toute la différence.
+                                <br/><br/>
+                                Parce que chaque client est unique, je m'engage à personnaliser chaque comparatif d'assurances et de mutuelles pour répondre précisément à vos besoins et à ceux de votre famille ou de votre entreprise. Faites confiance à un professionnel de l'assurance dévoué qui s'efforce constamment de surpasser les attentes.
+                                <br/><br/>
+                                Votre tranquillité d'esprit commence ici.
                             </p>
                             <div className='containerAbout__bloc'>
                                 <img 
-                                    className='containerAbout__bloc__handshake' 
-                                    src={handshake}
+                                    className='containerAbout__bloc__coupleSenior' 
+                                    src={coupleSenior}
                                     alt='serrage de main'
                                 />
                                 <div className='containerAbout__bloc__square'>-</div>
                                 <p className='containerAbout__bloc__pub'>
-                                    Notre objectif
+                                    L'objectif
                                     <br/>
-                                    est de vous offrir des résultats exceptionnels
+                                    est de vous offrir la tranquillité d'esprit
                                 </p>
                             </div>
                         </div>

@@ -19,7 +19,6 @@
         width: auto;
         height: 85vw;
         margin-left: -5vw;
-        background-image: linear-gradient(rgb(14, 78, 68), rgb(29, 156, 135));
         overflow: hidden;
     }
 
@@ -49,7 +48,7 @@
         right: 0;
     }
 
-    .containerAbout__bloc__handshake {
+    .containerAbout__bloc__coupleSenior {
         margin-right: -5vw;
         width: 56.7vw;
         height: auto;
@@ -89,7 +88,6 @@
     .button {
         padding: 1.312vw 2.187vw 1.312vw 2.187vw;
         font-size: 1.75vw;
-        border-radius: .87vw;
         letter-spacing: .0237vw;
     }
 
@@ -108,9 +106,8 @@
 
     .containerAbout__text {
         display: inline-block;
-        width: 30.15vw;
-        margin: 4vw 4.375vw 3.375vw 2.575vw;
-        font-size: 1.2vw;
+        width: 33vw;
+        margin: 3vw 4.375vw 3.375vw 2.575vw;
     }
 
     .containerAbout__text__header {
@@ -124,7 +121,7 @@
         right: 0;
     }
 
-    .containerAbout__bloc__handshake {
+    .containerAbout__bloc__coupleSenior {
         width: 46.725vw;
         margin-right: 0;
     }
@@ -154,10 +151,14 @@
     /********************************************* about ******************************************/
     /**********************************************************************************************/
 
+    .about__logo {
+        width: 5vw;
+        height: auto;
+    }
+
     .button {
         padding: 1.095vw 1.825vw 1.095vw 1.825vw;
         font-size: 1.46vw;
-        border-radius: .73vw;
         letter-spacing: .0365vw;
         box-shadow: rgba(0, 0, 0, 0.24) 0 .219vw .584vw;
     }
@@ -167,14 +168,13 @@
     }
 
     .containerAbout>p {
-        font-size: 1.28vw;
-        line-height: 1.96vw;
+        font-size: 1.2vw;
+        line-height: 1.6vw;
     }
 
     .containerAbout__text {
-        width: 38.668vw;
-        margin: 4.38vw 3.65vw 3.65vw 3.65vw;
-        font-size: 1.168vw;
+        width: 40vw;
+        margin: 3vw 3vw 3vw 3vw;
     }
 
     .containerAbout__text__header {
@@ -182,7 +182,7 @@
         line-height: 2.555vw;
     }
 
-    .containerAbout__bloc__handshake {
+    .containerAbout__bloc__coupleSenior {
         width: 38.982vw;
     }
 

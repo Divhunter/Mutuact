@@ -8,20 +8,22 @@
     margin-top: 5vw;
     margin-bottom: 8vw;
     font-size: 4.5vw;
-    border-radius: .87vw;
+    border-radius: 5px;
     letter-spacing: .0237vw;
     font-weight: bold;
-    color: black;
-    background-color: rgb(255, 191, 0);
+    color: white;
+    background-image:
+    linear-gradient(to right, rgb(223, 202, 88), rgb(184, 145, 39));
     cursor: pointer;
-    transition: color .4s, background-color .4s;
+    transition: 10s;
     box-shadow: rgba(0, 0, 0, 0.24) 0 .262vw .7vw;
 }
 
 .button:hover {
     color: rgb(255, 255, 255);
-    background-color: orange;
-    transition: color .4s, background-color .4s;
+    background-image: 
+    linear-gradient(to right, rgb(223, 202, 88), rgb(226, 185, 70));
+    transition: 10s;
 }
 
 .containerAbout {
@@ -29,8 +31,10 @@
     flex-direction: column;
     width: auto;
     height: auto;
-    background-image: linear-gradient(rgb(14, 78, 68), rgb(29, 156, 135));
+    /*background-image: linear-gradient(rgb(163, 127, 27), rgb(199, 156, 39));*/
+    background-color: rgb(250, 240, 191);
     overflow: hidden;
+    color: black;
 }
 
 .containerAbout>p {
@@ -56,7 +60,7 @@
     margin-bottom: -1vw;
 }
 
-.containerAbout__bloc__handshake {
+.containerAbout__bloc__coupleSenior {
     margin-right: -5vw;
     width: 82vw;
     height: auto;
@@ -71,7 +75,7 @@
     width: auto;
     height: 13vw;
     padding-right: 54.3vw;
-    border: .175vw solid rgb(255, 191, 0);
+    border: .175vw solid rgb(255, 238, 0);
 }
 
 .containerAbout__bloc__pub {
@@ -83,6 +87,7 @@
     font-weight: 800;
     font-size: 5.5vw;
     line-height: 6vw;
+    color: white;
 }
 
 /********************************************* media queries ************************************************/
@@ -99,7 +104,6 @@
         margin-top: 2.963vw;
         margin-bottom: 4.74vw;
         font-size: 2.37vw;
-        border-radius: .515vw;
         letter-spacing: .014vw;
     }
 
@@ -127,7 +131,7 @@
         margin-bottom: -0.529vw;
     }
     
-    .containerAbout__bloc__handshake {
+    .containerAbout__bloc__coupleSenior {
         margin-right: -2.963vw;
         width: 100%;
     }

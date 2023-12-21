@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import { Link as GoTo} from 'react-router-dom'
 import { useState } from 'react'
-import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar, faPhoneFlip, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoMutuactW from '../../assets/pictures/logo-mutuact-blanc.png'
 
@@ -41,12 +41,29 @@ const Header = () => {
 				</GoTo>
 				
 				<div
-					className={
-						isOpen ? 
-						'nav__menu__link-header actu white' : 'nav__menu__link-header actu gold'}
+					className='nav__menu__link-header actu'
 					onClick={isActuState}
 				>
-					Nos actualités
+					Actualités
+				</div>
+
+				<div className='nav__menu__link-header contact'>
+					Contact&nbsp;&nbsp;
+					<FontAwesomeIcon 
+						icon={faPhoneFlip} 
+					/>
+				</div>
+
+				<div className={
+					isOpen?
+					'nav__menu__link-header devis devis-hidden':
+					'nav__menu__link-header devis devis-visible'
+					}
+				>
+					Devis sous 48h&nbsp;&nbsp;
+					<FontAwesomeIcon 
+						icon={faArrowCircleRight} 
+					/>
 				</div>
 
 				<div className='navbar__separator'></div>	
@@ -68,6 +85,8 @@ const Header = () => {
 					icon={faXmark} 
 				/>
 
+				<p className='nav__menu__bienvenue'>Bienvenue chez mutuact</p>
+
 				<menu className={
 						isOpen ?
 						'navbar__menu navbar__menu-open':
@@ -75,21 +94,21 @@ const Header = () => {
 					}
 				>
 					
-					<Link onClick={isOpenState} to='/'>
+					<Link onClick={isOpenState} to='epargne'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingDollar} 
 						/>
 						<p className='nav__menu__text'>Epargne</p>
 					</Link>
-					<Link onClick={isOpenState} to='about'>
+					<Link onClick={isOpenState} to='prevoyance'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingHand} 
 						/>
 						<p className='nav__menu__text'>Prévoyance</p>
 					</Link>
-					<Link onClick={isOpenState} to='prestations'>
+					<Link onClick={isOpenState} to='epargne'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingMedical} 
@@ -115,7 +134,7 @@ const Header = () => {
 							className='nav__menu__link'
 							icon={faCar} 
 						/>
-						<p className='nav__menu__text'>Auto</p>
+						<p className='nav__menu__text'>Auto-Moto</p>
 					</Link>
 				</menu> 
 			</nav>

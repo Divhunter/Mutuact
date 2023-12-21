@@ -1,3 +1,6 @@
+import { Link } from 'react-scroll'
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import background1 from '../../assets/pictures/background1.jpg'
 
 // styles
@@ -9,7 +12,15 @@ const Background = () => {
 	return (
 		<>
 			<div className='background'>
-				<img className='house' src={background1} alt='maison contemporaine' />
+				<img className='famille' src={background1} alt='maison contemporaine' />
+				<Link to='about'>
+					<div className='background__plus'>
+						En savoir plus&nbsp;&nbsp;
+						<FontAwesomeIcon 
+							icon={faArrowCircleRight} 
+						/>
+					</div>
+				</Link>
 			</div>
 		</>
 	)
