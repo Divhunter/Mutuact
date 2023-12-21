@@ -30,9 +30,8 @@ const Epargne = () => {
                         <div>
                             {item.titleCol1}
                             <br/>
-                            <br/>
                             <FontAwesomeIcon 
-                                className='epargne-logo'
+                                className='header-logo'
                                 icon={faHandHoldingDollar} 
                             />
                         </div>
@@ -42,7 +41,10 @@ const Epargne = () => {
                     text1={
                         <>
                             <section className='why'>
-                                <header>Pourquoi choisir mutuact</header>
+                                <div className='pagination'>1</div>
+                                <header>
+                                    Pourquoi choisir mutuact
+                                </header>
                                 <p>
                                     Vous avez à cœur de faire fructifier votre épargne et d'envisager des placements financiers judicieux ? Si vous souhaitez mettre en place un plan d'épargne régulier, vous êtes au bon endroit.
                                     <br/><br/>

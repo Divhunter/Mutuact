@@ -63,9 +63,11 @@
     /******************************************** epargne *****************************************/
     /**********************************************************************************************/
     
-    .epargne-logo {
+    .header-logo {
         font-size: 4.5vw;
         color: rgb(184, 145, 39);
+        margin-top: 2vw;
+        margin-bottom: 1.5vw;
     }
 
     .why {
@@ -79,8 +81,25 @@
         margin-bottom: 1.5vw;
     }
 
+    .pagination {
+        position: absolute;
+        display: inline-block;
+        top: 5.3vw;
+        padding: auto;
+        left: 53.5vw;
+        max-width: 6vw;
+        height: 6vw;
+        font-size: 4vw;
+        font-weight: 800;
+        background-image:
+        linear-gradient(to right, rgb(223, 202, 88), rgb(184, 145, 39));
+        color: white;
+        border-radius: 8px;
+        z-index: -1;
+    }
+
     .why>p{
-        margin-top: 4vw;
+        margin-top: 8vw;
         margin-left: 1.8vw;
         margin-right: 1.8vw;
         font-size: 1.3vw;
