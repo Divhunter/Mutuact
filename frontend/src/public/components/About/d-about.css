@@ -170,12 +170,12 @@
 
     .containerAbout>p {
         font-size: 1.2vw;
-        line-height: 1.6vw;
+        line-height: 1.5vw;
     }
 
     .containerAbout__text {
         width: 40vw;
-        margin: 3vw 3vw 3vw 3vw;
+        margin: 2.5vw 3vw 3vw 3vw;
     }
 
     .containerAbout__text__header {

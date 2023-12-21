@@ -8,7 +8,11 @@ import Banner from '../../public/components/Banner'
 import About from '../../public/components/About'
 import Epargne from '../../public/components/Epargne'
 import Prevoyance from '../../public/components/Prevoyance'
-import Agences from '../../public/components/Agences'
+import Sante from '../../public/components/Sante'
+import Vowd from '../../public/components/Vowd'
+import Prof from '../../public/components/Prof'
+import Pret from '../../public/components/Pret'
+import Auto from '../../public/components/Auto'
 import Contact from '../../public/components/Contact'
 import Footer from '../../public/components/Footer'
 
@@ -47,23 +51,31 @@ const PublicContainer = () => {
     }, [])
 
     useEffect(() => {
-        slideInTop('#about')
-    }, [])
-
-    useEffect(() => {
         slideInTop('#epargne')
     }, [])
 
-	useEffect(() => {
+    useEffect(() => {
         slideInTop('#prevoyance')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#agences')
+        slideInTop('#sante')
     }, [])
 
 	useEffect(() => {
+        slideInTop('#pro')
+    }, [])
+
+	useEffect(() => {
+        slideInTop('#pret')
+    }, [])
+
+    useEffect(() => {
         slideInTop('#contact')
+    }, [])
+
+    useEffect(() => {
+        slideInTop('#auto')
     }, [])
 
 	return (
@@ -74,7 +86,11 @@ const PublicContainer = () => {
 				<About />
 				<Epargne />
 				<Prevoyance />
-				<Agences />
+				<Sante />
+                <Vowd />
+                <Prof />
+                <Pret />
+                <Auto />
 				<Contact />
 				<Footer />
                 <Background />

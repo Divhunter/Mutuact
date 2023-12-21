@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import { Link as GoTo} from 'react-router-dom'
 import { useState } from 'react'
-import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar, faPhoneFlip, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar, faPhoneFlip, faArrowCircleRight, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoMutuactW from '../../assets/pictures/logo-mutuact-blanc.png'
 
@@ -44,13 +44,16 @@ const Header = () => {
 					className='nav__menu__link-header actu'
 					onClick={isActuState}
 				>
-					Actualités
+					Nos actualités
 				</div>
 
 				<div className='nav__menu__link-header contact'>
-					Contact&nbsp;&nbsp;
+					Nous contacter&nbsp;&nbsp;
 					<FontAwesomeIcon 
 						icon={faPhoneFlip} 
+					/>&nbsp;&nbsp;
+					<FontAwesomeIcon 
+						icon={faLocationDot} 
 					/>
 				</div>
 
@@ -108,28 +111,28 @@ const Header = () => {
 						/>
 						<p className='nav__menu__text'>Prévoyance</p>
 					</Link>
-					<Link onClick={isOpenState} to='epargne'>
+					<Link onClick={isOpenState} to='sante'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingMedical} 
 						/>
 						<p className='nav__menu__text'>Santé</p>
 					</Link>
-					<Link onClick={isOpenState} to='realisations'>
+					<Link onClick={isOpenState} to='pro'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faUserTie} 
 						/>
 						<p className='nav__menu__text'>Pro.</p>
 					</Link>
-					<Link onClick={isOpenState} to='agences'>
+					<Link onClick={isOpenState} to='pret'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingHeart} 
 						/>
 						<p className='nav__menu__text'>Prêt</p>
 					</Link>
-					<Link onClick={isOpenState} to='contact'>
+					<Link onClick={isOpenState} to='auto'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faCar} 

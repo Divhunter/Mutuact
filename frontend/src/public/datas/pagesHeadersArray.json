@@ -10,7 +10,7 @@
 	{	
         "title": "2",
 		"titleCol1": "Epargne",
-        "subTitle1": "En tant qu'assureur chevronné, je comprends l'importance cruciale de préparer l'avenir financier de mes clients. C'est avec enthousiasme que je vous présente des solutions d'épargne conçues pour transformer vos rêves en réalité.",
+        "subTitle1": "En tant qu'assureur chevronné, nous comprenons l'importance cruciale de préparer l'avenir financier de nos clients. C'est avec enthousiasme que nous vous présentons des solutions d'épargne conçues pour transformer vos rêves en réalité.",
         "subTitle2": "ASSURANCE VIE - PLAN D'ÉPARGNE RETRAITE - ASSURANCE DÉCÉS - ASSURANCE DÉPENDANCE - RENTE ...",
         "text1": ""
     },
@@ -25,28 +25,35 @@
         "title": "4",
 		"titleCol1": "Santé",
         "subTitle1": "Prenez le contrôle de votre bien-être. Optez pour une complémentaire santé qui va au-delà des attentes, assurant une protection solide et des remboursements adaptés.",
-        "subTitle2": "NOS CHARGÉS D'AFFAIRES SONT DISPONIBLES DURANT TOUTE LA DURÉE DU PROCESSUS DE RÉALISATION",
+        "subTitle2": "COMPLÉMENTAIRE INDIVIDUELLE - COLLECTIVE - JEUNE - FAMILLE - RESPONSABLE - 100% ...",
         "text1": ""
 	},
-    {	
+    {
         "title": "5",
-		"titleCol1": "Contact",
-        "subTitle1": "Nous vous invitons à remplir le formulaire de contact en nous fournissant autant de détails que possible sur votre projet.",
-        "subTitle2": "NOUS REVIENDRONS VERS VOUS DANS LES MEILLEURS DÉLAIS POUR VOUS FOURNIR UN DEVIS PERSONNALISÉ",
+		"titleCol1": "Pro.",
+        "subTitle1": "Ensemble, écrivons la success story de votre entreprise. Notre cabinet comprend les défis uniques auxquels font face les professionnels comme vous.",
+        "subTitle2": "RCP - MRP - CYBER RISQUES - FLOTTE AUTOMOBILE - DOMMAGE AUX BIENS - RCM - JURIDIQUE ... ",
         "text1": ""
 	},
     {	
         "title": "6",
-		"titleCol1": "Galerie",
-        "subTitle1": "Plus de 50 réalisations par an et 20 années d'expérience.",
-        "subTitle2": "NOS COLLABORATEURS REALISENT LES INTERVENTIONS SOUS LE CONTRÔLE DU CHARGÉ D'AFFAIRE",
+		"titleCol1": "Prêt",
+        "subTitle1": "Lorsque vous envisagez de concrétiser un projet financier avec l'aide d'un emprunt, il est essentiel de considérer la protection de votre investissement. Dans la plupart des situations, la souscription à une assurance emprunteur est incontournable, tant pour votre sécurité que celle de votre famille.",
+        "subTitle2": "PRÊT PERSONNEL - IMMOBILIER - AUTOMOBILE - ÉTUDIANT - CONSOMMATION - PROFESSIONNEL ...",
         "text1": ""
 	},
     {	
         "title": "7",
-		"titleCol1": "Images de nos chantiers",
-        "subTitle1": "Plus de 50 réalisations par an et 20 années d'expérience.",
-        "subTitle2": "NOS COLLABORATEURS REALISENT LES INTERVENTIONS SOUS LE CONTRÔLE DU CHARGÉ D'AFFAIRE",
+		"titleCol1": "Auto & Moto",
+        "subTitle1": "Lorsque vous envisagez de concrétiser un projet financier avec l'aide d'un emprunt, il est essentiel de considérer la protection de votre investissement. Dans la plupart des situations, la souscription à une assurance emprunteur est incontournable, tant pour votre sécurité que celle de votre famille.",
+        "subTitle2": "PRÊT PERSONNEL - IMMOBILIER - AUTOMOBILE - ÉTUDIANT - CONSOMMATION - PROFESSIONNEL ...",
+        "text1": ""
+	},
+    {	
+        "title": "8",
+		"titleCol1": "Contact",
+        "subTitle1": "Nous vous invitons à remplir le formulaire de contact en nous fournissant autant de détails que possible sur votre projet.",
+        "subTitle2": "NOUS REVIENDRONS VERS VOUS DANS LES MEILLEURS DÉLAIS POUR VOUS FOURNIR UN DEVIS PERSONNALISÉ",
         "text1": ""
 	}
 ]
