@@ -46,11 +46,11 @@ const Auto = () => {
                                     Pourquoi choisir mutuact
                                 </header>
                                 <p>
-                                    Cette assurance n'est pas seulement une formalité, c'est une barrière de protection cruciale. Elle garantit la continuité du remboursement de votre emprunt en cas de situations difficiles telles que le décès, l'invalidité, ou la perte d'emploi. Au-delà de la tranquillité d'esprit qu'elle offre à vous et à votre entourage, elle constitue également une sécurité pour l'organisme de crédit.
+                                    Que vous soyez locataire ou propriétaire, que vous possédiez une résidence secondaire ou un immeuble, notre objectif est de protéger ce qui compte le plus pour vous. Laissez-nous vous guider à travers des options d'assurance habitation flexibles, conçues pour s'adapter à votre style de vie.
                                     <br/><br/>
-                                    Imaginez, en cas de circonstances imprévues, l'assurance prend le relais, soulageant ainsi le fardeau financier qui pourrait peser sur votre famille. C'est un investissement dans la stabilité de votre avenir financier.
+                                    N'ayez pas peur de comparer. Parce que nous comprenons que chaque situation est unique, nous vous offrons la possibilité de personnaliser votre couverture. Ne compromettez pas votre sécurité et votre tranquillité d'esprit. Optez pour des assurances qui s'adaptent à votre réalité.
                                     <br/><br/>
-                                    En tant qu'assureur dévoué, nous comprenons l'importance de choisir une assurance emprunteur qui répond à vos besoins spécifiques. Contactez-nous aujourd'hui pour discuter de la meilleure façon de protéger votre investissement et de garantir un avenir financier serein.
+                                    Contactez-nous dès aujourd'hui pour découvrir comment nos solutions d'assurance auto, moto et habitation peuvent s'aligner parfaitement sur votre mode de vie dynamique. Votre protection, notre engagement.
                                 </p>
                             </section>
                         </>
