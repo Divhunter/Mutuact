@@ -3,5 +3,5 @@ import { PrismaClient } from "@prisma/client";
 export declare class PrismaService extends PrismaClient implements OnModuleInit {
     constructor();
     onModuleInit(): Promise<void>;
-    cleanDb(): any;
+    cleanDb(): Promise<[import(".prisma/client").Prisma.BatchPayload, import(".prisma/client").Prisma.BatchPayload, import(".prisma/client").Prisma.BatchPayload, import(".prisma/client").Prisma.BatchPayload]>;
 }
