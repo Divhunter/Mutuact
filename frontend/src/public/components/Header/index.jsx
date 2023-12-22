@@ -47,15 +47,17 @@ const Header = () => {
 					Nos actualités
 				</div>
 
-				<div className='nav__menu__link-header b-contact'>
-					Nous contacter&nbsp;&nbsp;
-					<FontAwesomeIcon 
-						icon={faPhoneFlip} 
-					/>&nbsp;&nbsp;
-					<FontAwesomeIcon 
-						icon={faLocationDot} 
-					/>
-				</div>
+				<Link to='agences'>
+					<div className='nav__menu__link-header b-contact'>
+						Nous contacter&nbsp;&nbsp;
+						<FontAwesomeIcon 
+							icon={faPhoneFlip} 
+						/>&nbsp;&nbsp;
+						<FontAwesomeIcon 
+							icon={faLocationDot} 
+						/>
+					</div>
+				</Link>
 				
 				<Link to='contact'>
 					<div className={

@@ -13,6 +13,7 @@ import Vowd from '../../public/components/Vowd'
 import Prof from '../../public/components/Prof'
 import Pret from '../../public/components/Pret'
 import Auto from '../../public/components/Auto'
+import Agences from '../../public/components/Agences'
 import Contact from '../../public/components/Contact'
 import Footer from '../../public/components/Footer'
 
@@ -91,6 +92,7 @@ const PublicContainer = () => {
                 <Prof />
                 <Pret />
                 <Auto />
+                <Agences />
 				<Contact />
 				<Footer />
                 <Background />

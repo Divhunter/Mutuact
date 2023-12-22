@@ -9,7 +9,7 @@ import './d-contact.css'
 
 const Contact = () => {
     
-    const contactHeader = pagesHeadersArray.find(el => el.title === "8")
+    const contactHeader = pagesHeadersArray.find(el => el.title === "9")
     const contactHeaderArray = []
     contactHeaderArray.push(contactHeader)
 
