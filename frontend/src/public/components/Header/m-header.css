@@ -207,6 +207,16 @@
     letter-spacing: .2vw;
 }
 
+.ici {
+	text-decoration: none;
+	color: rgb(209, 165, 43);
+}
+
+.ici:hover {
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
 /********************************************* media queries ************************************************/
 /************************** New rules if the screen is at more 450px ****************************************/
 

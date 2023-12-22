@@ -162,9 +162,17 @@ const Header = () => {
 					</header>
 					<h2>Bonjour à tous,</h2>
 					<p>
-					1- Nous sommes ravis d'annoncer notre partenariat avec BCRA.
+					1- Mutuact recrute!
 					<br/>
-					Ensemble, nous unissons nos forces et notre expertise pour offrir des solutions exceptionnelles à nos clients communs.
+					Pour postuler, veuillez nous contacter directement, c'est par&nbsp;
+					<strong>
+						<a 
+							href='mailto:mutuact@mutuact.fr'
+							className='ici'
+						>
+							ici
+						</a>
+					</strong>.
 					</p>
 					<p>
 					2- Nous sommes ravis de vous présenter notre nouveau site web réalisé par la société VOWD.fr.

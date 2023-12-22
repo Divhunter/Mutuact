@@ -36,20 +36,20 @@ const Footer = () => {
         <br/>
         SIRET 75344673100048
         <br/>
-        Tél : XX XX XX XX XX
+        Tél : 06 28 18 02 03
         <br/>
         https://www.mutuact.fr
         <br/>
         <span>
           <a 
-            href='/' 
+            href='mailto:mutuact@mutuact.fr'
             className='mail-link'
           >
-              mutuact@contact.fr
+              mutuact@mutuact.fr
           </a>
         </span>
         <br/>
-        41 Rue de la Decouverte - 31670 Labège
+        41 Rue de la Découverte CS37621 - 31670 Labège - France
       </p>
       <div className='footer__copyright'>
           <p>
