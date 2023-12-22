@@ -7,7 +7,7 @@
     color: black;
 }
 
-.cgu__logo-2br {
+.cgu__logo-mutuact {
     margin-bottom: 5vw;
 }
 
@@ -17,7 +17,7 @@
     width: 100%;
     padding-top: 10vw;
     padding-bottom: 10vw;
-    color: rgb(177, 148, 63);
+    color: rgb(194, 146, 15);
     background-color: rgb(247, 236, 206);
 }
 
@@ -39,11 +39,11 @@
     margin-top: auto;
     margin-left: 3vw;
     font-size: 4.5vw;
-    color: rgb(18, 105, 92);
+    color: rgb(194, 146, 15);
 }
 
 .cgu > li> a {
-    color: rgb(18, 105, 92);
+    color: rgb(194, 146, 15);
     font-weight: 500;
 }
 

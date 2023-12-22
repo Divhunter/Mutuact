@@ -53,7 +53,7 @@ const Footer = () => {
       </p>
       <div className='footer__copyright'>
           <p>
-              © MUTUACT - Tous droits réservés - <Link className='footer__copyright__link' to='https://www.mutuact.fr/cgu'>Mentions légales</Link> - 2023 - conception web vowd.fr
+              © MUTUACT - Tous droits réservés - <Link className='footer__copyright__link' to='/cgu'>Mentions légales</Link> - 2023 - conception web vowd.fr
           </p>
       </div>	
     </section>
