@@ -47,7 +47,7 @@ const Header = () => {
 					Nos actualités
 				</div>
 
-				<div className='nav__menu__link-header contact'>
+				<div className='nav__menu__link-header b-contact'>
 					Nous contacter&nbsp;&nbsp;
 					<FontAwesomeIcon 
 						icon={faPhoneFlip} 
@@ -56,18 +56,20 @@ const Header = () => {
 						icon={faLocationDot} 
 					/>
 				</div>
-
-				<div className={
-					isOpen?
-					'nav__menu__link-header devis devis-hidden':
-					'nav__menu__link-header devis devis-visible'
-					}
-				>
-					Devis sous 48h&nbsp;&nbsp;
-					<FontAwesomeIcon 
-						icon={faArrowCircleRight} 
-					/>
-				</div>
+				
+				<Link to='contact'>
+					<div className={
+						isOpen?
+						'nav__menu__link-header devis devis-hidden':
+						'nav__menu__link-header devis devis-visible'
+						}
+					>
+						Devis sous 48h&nbsp;&nbsp;
+						<FontAwesomeIcon 
+							icon={faArrowCircleRight} 
+						/>
+					</div>
+				</Link>
 
 				<div className='navbar__separator'></div>	
 
@@ -137,7 +139,7 @@ const Header = () => {
 							className='nav__menu__link'
 							icon={faCar} 
 						/>
-						<p className='nav__menu__text'>Auto-Moto</p>
+						<p className='nav__menu__text'>Auto, habitation</p>
 					</Link>
 				</menu> 
 			</nav>

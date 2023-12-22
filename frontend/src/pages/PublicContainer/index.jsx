@@ -71,11 +71,11 @@ const PublicContainer = () => {
     }, [])
 
     useEffect(() => {
-        slideInTop('#contact')
+        slideInTop('#auto')
     }, [])
 
     useEffect(() => {
-        slideInTop('#auto')
+        slideInTop('#contact')
     }, [])
 
 	return (
