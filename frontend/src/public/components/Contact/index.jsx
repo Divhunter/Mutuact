@@ -43,7 +43,7 @@ const Contact = () => {
                                 <p className='containerContact__bloc__pub'>
                                     Notre objectif
                                     <br/>
-                                    est de vous offrir des résultats exceptionnels
+                                    est de vous offrir la tranquillité d'esprit
                                 </p>
                             </div>
                         </>

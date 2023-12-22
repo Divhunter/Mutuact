@@ -104,7 +104,7 @@ const Header = () => {
 							className='nav__menu__link'
 							icon={faHandHoldingDollar} 
 						/>
-						<p className='nav__menu__text'>Epargne</p>
+						<p className='nav__menu__text'>Épargne</p>
 					</Link>
 					<Link onClick={isOpenState} to='prevoyance'>
 						<FontAwesomeIcon 
@@ -139,7 +139,7 @@ const Header = () => {
 							className='nav__menu__link'
 							icon={faCar} 
 						/>
-						<p className='nav__menu__text'>Auto, habitation</p>
+						<p className='nav__menu__text'>Auto...</p>
 					</Link>
 				</menu> 
 			</nav>
