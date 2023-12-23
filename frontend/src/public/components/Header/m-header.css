@@ -13,6 +13,7 @@
 .navbar-open {
 	height: 126.4vw;
 	transition: height .4s, background-color 1.5s;
+	background: linear-gradient(to right, rgba(52, 190, 167, .15), rgba(10, 86, 109, .15));
 }
 
 .navbar-closed {
