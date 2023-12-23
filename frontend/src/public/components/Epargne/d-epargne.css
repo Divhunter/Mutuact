@@ -62,13 +62,6 @@
     /**********************************************************************************************/
     /******************************************** epargne *****************************************/
     /**********************************************************************************************/
-    
-    .header-logo {
-        font-size: 4.5vw;
-        color: rgb(184, 145, 39);
-        margin-top: 2vw;
-        margin-bottom: 1.5vw;
-    }
 
     .why {
         margin-top: -2.19vw;
@@ -92,7 +85,7 @@
         font-size: 4vw;
         font-weight: 800;
         background-image:
-        linear-gradient(to right, rgb(223, 202, 88), rgb(184, 145, 39));
+        linear-gradient(to right, rgb(82, 238, 212), rgb(10, 86, 109));
         color: white;
         border-radius: 8px;
         z-index: -1;

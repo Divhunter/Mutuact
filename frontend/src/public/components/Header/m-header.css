@@ -17,7 +17,7 @@
 
 .navbar-closed {
 	height: 27vw;
-	background: linear-gradient(to right, rgb(233, 215, 116), rgb(209, 165, 43));
+	background: linear-gradient(to right, rgb(52, 190, 167), rgb(10, 86, 109));
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	transition: height .3s, background-color .8s;
 }
