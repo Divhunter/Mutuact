@@ -192,14 +192,14 @@
 		padding-bottom: 0;
 		letter-spacing: .146vw;
 		font-size: 35px;
-		color: white;
+		color: rgb(255, 255, 255);
 		transition: color .4s;
 	}
 	
 	.nav__menu__link:hover {
 		padding-left: 0;
 		font-size: 35px;
-		color: rgb(71, 255, 224);
+		color: rgb(205, 255, 247);
 		transition: color .4s;
 	}
 
