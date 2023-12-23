@@ -16,7 +16,7 @@
     top: 0;
     width: 236vw;
     height: auto;
-    filter: grayscale(1) brightness(70%);
+    filter: grayscale(1) brightness(50%);
 }
 
 /********************************************* media queries ************************************************/
