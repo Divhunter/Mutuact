@@ -84,8 +84,7 @@
         height: 6vw;
         font-size: 4vw;
         font-weight: 800;
-        background-image:
-        linear-gradient(to right, rgb(82, 238, 212), rgb(10, 86, 109));
+        background-color: rgb(80, 197, 178);
         color: white;
         border-radius: 8px;
         z-index: -1;
