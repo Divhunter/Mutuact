@@ -19,7 +19,7 @@ async function bootstrap() {
     origin: configService.get<string>("ORIGIN_URL"), // Remplacez par votre origine
   });
 
-  const PORT = configService.get<number>("PORT") || 9000;
+  const PORT = 9000;
 
   app.useGlobalPipes(new ValidationPipe());
   console.log("app started");
