@@ -8,14 +8,15 @@ import { PassportModule } from "@nestjs/passport";
 import { ProjetController } from "./application/controllers/projets/projet.controller";
 import { AuthModule } from "./modules/auth.module";
 import { ProjetModule } from "./modules/projet.module";
-import { ConfigService } from "@nestjs/config";
+import { ConfigModule, ConfigService } from "@nestjs/config";
 import { HttpModule } from "@nestjs/axios";
 import { InitService } from "./domain/services/ussers/init/init.service";
 import { PrismaService } from "./infrastructure/persistence/prisma/prisma.service";
+import { AppController } from "./application/controllers/app.controller";
 
 @Module({
-  imports: [PassportModule, JwtModule.register({}), AuthModule, ProjetModule, HttpModule],
-  controllers: [AuthController, ProjetController],
+  imports: [PassportModule, JwtModule.register({}), AuthModule, ProjetModule, HttpModule, ConfigModule.forRoot()],
+  controllers: [AppController, AuthController, ProjetController],
   providers: [TokenService, LocalStrategy, JwtStrategy, ConfigService, InitService, PrismaService],
 })
 export class AppModule {}
