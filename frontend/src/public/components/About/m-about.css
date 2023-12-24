@@ -2,6 +2,11 @@
 /********************************************* about ******************************************/
 /**********************************************************************************************/
 
+.about__logo {
+    width: 10vw;
+    height: auto;
+}
+
 .button {
     display: inline-block;
     padding: 3vw 3vw 3vw 3vw;
@@ -12,18 +17,18 @@
     letter-spacing: .0237vw;
     font-weight: bold;
     color: white;
-    background-image:
-    linear-gradient(to right, rgb(223, 202, 88), rgb(184, 145, 39));
+    background-color: rgb(0, 119, 255);
     cursor: pointer;
     transition: 10s;
     box-shadow: rgba(0, 0, 0, 0.24) 0 .262vw .7vw;
+    transition: background-color 2s, box-shadow 2s;
 }
 
 .button:hover {
     color: rgb(255, 255, 255);
-    background-image: 
-    linear-gradient(to right, rgb(223, 202, 88), rgb(226, 185, 70));
-    transition: 10s;
+    background-color: rgb(44, 143, 255);
+    box-shadow: rgba(0, 0, 0, 0.5) 0 .262vw .7vw;
+    transition: background-color .4s, box-shadow .4s;
 }
 
 .containerAbout {
@@ -31,8 +36,7 @@
     flex-direction: column;
     width: auto;
     height: auto;
-    /*background-image: linear-gradient(rgb(163, 127, 27), rgb(199, 156, 39));*/
-    background-color: rgb(250, 240, 191);
+    background-color: rgb(244, 252, 250); 
     overflow: hidden;
     color: black;
 }

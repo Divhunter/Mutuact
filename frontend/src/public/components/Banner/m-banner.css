@@ -10,6 +10,17 @@
     background-color: rgb(177, 148, 63);
 }
 
+.banner__logo-mutuact {
+    position: relative;
+    top: -130vw;
+    margin-top: -40vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 260px;
+    height: auto;   
+    z-index: 3000;
+}
+
 .banner__picture1 {
     position: absolute;
     display: block;
@@ -19,6 +30,7 @@
     width: auto;
     height: 100%;
     margin-bottom: -2vw;
+    filter: brightness(35%)
 }
 
 .banner__picture2 {

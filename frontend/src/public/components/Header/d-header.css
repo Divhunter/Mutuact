@@ -192,14 +192,14 @@
 		padding-bottom: 0;
 		letter-spacing: .146vw;
 		font-size: 35px;
-		color: rgb(252, 238, 161);
+		color: rgb(255, 255, 255);
 		transition: color .4s;
 	}
 	
 	.nav__menu__link:hover {
 		padding-left: 0;
 		font-size: 35px;
-		color: rgb(248, 221, 67);
+		color: rgb(205, 255, 247);
 		transition: color .4s;
 	}
 
@@ -249,16 +249,16 @@
 	}
 
 	.devis {
-		border: solid 1px rgb(184, 145, 39); 
-		background-color: rgb(184, 145, 39);
+		border: solid 1px rgb(36, 122, 108); 
+		background-color: rgb(36, 122, 108);
 		float: left;
 		margin-left: 3vw;
 		transition: .4s;
 	}
 
 	.devis:hover {
-		border: solid 1px rgb(209, 165, 43);
-		background-color: rgb(209, 165, 43);
+		border: solid 1px rgb(44, 151, 133);
+		background-color: rgb(44, 151, 133); 
 		transition: .4s;
 	}
 

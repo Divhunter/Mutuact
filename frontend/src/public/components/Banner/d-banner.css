@@ -20,7 +20,7 @@
     .banner__picture2 {
        display: block;
        margin-bottom: -3vw;
-       filter: brightness(35%)
+       filter: brightness(50%);
     }
 }
 

@@ -58,7 +58,7 @@ const About = () => {
                                 <br/><br/>
                                 Parce que chaque client est unique, nous nous engageons à personnaliser chaque comparatif d'assurances et de mutuelles pour répondre précisément à vos besoins et à ceux de votre famille ou de votre entreprise. Faites confiance à des professionnels de l'assurance dévoués qui s'efforcent constamment de surpasser les attentes.
                                 <br/><br/>
-                                Votre tranquillité d'esprit commence ici.
+                                <div className='end'>Votre tranquillité d'esprit commence ici</div>
                             </p>
                             <div className='containerAbout__bloc'>
                                 <img 
