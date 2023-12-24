@@ -12,11 +12,12 @@ import { ConfigModule, ConfigService } from "@nestjs/config";
 import { HttpModule } from "@nestjs/axios";
 import { InitService } from "./domain/services/ussers/init/init.service";
 import { PrismaService } from "./infrastructure/persistence/prisma/prisma.service";
-import { AppController } from "./application/controllers/app.controller";
+import { AppController } from "./app.controller";
+import { AppService } from "./app.service";
 
 @Module({
   imports: [PassportModule, JwtModule.register({}), AuthModule, ProjetModule, HttpModule, ConfigModule.forRoot()],
   controllers: [AppController, AuthController, ProjetController],
-  providers: [TokenService, LocalStrategy, JwtStrategy, ConfigService, InitService, PrismaService],
+  providers: [TokenService, LocalStrategy, JwtStrategy, ConfigService, InitService, PrismaService, AppService],
 })
 export class AppModule {}
