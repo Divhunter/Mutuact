@@ -14,7 +14,7 @@ async function bootstrap() {
   SwaggerModule.setup("api", app, document);
 
   const configService = app.get(ConfigService);
-  app.setGlobalPrefix("api");
+  // app.setGlobalPrefix("api");
   app.enableCors({
     origin: configService.get<string>("ORIGIN_URL"), // Remplacez par votre origine
   });
