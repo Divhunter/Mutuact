@@ -1,12 +1,12 @@
 import { Body, Controller, Get, Put, Post, Query, Request, UseGuards, Delete } from "@nestjs/common";
 import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
-import { ConfirmUserDto, EmailDto, userIdDto } from "src/domain/dtos/users/auth.dto";
-import { CreateUserDto } from "src/domain/dtos/users/create.user.dto";
-import { LoginDto } from "src/domain/dtos/users/login.dto";
-import { ResetPasswordConfirmDto, ResetPasswordDemandeDto } from "src/domain/dtos/users/resetPassword.dto";
-import { AuthService } from "src/domain/services/ussers/auth.service";
-import { JwtAuthGuard } from "src/domain/services/ussers/strategies/local/jwt-auth.guard";
-import { LocalAuthGuard } from "src/domain/services/ussers/strategies/local/local-auth.guard";
+import { ConfirmUserDto, EmailDto, userIdDto } from "../../../domain/dtos/users/auth.dto";
+import { CreateUserDto } from "../../../domain/dtos/users/create.user.dto";
+import { LoginDto } from "../../../domain/dtos/users/login.dto";
+import { ResetPasswordDemandeDto, ResetPasswordConfirmDto } from "../../../domain/dtos/users/resetPassword.dto";
+import { AuthService } from "../../../domain/services/ussers/auth.service";
+import { JwtAuthGuard } from "../../../domain/services/ussers/strategies/local/jwt-auth.guard";
+import { LocalAuthGuard } from "../../../domain/services/ussers/strategies/local/local-auth.guard";
 
 @ApiTags("Authentification")
 @Controller("auth")

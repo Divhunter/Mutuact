@@ -1,8 +1,8 @@
-import { IProjetRepository } from "src/domain/abstraction/projets/projet.repository.interface";
-import { ProjetModel } from "src/domain/models/projets/projet.model";
-import { PrismaService } from "../prisma.service";
-import { CreateProjetDto, MessageDto } from "src/domain/dtos/projets/create.projet.dto";
 import { Injectable } from "@nestjs/common";
+import { IProjetRepository } from "../../../../domain/abstraction/projets/projet.repository.interface";
+import { CreateProjetDto, MessageDto } from "../../../../domain/dtos/projets/create.projet.dto";
+import { ProjetModel } from "../../../../domain/models/projets/projet.model";
+import { PrismaService } from "../prisma.service";
 
 @Injectable()
 export class ProjetRepository implements IProjetRepository {

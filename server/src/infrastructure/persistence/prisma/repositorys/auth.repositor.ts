@@ -1,14 +1,15 @@
 /* eslint-disable prettier/prettier */
 
-import { IAuthRepository } from "src/domain/abstraction/users/auth.repository.interface";
-import { PrismaService } from "../prisma.service";
-import { UserUpdateConfirmDto } from "src/domain/dtos/users/auth.dto";
-import { CreateUserDto } from "src/domain/dtos/users/create.user.dto";
-import { UserVerificationDto } from "src/domain/dtos/users/user.verification.dto";
-import { UserModel } from "src/domain/models/users/user.model";
-import { VerificationTokenModel } from "src/domain/models/users/verificationToken.model";
 import { Injectable } from "@nestjs/common";
-import { ResetPasswordDto } from "src/domain/dtos/users/resetPassword.dto";
+import { IAuthRepository } from "../../../../domain/abstraction/users/auth.repository.interface";
+import { UserUpdateConfirmDto } from "../../../../domain/dtos/users/auth.dto";
+import { CreateUserDto } from "../../../../domain/dtos/users/create.user.dto";
+import { ResetPasswordDto } from "../../../../domain/dtos/users/resetPassword.dto";
+import { UserVerificationDto } from "../../../../domain/dtos/users/user.verification.dto";
+import { UserModel } from "../../../../domain/models/users/user.model";
+import { VerificationTokenModel } from "../../../../domain/models/users/verificationToken.model";
+import { PrismaService } from "../prisma.service";
+
 
 @Injectable()
 export class AuthRepository implements IAuthRepository {

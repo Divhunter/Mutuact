@@ -1,9 +1,9 @@
 import { Body, Controller, Delete, Get, Post, Put, Query, UseGuards } from "@nestjs/common";
 import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
-import { CreateProjetDto } from "src/domain/dtos/projets/create.projet.dto";
-import { ProjetService } from "src/domain/services/projets/projet.service";
-import { JwtAuthGuard } from "src/domain/services/ussers/strategies/local/jwt-auth.guard";
-import { RecaptchaGuard } from "src/domain/services/ussers/strategies/local/recaptcha.guard";
+import { CreateProjetDto } from "../../../domain/dtos/projets/create.projet.dto";
+import { ProjetService } from "../../../domain/services/projets/projet.service";
+import { JwtAuthGuard } from "../../../domain/services/ussers/strategies/local/jwt-auth.guard";
+import { RecaptchaGuard } from "../../../domain/services/ussers/strategies/local/recaptcha.guard";
 
 @ApiTags("Projet")
 @Controller("projet")

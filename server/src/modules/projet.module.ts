@@ -1,9 +1,9 @@
 import { Module } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
-import { MailService } from "src/communs/utils/mail.service";
-import { ProjetService } from "src/domain/services/projets/projet.service";
-import { PrismaService } from "src/infrastructure/persistence/prisma/prisma.service";
-import { ProjetRepository } from "src/infrastructure/persistence/prisma/repositorys/projet.repository";
+import { MailService } from "../communs/utils/mail.service";
+import { ProjetService } from "../domain/services/projets/projet.service";
+import { PrismaService } from "../infrastructure/persistence/prisma/prisma.service";
+import { ProjetRepository } from "../infrastructure/persistence/prisma/repositorys/projet.repository";
 
 @Module({
   providers: [ProjetService, ProjetRepository, MailService, PrismaService, ConfigService], // Ajoutez vos services et repositories ici

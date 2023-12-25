@@ -1,20 +1,22 @@
 /* eslint-disable prettier/prettier */
-import { IAuthService } from "src/domain/abstraction/users/auth.service.interface";
 import { HttpException, HttpStatus, Injectable, InternalServerErrorException } from "@nestjs/common";
-import { UserUpdateConfirmDto, VerificationTokenTypeDto } from "src/domain/dtos/users/auth.dto";
-import { CreateUserDto } from "src/domain/dtos/users/create.user.dto";
-import { UserVerificationDto } from "src/domain/dtos/users/user.verification.dto";
-import { UserModel } from "src/domain/models/users/user.model";
-import { VerificationTokenModel } from "src/domain/models/users/verificationToken.model";
+
 import { ConflictException, BadRequestException, NotFoundException, UnauthorizedException } from "@nestjs/common";
 import * as bcrypt from "bcryptjs";
 import { ConfigService } from '@nestjs/config';
-import { MailService } from "src/communs/utils/mail.service";
-import { AuthRepository } from "src/infrastructure/persistence/prisma/repositorys/auth.repositor";
-import { TokenService } from "src/communs/utils/token.service";
+
 import { JwtService } from "@nestjs/jwt";
 import * as speakeasy from 'speakeasy';
-import { ResetPasswordConfirmDto, ResetPasswordDemandeDto, ResetPasswordDto } from "src/domain/dtos/users/resetPassword.dto";
+import { MailService } from "../../../communs/utils/mail.service";
+import { TokenService } from "../../../communs/utils/token.service";
+import { AuthRepository } from "../../../infrastructure/persistence/prisma/repositorys/auth.repositor";
+import { IAuthService } from "../../abstraction/users/auth.service.interface";
+import { VerificationTokenTypeDto, UserUpdateConfirmDto } from "../../dtos/users/auth.dto";
+import { CreateUserDto } from "../../dtos/users/create.user.dto";
+import { ResetPasswordConfirmDto, ResetPasswordDto, ResetPasswordDemandeDto } from "../../dtos/users/resetPassword.dto";
+import { UserVerificationDto } from "../../dtos/users/user.verification.dto";
+import { UserModel } from "../../models/users/user.model";
+import { VerificationTokenModel } from "../../models/users/verificationToken.model";
 
 @Injectable()
 export class AuthService implements IAuthService {
