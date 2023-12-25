@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { IProjetService } from 'src/abstractions/projets/projet.service.interface';
 import { ProjetRepository } from './projet.repository';
 import { Projet } from './entities/projet.entity';
 import { Message } from './entities/message.model';
 import { CreateProjetDto, MessageDto } from './dto/create-projet.dto';
+import { IProjetService } from '../abstractions/projets/projet.service.interface';
 
 @Injectable()
 export class ProjetService implements IProjetService {

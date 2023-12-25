@@ -1,5 +1,5 @@
-import { CreateProjetDto, MessageDto } from 'src/projet/dto/create-projet.dto';
-import { Projet } from 'src/projet/entities/projet.entity';
+import { CreateProjetDto, MessageDto } from '../../projet/dto/create-projet.dto';
+import { Projet } from '../../projet/entities/projet.entity';
 
 export interface IProjetRepository {
   findAllProjets(): Promise<Projet[]>;

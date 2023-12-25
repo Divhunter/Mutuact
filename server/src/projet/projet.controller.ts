@@ -1,8 +1,8 @@
 import { Body, Controller, Delete, Get, Post, Put, Query, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { ProjetService } from './projet.service';
-import { RecaptchaGuard } from 'src/guards/recaptha.guard';
 import { CreateProjetDto } from './dto/create-projet.dto';
+import { RecaptchaGuard } from '../guards/recaptha.guard';
 
 @ApiTags('Projet')
 @Controller('projet')

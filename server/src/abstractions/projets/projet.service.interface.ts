@@ -1,6 +1,5 @@
-import { CreateProjetDto } from 'src/projet/dto/create-projet.dto';
-import { Message } from 'src/projet/entities/message.model';
-import { Projet } from 'src/projet/entities/projet.entity';
+import { Projet, Message } from '@prisma/client';
+import { CreateProjetDto } from '../../projet/dto/create-projet.dto';
 
 export interface IProjetService {
   getAllProjets(): Promise<Projet[]>;
