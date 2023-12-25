@@ -4,7 +4,7 @@ import { AuthService } from "../../auth.service";
 import { BadRequestException, Injectable, NotFoundException, UnauthorizedException } from "@nestjs/common";
 import * as bcrypt from "bcryptjs";
 import { validate } from "class-validator";
-import { LoginDto } from "src/domain/dtos/users/login.dto";
+import { LoginDto } from "../../../../dtos/users/login.dto";
 
 @Injectable()
 export class LocalStrategy extends PassportStrategy(Strategy) {
