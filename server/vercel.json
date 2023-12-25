@@ -1,21 +1,24 @@
 {
-  "version": 2,
-  "builds": [
+    "version": 2,
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "commands": [
+        "npm install",
+        "npx prisma generate",
+        "npm run build"
+      ],
+      "outputDirectory": "dist"
+    },
+    "routes": [
       {
-          "src": "src/main.ts",
-          "use": "@vercel/node"
+        "src": "/(.*)",
+        "dest": "src/main.ts",
+        "methods": ["GET", "POST", "PUT", "DELETE"]
       }
-  ],
-  "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "src/main.ts",
-          "methods": [
-              "GET",
-              "POST",
-              "PUT",
-              "DELETE"
-          ]
-      }
-  ]
-}
+    ],
+    "functions": {},
+    "env": {}
+   }
+   
