@@ -1,5 +1,5 @@
-import { CreateProjetDto, MessageDto } from "src/domain/dtos/projets/create.projet.dto";
-import { ProjetModel } from "src/domain/models/projets/projet.model";
+import { CreateProjetDto, MessageDto } from "../../dtos/projets/create.projet.dto";
+import { ProjetModel } from "../../models/projets/projet.model";
 
 export interface IProjetRepository {
   findAllProjets(): Promise<ProjetModel[]>;

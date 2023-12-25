@@ -1,9 +1,9 @@
-import { UserUpdateConfirmDto } from "src/domain/dtos/users/auth.dto";
-import { CreateUserDto } from "src/domain/dtos/users/create.user.dto";
-import { ResetPasswordDto } from "src/domain/dtos/users/resetPassword.dto";
-import { UserVerificationDto } from "src/domain/dtos/users/user.verification.dto";
-import { UserModel } from "src/domain/models/users/user.model";
-import { VerificationTokenModel } from "src/domain/models/users/verificationToken.model";
+import { UserUpdateConfirmDto } from "../../dtos/users/auth.dto";
+import { CreateUserDto } from "../../dtos/users/create.user.dto";
+import { ResetPasswordDto } from "../../dtos/users/resetPassword.dto";
+import { UserVerificationDto } from "../../dtos/users/user.verification.dto";
+import { UserModel } from "../../models/users/user.model";
+import { VerificationTokenModel } from "../../models/users/verificationToken.model";
 
 export interface IAuthRepository {
   createUser(userDto: CreateUserDto): Promise<UserModel>;

@@ -1,6 +1,6 @@
-import { CreateProjetDto } from "src/domain/dtos/projets/create.projet.dto";
-import { MessageModel } from "src/domain/models/projets/message.model";
-import { ProjetModel } from "src/domain/models/projets/projet.model";
+import { CreateProjetDto } from "../../dtos/projets/create.projet.dto";
+import { MessageModel } from "../../models/projets/message.model";
+import { ProjetModel } from "../../models/projets/projet.model";
 
 export interface IProjetService {
   getAllProjets(): Promise<ProjetModel[]>;

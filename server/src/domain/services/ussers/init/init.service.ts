@@ -2,7 +2,7 @@ import { Injectable, OnModuleInit } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import { User } from "@prisma/client";
 import * as bcrypt from "bcryptjs";
-import { PrismaService } from "src/infrastructure/persistence/prisma/prisma.service";
+import { PrismaService } from "../../../../infrastructure/persistence/prisma/prisma.service";
 
 @Injectable()
 export class InitService implements OnModuleInit {
