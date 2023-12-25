@@ -6,12 +6,6 @@
           "use": "@vercel/node"
       }
   ],
-  "build": {
-    "commands": [
-      "npm install", 
-      "npx prisma generate", 
-      "npm run build" 
-    ]},
   "routes": [
       {
           "src": "/(.*)",
@@ -24,4 +18,4 @@
           ]
       }
   ]
-  }
+}
