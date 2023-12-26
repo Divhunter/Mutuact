@@ -1,7 +1,5 @@
 {
     "version": 2,
-    "buildCommand": "prisma generate && nest build",
-    "installCommand": "npm install",
     "builds": [
         {
             "src": "src/main.ts",
@@ -20,4 +18,5 @@
             ]
         }
     ]
-    }
+ }
+ 
