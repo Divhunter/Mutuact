@@ -89,6 +89,7 @@ const handleErrorResponse = (error) => {
 export const createProjet = async (projetData) => {
   try {
     const response = await axios.post(`${API_URL}/new`, projetData);
+    console.log("res:",response)
     return handleSuccessResponse(response);
   } catch (error) {
     return handleErrorResponse(error);

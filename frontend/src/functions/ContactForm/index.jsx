@@ -184,7 +184,7 @@ const ContactForm = () => {
     event.preventDefault();
   
     const isValid = handleValidation(values, errors, setErrors, setIsValidForm, focusedFields);
-  
+    // const isValid = true
     if (!accepterConditions) {
       setAcceptError(["Vous devez accepter nos conditions et notre politique de confidentialité."]);
       setLoading(false);
@@ -229,6 +229,7 @@ const ContactForm = () => {
     } else {
       setLoading(false);
     }
+    captchaRef.current.reset()
   };
   
 
