@@ -50,7 +50,7 @@
     overflow: hidden;
 }
 
-.containerContact__bloc__handshake {
+.containerContact__bloc__woman {
     width: 70vw;
     height: auto;
     margin-right: -20vw;
@@ -67,7 +67,7 @@
     font-weight: 800;
     font-size: 6vw;
     line-height: 6.5vw;
-    color: rgb(168, 140, 57);
+    color: rgb(0, 218, 181);
 }
 
 /********************************************* media queries ************************************************/
@@ -107,7 +107,7 @@
         right: .16vw;
     }
 
-    .containerContact__bloc__handshake {
+    .containerContact__bloc__woman {
         width: 64.8vw;
         margin-right: -15vw;
         margin-top: 75.3vw;

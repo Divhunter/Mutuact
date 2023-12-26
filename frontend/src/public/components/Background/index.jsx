@@ -9,7 +9,21 @@ const Background = () => {
 	return (
 		<>
 			<div className='background'>
-				<img className='house' src={background1} alt='maison contemporaine' />
+				<img 
+					className='famille' 
+					src={background1} 
+					width='1500px'
+					height='1000px'
+					fetchpriority='high' 
+					alt='famille' />
+				<Link to='about'>
+					<div className='background__plus'>
+						En savoir plus&nbsp;&nbsp;
+						<FontAwesomeIcon 
+							icon={faArrowCircleRight} 
+						/>
+					</div>
+				</Link>
 			</div>
 		</>
 	)

@@ -140,13 +140,13 @@
 
 .contact-legal-content__text__link {
     font-weight: bold;
-    color: rgb(255, 115, 0);
+    color: rgb(0, 187, 156);
     text-decoration: none;
     cursor: pointer;
 }
 
 .contact-legal-content__text__link:hover {
-    border-bottom: 1px solid rgb(255, 115, 0);
+    border-bottom: 1px solid rgb(24, 226, 192);
 }
 
 .checkbox-container {

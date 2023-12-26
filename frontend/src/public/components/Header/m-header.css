@@ -222,6 +222,21 @@
     letter-spacing: .2vw;
 }
 
+<<<<<<< HEAD
+=======
+.ici, 
+.vowd {
+	text-decoration: none;
+	color: rgb(228, 0, 87);
+}
+
+.ici:hover,
+.vowd:hover {
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+>>>>>>> 6fcf7fdf71bf33ee70586c2680cb662257646500
 /********************************************* media queries ************************************************/
 /************************** New rules if the screen is at more 450px ****************************************/
 

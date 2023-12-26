@@ -36,7 +36,11 @@ const Header = () => {
 							'navbar__logoMutuactW logo-visible':
 							'navbar__logoMutuactW logo-hidden'
 						} 
-						src={logoMutuactW} alt='logo Mutuact' 
+						src={logoMutuactW} 
+						width='2035px'
+						height='960px'
+						fetchpriority='high' 
+						alt='logo Mutuact' 
 					/>
 				</GoTo>
 				
@@ -143,7 +147,14 @@ const Header = () => {
 					Ensemble, nous unissons nos forces et notre expertise pour offrir des solutions exceptionnelles à nos clients communs.
 					</p>
 					<p>
-					2- Nous sommes ravis de vous présenter notre nouveau site web réalisé par la société VOWD.fr.
+					2- Nous sommes ravis de vous présenter notre nouveau site web réalisé par la société&nbsp; 
+					<strong>
+						<a 
+							href='https://www.vowd.fr'
+							className='vowd'>
+								vowd.fr
+						</a>
+					</strong>.
 					</p>
 					<br/>
 				</div>

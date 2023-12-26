@@ -97,7 +97,10 @@ const Banner = () => {
 								'banner__picture1 banner__picture--out'
 							}
 							src={items.img} 
-							alt="photos d'ouvriers" />
+							width='720px'
+							height='1342px'
+							fetchpriority='high' 
+							alt="photos paisible" />
 						</div>
 					))}
 					{slideArray2.map((items, index) => (
@@ -107,7 +110,10 @@ const Banner = () => {
 								'banner__picture2 banner__picture--out'
 							}
 							src={items.img} 
-							alt="photos d'ouvriers" />
+							width='1500px'
+							height='1000px'
+							fetchpriority='high' 
+							alt="photos paisible" />
 						</div>
 					))}
 				</div>	
@@ -115,7 +121,14 @@ const Banner = () => {
 					<Slogan />
 				</div>*/}
 			</section>
-			<img className='banner__logo-mutuact' src={logoMutuacFull} alt='logo de mutuact'/>
+			<img 
+				className='banner__logo-mutuact' 
+				src={logoMutuacFull} 
+				width='2035px'
+				height='1294px'
+				fetchpriority='high' 
+				alt='logo de mutuact'
+			/>
 		</>
 	)
 }

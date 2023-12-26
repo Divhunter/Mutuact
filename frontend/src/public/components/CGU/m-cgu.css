@@ -17,8 +17,8 @@
     width: 100%;
     padding-top: 10vw;
     padding-bottom: 10vw;
-    color: rgb(177, 148, 63);
-    background-color: rgb(247, 236, 206);
+    color: rgb(10, 86, 109);
+    background-color: rgb(236, 251, 255);
 }
 
 .cgu > h2 {
@@ -39,11 +39,11 @@
     margin-top: auto;
     margin-left: 3vw;
     font-size: 4.5vw;
-    color: rgb(18, 105, 92);
+    color: rgb(10, 86, 109);
 }
 
 .cgu > li> a {
-    color: rgb(18, 105, 92);
+    color: rgb(10, 86, 109);
     font-weight: 500;
 }
 
@@ -52,7 +52,7 @@
     width: 100%;
     height: 1px;
     margin-top: 10vw;
-    background-color: rgb(230, 202, 119);
+    background-color: rgba(10, 86, 109, .5);
 }
 
 /********************************************* media queries ************************************************/

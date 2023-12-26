@@ -105,6 +105,9 @@ const Agences = () => {
                                 <img 
                                     className='containerOffice__bloc__office__pic' 
                                     src={office}
+                                    width='1500px'
+                                    height='844px'
+                                    fetchpriority='high' 
                                     alt='bureau'
                                 />
                                 <div className='containerOffice__bloc__office__text'>

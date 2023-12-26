@@ -63,6 +63,13 @@
         letter-spacing: .0275vw;
     }
 
+    .header-logo {
+        width: 5.5vw;
+        height: auto;
+        margin-top: 2vw;
+        margin-bottom: 1.5vw;
+    }
+
     h3 {
         margin-top: 2vw;
         padding-left: 14vw;

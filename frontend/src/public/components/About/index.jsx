@@ -21,7 +21,21 @@ const About = () => {
             {aboutHeaderArray.map((item, index) => (
                 <PagesHeaders 
                     key={index}
-                    titleCol1={item.titleCol1}
+                    titleCol1={
+                        <div>
+                            {item.titleCol1 }
+                            <br/>
+                            <br/>
+                            <img
+                                className='about__logo' 
+                                src={logoMutuactP} 
+                                width='577px'
+                                height='564px'
+                                loading='lazy'
+                                alt='logo mutuact planet' 
+                            />
+                        </div>
+                    }
                     subTitle1={item.subTitle1}
                     subTitle2={item.subTitle2}
                     button={
