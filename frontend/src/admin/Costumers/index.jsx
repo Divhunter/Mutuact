@@ -103,7 +103,7 @@ const Costumers = () => {
     return total + projet.messages.filter(message => !message.isRead).length;
   }, 0);
 
-  console.log(totalMessagesLus);
+  // console.log(totalMessagesLus);
 
   const deleteProjetById = (id) => {
     handleDeleteProjet(id)

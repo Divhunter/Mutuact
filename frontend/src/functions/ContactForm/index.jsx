@@ -182,51 +182,55 @@ const ContactForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     const isValid = handleValidation(values, errors, setErrors, setIsValidForm, focusedFields);
-
+  
     if (!accepterConditions) {
-      const error = [];
-      error.push("Vous devez accepter nos conditions et notre politique de confidentialité.");
-      setAcceptError(error);
-      setLoading(false); // Désactive le chargement
+      setAcceptError(["Vous devez accepter nos conditions et notre politique de confidentialité."]);
+      setLoading(false);
+      return;
     }
+  
     if (!captchaValue) {
-      const error = ["Vous devez vérifier que vous n'êtes pas un robot."];
-      setCaptchaError(error);
-      setLoading(false); // Désactive le chargement
-      return; // Arrête le traitement si la condition n'est pas remplie
+      setCaptchaError(["Vous devez vérifier que vous n'êtes pas un robot."]);
+      setLoading(false);
+      return;
     }
-
-
+  
     if (captchaValue && accepterConditions && isValid) {
-      setLoading(true)
-      // Si les deux premières conditions sont vérifiées, exécutez createProjet
+      setLoading(true);
+  
       const projetData = {
         ...values,
         "recaptchaResponse": captchaValue,
-      }
-
+      };
+  
       try {
-        const result = await createProjet(projetData)
-        if (result.success) {
-          // notifySuccess(result.data.message)
-          setSuccess(true)
-          handleFormReset()
-        } else {
-          console.log("result", result)
-          setErrorsGlobal(result.error ? [result.error] : result.errorMessages)
-          notifyError(result.error ? "La validation du captcha a echoué!" : "Erreur de validation veillez ressayer")
+        const result = await createProjet(projetData);
+  
+        if (!result) {
+          notifyError('Pas de réponse du serveur');
+          setLoading(false);
+          return;
         }
-        if (!result) { notifyError('Pas de reponse du serveur') }
-        setLoading(false)
+  
+        if (result.success) {
+          setSuccess(true);
+          handleFormReset();
+        } else {
+          setErrorsGlobal(result.error ? [result.error] : result.errorMessages);
+        }
       } catch (error) {
-        console.error('Une erreur s\'est produite lors de la création du projet :', error)
-        setLoading(false)
+        console.error('Une erreur s\'est produite lors de la création du projet :', error);
+        notifyError('Une erreur s\'est produite. Veuillez réessayer.');
+      } finally {
+        setLoading(false);
       }
-      setLoading(false)
+    } else {
+      setLoading(false);
     }
   };
+  
 
   return (
     <Fragment >
