@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { Loader } from '../functions/loader/Loader';
 
-const ProtectedRoute = ({ redirectPath = '/2br', children }) => {
+const ProtectedRoute = ({ redirectPath = '/mutuact', children }) => {
   const { isAuthenticated, isLoading } = useContext(AuthContext);
 
   if (isLoading) {

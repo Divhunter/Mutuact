@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = `${process.env.REACT_APP_API_URL}/api/projet`;
+const API_URL = `${process.env.REACT_APP_API_URL}/projet`;
 export const getAllProjets = async (token) => {
   try {
     const headers = {
@@ -21,7 +21,7 @@ export const getAllProjets = async (token) => {
 export const getProjetByEmail = async (email) => {
   try {
 
-    const exist = await axios.get(`${API_URL}/exist?email=${email}`);
+    const exist = await axios.get(`${API_URL}?email=${email}`);
     return exist;
   } catch (error) {
     return error;
@@ -34,7 +34,7 @@ export const deleteProjet = async (projetId, token) => {
       Authorization: `Bearer ${token}`,
 
     };
-    await axios.delete(`${API_URL}/delete?projetId=${projetId}`, { headers });
+    await axios.delete(`${API_URL}?projetId=${projetId}`, { headers });
   } catch (error) {
     console.error('Erreur lors de la suppression du projet :', error);
     return error;
