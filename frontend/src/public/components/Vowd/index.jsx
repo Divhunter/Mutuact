@@ -54,9 +54,9 @@ const Vowd = () => {
                 className='vowd__img' 
                 src={assuPub} 
                 width='1500px' 
-                height='1000px'
-                loading='lazy'
-                alt='femme au parapluie' 
+                height='998px'
+                fetchpriority='high' 
+                alt='famille heureuse' 
                 onMouseEnter={onEnter}
             />
             <div 

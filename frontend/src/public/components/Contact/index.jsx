@@ -1,6 +1,6 @@
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
-import handshake from '../../assets/pictures/handshake2.png'
+import woman from '../../assets/pictures/woman.png'
 import ContactForm from '../../../functions/ContactForm'
 
 // styles
@@ -35,8 +35,11 @@ const Contact = () => {
                                 </div>
                                 <div className='containerContact__bloc'>
                                     <img 
-                                        className='containerContact__bloc__handshake' 
-                                        src={handshake}
+                                        className='containerContact__bloc__woman' 
+                                        src={woman}
+                                        width='1130px'
+                                        height='2078px'
+                                        fetchpriority='high' 
                                         alt='serrage de main'
                                     />
                                 </div>

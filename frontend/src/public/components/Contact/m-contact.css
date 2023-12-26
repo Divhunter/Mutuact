@@ -50,7 +50,7 @@
     overflow: hidden;
 }
 
-.containerContact__bloc__handshake {
+.containerContact__bloc__woman {
     width: 70vw;
     height: auto;
     margin-right: -20vw;
@@ -103,7 +103,7 @@
         width: 43.75vw;
     }
 
-    .containerContact__bloc__handshake {
+    .containerContact__bloc__woman {
         width: 64.8vw;
         margin-right: -15vw;
         margin-top: 75.6vw;

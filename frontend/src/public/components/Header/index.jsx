@@ -36,7 +36,11 @@ const Header = () => {
 							'navbar__logoMutuactW logo-visible':
 							'navbar__logoMutuactW logo-hidden'
 						} 
-						src={logoMutuactW} alt='logo Mutuact' 
+						src={logoMutuactW} 
+						width='2035px'
+						height='960px'
+						fetchpriority='high' 
+						alt='logo Mutuact' 
 					/>
 				</GoTo>
 				

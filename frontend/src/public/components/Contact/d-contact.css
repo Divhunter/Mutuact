@@ -48,7 +48,7 @@
         width: 43.75vw;
     }
 
-    .containerContact__bloc__handshake {
+    .containerContact__bloc__woman {
         width: 64.8vw;
         margin-right: -10vw;
         margin-top: 45.7vw;
@@ -100,9 +100,9 @@
         right: 0.05vw;
     }
 
-    .containerContact__bloc__handshake {
-        width: 54.093vw;
-        margin-right: -1vw;
+    .containerContact__bloc__woman {
+        width: 48.5vw;
+        margin-right: 0;
         margin-top: 38.4vw;
     }
 

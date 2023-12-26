@@ -12,7 +12,13 @@ const Background = () => {
 	return (
 		<>
 			<div className='background'>
-				<img className='famille' src={background1} alt='famille' />
+				<img 
+					className='famille' 
+					src={background1} 
+					width='1500px'
+					height='1000px'
+					fetchpriority='high' 
+					alt='famille' />
 				<Link to='about'>
 					<div className='background__plus'>
 						En savoir plus&nbsp;&nbsp;
