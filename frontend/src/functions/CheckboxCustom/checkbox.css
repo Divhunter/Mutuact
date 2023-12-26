@@ -9,7 +9,7 @@ input[type="checkbox"] {
     border-radius: 15%;
     cursor: pointer;
     overflow: hidden;
-    border: 1px solid rgb(180, 180, 180);
+    border: 1px solid rgb(29, 151, 131);
 }
 
 input[type="checkbox"]::after {

@@ -9,7 +9,7 @@ import './d-contact.css'
 
 const Contact = () => {
     
-    const contactHeader = pagesHeadersArray.find(el => el.title === "9")
+    const contactHeader = pagesHeadersArray.find(el => el.title === "5")
     const contactHeaderArray = []
     contactHeaderArray.push(contactHeader)
 
@@ -22,31 +22,28 @@ const Contact = () => {
                     subTitle1={item.subTitle1}
                     subTitle2={item.subTitle2}
                     text1={
-                        <>
-                            <br/><br/>
-                            <div className='containerContact'>
-                                <div className='containerContact__text' >
-                                    <p className='containerContact__text__header'>
-                                        Devis gratuit sous 48h
-                                    </p>
-                                    <div className='containerContact__text__form'>
-                                        <ContactForm />
-                                    </div>
-                                </div>
-                                <div className='containerContact__bloc'>
-                                    <img 
-                                        className='containerContact__bloc__handshake' 
-                                        src={handshake}
-                                        alt='serrage de main'
-                                    />
-                                </div>
-                                <p className='containerContact__bloc__pub'>
-                                    Notre objectif
-                                    <br/>
-                                    est de vous offrir la tranquillité d'esprit
+                        <div className='containerContact'>
+                            <div className='containerContact__text' >
+                                <p className='containerContact__text__header'>
+                                    Devis gratuit sous 48h
                                 </p>
+                                <div className='containerContact__text__form'>
+                                    <ContactForm />
+                                </div>
                             </div>
-                        </>
+                            <div className='containerContact__bloc'>
+                                <img 
+                                    className='containerContact__bloc__handshake' 
+                                    src={handshake}
+                                    alt='serrage de main'
+                                />
+                            </div>
+                            <p className='containerContact__bloc__pub'>
+                                Notre objectif
+                                <br/>
+                                est de vous offrir des résultats exceptionnels
+                            </p>
+                        </div>
                     } 
                 />
             ))}

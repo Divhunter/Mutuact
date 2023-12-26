@@ -28,16 +28,16 @@ const Notification = () => {
     }, [isOpen]);
     return (
         <div ref={modalRef} className='notif-container' onClick={() => setIsOpen(!isOpen)} >
-            <div className='notif'  >
-                {projets?.filter((projet) => projet.isRead === false).length !== 0 && <span className='notif-count'>
-                    {projets?.filter((projet) => projet.isRead === false).length
-                    }
-                </span>
+            <div className='notif'>
+                {projets && projets.length > 0 && projets.filter((projet) => projet.isRead === false).length !== 0 &&
+                    <span className='notif-count'>
+                        {projets.filter((projet) => projet.isRead === false).length}
+                    </span>
                 }
-
                 <BsBellFill className='bell' />
                 <ModalNotification isOpen={isOpen} setIsOpen={setIsOpen} />
             </div>
+
         </div>
     )
 }

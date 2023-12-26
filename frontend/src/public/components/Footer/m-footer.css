@@ -45,12 +45,31 @@
     transition: all .2s;
 }
 
-.footer__logo-mutuact {
+.footer__logo-2br {
     margin-top: 12vw;
     margin-bottom: 12vw;
     width: 20vw;
     height: auto;
     cursor: pointer;
+}
+
+.footer__logo-labels {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 33vw;
+    height: auto;
+}
+
+.footer__logo-labels__decennal {
+    width: auto;
+    height: 18vw;
+}
+
+.footer__logo-labels__qualibat {
+    margin-top: 1.5vw;
+    width: auto;
+    height: 14vw;
 }
 
 .footer > p {
@@ -111,12 +130,25 @@
         font-size: 5.333vw;
     }
     
-    .footer__logo-mutuact {
+    .footer__logo-2br {
         margin-top: 5.25vw;
         margin-bottom: 5.25vw;
-        width: 20vw;
+        width: 11.852vw;
     }
 
+    .footer__logo-labels {
+        width: 19.555vw;
+    }
+    
+    .footer__logo-labels__decennal {
+        height: 10.666vw;
+    }
+    
+    .footer__logo-labels__qualibat {
+        margin-top: .888vw;
+        height: 8.296vw;
+    }
+    
     .footer > p {
         font-size: 2.2vw;
         line-height: 3.555vw;

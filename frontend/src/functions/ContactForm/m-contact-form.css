@@ -33,7 +33,7 @@
     line-height: 5vw;
     letter-spacing: .073vw;
     opacity: 1;
-    border: solid 2px rgb(180, 180, 180);
+    border: solid 2px rgb(29, 151, 131);
 }
 
 .form-group input {
@@ -51,14 +51,14 @@
 
 .form-group input:hover,
 .form-group textarea:hover {
-    border: solid 2px rgb(180, 180, 180);
+    border: solid 2px rgb(29, 151, 131);
 }
 
 .form-group input:focus,
 .form-group input:focus[type=password],
 .form-group textarea:focus {
     color: black;
-    border: solid 2px rgb(180, 180, 180);
+    border: solid 2px rgb(29, 151, 131);
 }
 
 .form-group input::placeholder,

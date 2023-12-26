@@ -1,8 +1,7 @@
 import { Link } from 'react-scroll'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
-import coupleSenior from '../../assets/pictures/coupleSenior.jpg'
-import logoMutuactP from '../../assets/pictures/logo-mutuact-blanc-solo.png'
+import handshake from '../../assets/pictures/handshake.jpg'
 
 // styles
 import './m-about.css'
@@ -22,55 +21,40 @@ const About = () => {
             {aboutHeaderArray.map((item, index) => (
                 <PagesHeaders 
                     key={index}
-                    titleCol1={
-                        <div>
-                            {item.titleCol1 }
-                            <br/>
-                            <br/>
-                            <img
-                                className='about__logo' 
-                                src={logoMutuactP} 
-                                alt='logo mutuact planet' 
-                            />
-                        </div>
-                    }
+                    titleCol1={item.titleCol1}
                     subTitle1={item.subTitle1}
                     subTitle2={item.subTitle2}
                     button={
-                        <Link to='contact'>
-                            <p className='button'>Suivez votre conseil</p>
+                        <Link to='agences'>
+                            <p className='button'>Suivez nos conseils</p>
                         </Link>
                     }
                     text1={
                         <div id='containerAbout' className='containerAbout'>
                             <p className='containerAbout__text' >
                                 <span className='containerAbout__text__header'>
-                                    En toute tranquillité !
+                                    Notre expertise au service de vos projets
                                 </span>
                                 <br/><br/>
-                                Fort de plus de deux décennies d'expérience en tant qu'agence d'assurance établie dans la pittoresque région du Sud-Ouest, nous nous consacrons à offrir à nos nombreux clients une tranquillité d'esprit inégalée. Notre mission est claire : garantir le meilleur comparatif d'assurances et de mutuelles, sur mesure pour répondre à leurs besoins spécifiques.
+                                La création de 2B REALISATION, basée sur Toulouse est une nouvelle étape dans notre développement : l'extension de notre périmètre d'intervention et la création d'une nouvelle antenne pour mieux vous accompagner. Grâce à notre engagement constant envers l'excellence et notre volonté d'aller toujours plus loin, nous sommes désormais en mesure d'étendre notre présence géographique afin de répondre aux besoins croissants de nos clients.
                                 <br/><br/>
-                                Au fil des années, nous avons établi des relations solides avec une clientèle diversifiée, et la satisfaction de nos clients demeure ma priorité absolue. Nous comprenons l'importance de fournir des solutions d'assurance fiables et adaptées, tout en simplifiant le processus pour nos clients.
+                                Que vous ayez un projet de construction neuve, de rénovation, d'agrandissement ou de réhabilitation, notre équipe d'experts qualifiés est là pour vous accompagner à chaque étape du processus.  
                                 <br/><br/>
-                                Notre devise est bien plus qu'une simple phrase : c'est un engagement envers l'excellence et l'intégrité. Nous nous efforçons constamment de rester à l'avant-garde des évolutions du secteur de l'assurance, afin de garantir à nos clients les options les plus avantageuses et les plus actuelles.
+                                Nous accordons une grande importance à la qualité de notre travail, en utilisant des matériaux de premier choix, en respectant les normes de sécurité les plus strictes et en adoptant les techniques les plus avancées.
                                 <br/><br/>
-                                Que vous soyez un particulier à la recherche d'une couverture complète pour votre famille ou une entreprise cherchant à sécuriser son avenir, nous sommes là pour vous guider à travers les méandres parfois complexes de l'assurance. Avec nous, vous bénéficiez non seulement d'une expertise approfondie, mais également d'un service personnalisé qui fait toute la différence.
-                                <br/><br/>
-                                Parce que chaque client est unique, nous nous engageons à personnaliser chaque comparatif d'assurances et de mutuelles pour répondre précisément à vos besoins et à ceux de votre famille ou de votre entreprise. Faites confiance à des professionnels de l'assurance dévoués qui s'efforcent constamment de surpasser les attentes.
-                                <br/><br/>
-                                <div className='end'>Votre tranquillité d'esprit commence ici</div>
+                                Nous sommes également attentifs aux délais et au respect des budgets convenus, afin de garantir une expérience sans souci pour nos clients.
                             </p>
                             <div className='containerAbout__bloc'>
                                 <img 
-                                    className='containerAbout__bloc__coupleSenior' 
-                                    src={coupleSenior}
+                                    className='containerAbout__bloc__handshake' 
+                                    src={handshake}
                                     alt='serrage de main'
                                 />
                                 <div className='containerAbout__bloc__square'>-</div>
                                 <p className='containerAbout__bloc__pub'>
-                                    L'objectif
+                                    Notre objectif
                                     <br/>
-                                    est de vous offrir la tranquillité d'esprit
+                                    est de vous offrir des résultats exceptionnels
                                 </p>
                             </div>
                         </div>

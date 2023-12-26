@@ -6,13 +6,8 @@ import Background from '../../public/components/Background'
 import Header from '../../public/components/Header'
 import Banner from '../../public/components/Banner'
 import About from '../../public/components/About'
-import Epargne from '../../public/components/Epargne'
-import Prevoyance from '../../public/components/Prevoyance'
-import Sante from '../../public/components/Sante'
-import Vowd from '../../public/components/Vowd'
-import Prof from '../../public/components/Prof'
-import Pret from '../../public/components/Pret'
-import Auto from '../../public/components/Auto'
+import Prestations from '../../public/components/Prestations'
+import Realisations from '../../public/components/Realisations'
 import Agences from '../../public/components/Agences'
 import Contact from '../../public/components/Contact'
 import Footer from '../../public/components/Footer'
@@ -52,30 +47,22 @@ const PublicContainer = () => {
     }, [])
 
     useEffect(() => {
-        slideInTop('#epargne')
+        slideInTop('#about')
     }, [])
 
     useEffect(() => {
-        slideInTop('#prevoyance')
+        slideInTop('#prestations')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#sante')
+        slideInTop('#realisations')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#pro')
+        slideInTop('#agences')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#pret')
-    }, [])
-
-    useEffect(() => {
-        slideInTop('#auto')
-    }, [])
-
-    useEffect(() => {
         slideInTop('#contact')
     }, [])
 
@@ -85,14 +72,9 @@ const PublicContainer = () => {
 				<Header />
 				<Banner />
 				<About />
-				<Epargne />
-				<Prevoyance />
-				<Sante />
-                <Vowd />
-                <Prof />
-                <Pret />
-                <Auto />
-                <Agences />
+				<Prestations />
+				<Realisations />
+				<Agences />
 				<Contact />
 				<Footer />
                 <Background />

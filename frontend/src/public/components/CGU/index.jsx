@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom'
+import { useNavigate,Link as Home } from 'react-router-dom'
 import { useEffect } from 'react'
-import logoMutuactP from '../../assets/pictures/logo-mutuact-blanc-solo.png'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo2br from '../../assets/pictures/logo-2br-2.png'
 
 // styles
 import './m-cgu.css'
@@ -14,21 +16,30 @@ const CGU = () => {
         window.scrollTo(0, 0)
     }, [])
 
+    const navigate = useNavigate()
+    const backToSite = () => navigate('/2br')
+
     return (
         <section 
             id='cgu'
             className='cgu'>
-            <Link to='/'>
+            <FontAwesomeIcon
+                onClick={backToSite}
+                className="arrow-left"
+                icon={faArrowLeft}
+            />
+            <br/>
+            <Home to='https://www.2brealisation.com'>
                 <img 
-                    className='cgu__logo-mutuact' 
-                    src={logoMutuactP} alt='logo mutuact' 
+                    className='cgu__logo-2br navbar__logo-2br' 
+                    src={logo2br} alt='2br-icon' 
                 />
-            </Link>
+            </Home>
             <h1>Mentions légales</h1>
 
             <h2>Concepteur</h2>
             <p>  
-            Vowd.fr
+            VOWD.fr
             <br/>
             Idépendant libéral
             <br/>
@@ -95,7 +106,7 @@ const CGU = () => {
                 Collecte des données
             </h2>
             <p>
-                Notre site internet « mutuact.fr » collecte des données personnelles :
+                Notre site internet « 2brealisation.com » collecte des données personnelles :
                 Quand vous nous contactez à l’aide d’un de nos formulaires.
                 Quelles sont les données collectées et pourquoi ?
                 Uniquement des informations nécessaires à notre échange telles que : votre nom, prénom, adresse email, téléphone.
@@ -120,9 +131,9 @@ const CGU = () => {
                 Comment voir ou supprimer mes données ?
             </h2>
             <p>
-                Raison Sociale : MUTUACT
+                Raison Sociale : 2b REALISATION
                 <br/><br/>
-                Adresse du siège social : 41 Rue de la Découverte CS37621 - 31670 Labège - France
+                Adresse du siège social : 3, impasse Palayre - 31100 Toulouse
                 <br/><br/>
                 Pour toute demande relative à vos données personnelles, vous pouvez nous contacter directement (via notre formulaire de contact) afin de consulter ou demander la suppression de ses données collectées. Nous vous répondrons dans un délai de 30 jours.
             </p>
@@ -152,7 +163,7 @@ const CGU = () => {
                 <br/><br/>
                 Cookies de sessions utilisés par REACT JS
                 <br/><br/>
-                Cookies de personnalisation et middlewares de Wowd.fr
+                Cookies de personnalisation et middlewares de WOWD.fr
                 <br/><br/>
                 Cookies d’accès aux serveurs informatiques Vercel.com
                 <br/><br/>

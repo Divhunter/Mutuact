@@ -48,10 +48,14 @@
         width: 43.75vw;
     }
 
+    .containerContact__bloc {
+        right: 0.2vw;
+    }
+
     .containerContact__bloc__handshake {
         width: 64.8vw;
         margin-right: -10vw;
-        margin-top: 45.7vw;
+        margin-top: 45.5vw;
     }
 
     .containerContact__bloc__pub {
@@ -74,6 +78,7 @@
 
     .containerContact {
         height: 127.6vw;
+        border: .073vw solid rgba(26, 131, 113, .4);
     }
 
     .containerContact__text {
@@ -97,13 +102,13 @@
     }
 
     .containerContact__bloc {
-        right: 0.05vw;
+        right: 0.12vw;
     }
 
     .containerContact__bloc__handshake {
         width: 54.093vw;
         margin-right: -1vw;
-        margin-top: 38.4vw;
+        margin-top: 48.66vw;
     }
 
     .containerContact__bloc__pub {

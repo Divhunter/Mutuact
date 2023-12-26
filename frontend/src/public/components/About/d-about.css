@@ -7,11 +7,6 @@
     /********************************************* about ******************************************/
     /**********************************************************************************************/
 
-    .about__logo {
-        width: 6vw;
-        height: auto;
-    }
-    
     .button {
         margin-top: 0;
         margin-bottom: 0;
@@ -20,66 +15,65 @@
     }
 
     .containerAbout {
+        display: inline-block;
         width: auto;
-        height: auto;
-        margin-left: auto;
+        height: 85vw;
+        margin-left: -5vw;
+        background-image: linear-gradient(rgb(14, 78, 68), rgb(29, 156, 135));
         overflow: hidden;
     }
 
     .containerAbout>p {
-        font-size: 1.8vw;
-        line-height: 3vw;
+        font-size: 1.6vw;
+        line-height: 2.2vw;
         letter-spacing: normal;
     }
 
-    .containerAbout>p>div {
-        font-size: 2.1vw;
-        font-weight: bold;
-        color: rgb(8, 165, 131);
-    }
-
     .containerAbout__text {
-        width: auto;
-        margin: 6vw 4.375vw 5vw 4.375vw;
+        display: inline-block;
+        width: 30.15vw;
+        margin: 2.4vw 4.375vw 3.375vw 2.575vw;
         font-size: 1.2vw;
     }
 
     .containerAbout__text__header {
-        font-size: 2.8vw;
+        font-size: 2.4vw;
         font-weight: 600;
-        line-height: 6vw;
+        line-height: 2.8vw;
     }
 
     .containerAbout__bloc {
+        position: absolute;
+        display: inline-block;
         left: auto;
         right: 0;
     }
 
-    .containerAbout__bloc__coupleSenior {
-        margin-right: 0;
-        width: 100%;
+    .containerAbout__bloc__handshake {
+        margin-right: -5vw;
+        width: 56.7vw;
         height: auto;
         filter: brightness(50%);
     }
 
     .containerAbout__bloc__square {
         position: absolute;
-        top: 57vw;
-        left: 8vw;
-        padding-right: 43vw;
-        height: 12vw;
+        top: 35.7vw;
+        left: -1vw;
+        padding-right: 29vw;
+        height: 7.1vw;
         border: .175vw solid rgb(255, 191, 0);
     }
 
     .containerAbout__bloc__pub {
         position: absolute;
-        top: 54.5vw;
-        margin-left: 12vw;
-        margin-right: 12vw;
+        top: 34.5vw;
+        margin-left: 2.625vw;
+        margin-right: 2.625vw;
         font-family: 'Helvetica';
         font-weight: 800;
-        font-size: 4vw;
-        line-height: 5vw;
+        font-size: 2.5vw;
+        line-height: 2.8vw;
     }
 }
 
@@ -95,6 +89,7 @@
     .button {
         padding: 1.312vw 2.187vw 1.312vw 2.187vw;
         font-size: 1.75vw;
+        border-radius: .87vw;
         letter-spacing: .0237vw;
     }
 
@@ -113,8 +108,9 @@
 
     .containerAbout__text {
         display: inline-block;
-        width: 33vw;
-        margin: 3vw 4.375vw 3.375vw 2.575vw;
+        width: 30.15vw;
+        margin: 4vw 4.375vw 3.375vw 2.575vw;
+        font-size: 1.2vw;
     }
 
     .containerAbout__text__header {
@@ -128,7 +124,7 @@
         right: 0;
     }
 
-    .containerAbout__bloc__coupleSenior {
+    .containerAbout__bloc__handshake {
         width: 46.725vw;
         margin-right: 0;
     }
@@ -158,17 +154,12 @@
     /********************************************* about ******************************************/
     /**********************************************************************************************/
 
-    .about__logo {
-        width: 5vw;
-        height: auto;
-    }
-
     .button {
         padding: 1.095vw 1.825vw 1.095vw 1.825vw;
         font-size: 1.46vw;
+        border-radius: .73vw;
         letter-spacing: .0365vw;
         box-shadow: rgba(0, 0, 0, 0.24) 0 .219vw .584vw;
-        margin-bottom: 8vw;
     }
 
     .containerAbout {
@@ -176,17 +167,14 @@
     }
 
     .containerAbout>p {
-        font-size: 1.2vw;
-        line-height: 1.5vw;
-    }
-
-    .containerAbout>p>div {
-        font-size: 1.5vw;
+        font-size: 1.28vw;
+        line-height: 1.96vw;
     }
 
     .containerAbout__text {
-        width: 40vw;
-        margin: 2.5vw 3vw 3vw 3vw;
+        width: 38.668vw;
+        margin: 4.38vw 3.65vw 3.65vw 3.65vw;
+        font-size: 1.168vw;
     }
 
     .containerAbout__text__header {
@@ -194,7 +182,7 @@
         line-height: 2.555vw;
     }
 
-    .containerAbout__bloc__coupleSenior {
+    .containerAbout__bloc__handshake {
         width: 38.982vw;
     }
 

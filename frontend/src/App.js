@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 import PublicRouter from './public/PublicRouter'
 import AdminRouter from './admin/AdminRouter'
 import Error from './_utils/Error'
+import Card from './public/components/Card'
+import GalerieCard from './public/components/GalerieCard'
 import CGU from './public/components/CGU'
 import ScrollToTop from './functions/ScrollToTop'
 
@@ -91,6 +93,8 @@ const App = () => {
             <Routes>
                 <Route exact path='/*' element={ <PublicRouter /> } />
                 <Route path='/dashboard/*' element={ <AdminRouter /> } />
+                <Route path='/GalerieCard' element={ <GalerieCard /> } />
+                <Route path='/Card/:id' element={ <Card /> } />
                 <Route path='/CGU' element={ <CGU /> } />
                 <Route path='*' element={ <Error /> } />
             </Routes>

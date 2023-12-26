@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import {fab, faFacebook, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import iconMutuact from '../../assets/pictures/logo-mutuact-blanc.png'
+import icon2w from '../../assets/brands/drapeau-2br-w.png'
+import decennal from '../../assets/pictures/label-decennal.png'
+import qualibat from '../../assets/pictures/label-qualibat.png'
 
 // styles
 import './m-footer.css'
@@ -12,7 +14,7 @@ const Footer = () => {
     <section className='footer'>
       <h1>Suivez-nous</h1>
       <div className='footer__link'>
-        <Link to=''>
+        <Link to='https://www.facebook.com/profile.php?id=100093983119718'>
           <FontAwesomeIcon className='footer__link__icon icon-fb' icon={(fab, faFacebook)} />
         </Link>
         <Link to='/'>
@@ -25,35 +27,45 @@ const Footer = () => {
           <FontAwesomeIcon className='footer__link__icon icon-yt' icon={(fab, faYoutube)} />
         </Link>
       </div>
-      <Link to='https://www.mutuact.fr/mutuact'>
+      <Link to='https://www.2brealisation.com/2br'>
         <img 
-            className='footer__logo-mutuact' 
-            src={iconMutuact} alt='mutuact-icon' 
+            className='footer__logo-2br' 
+            src={icon2w} alt='2br-icon' 
         />
       </Link>
+      <div className='footer__logo-labels'>
+        <img 
+            className='footer__logo-labels__decennal labels' 
+            src={decennal} alt='logo décennal' 
+        />
+        <img 
+            className='footer__logo-labels__qualibat labels' 
+            src={qualibat} alt='logo qualibat' 
+        />
+      </div>
       <p className='footer__logo-info'>
-        MUTUACT
+        2B REALISATION
         <br/>
-        SIRET 75344673100048
+        RCS B 953 636 545 Toulouse
         <br/>
-        Tél : 06 28 18 02 03
+        Tél : 06 29 88 73 84
         <br/>
-        https://www.mutuact.fr
+        https://www.2brealisation.com 
         <br/>
         <span>
           <a 
-            href='mailto:mutuact@mutuact.fr'
+            href='mailto:stephane@2brealisation.com' 
             className='mail-link'
           >
-              mutuact@mutuact.fr
+              stephane@2brealisation.com
           </a>
         </span>
         <br/>
-        41 Rue de la Découverte CS37621 - 31670 Labège - France
+        3, impasse Palayre - 31100 Toulouse
       </p>
       <div className='footer__copyright'>
           <p>
-              © MUTUACT - Tous droits réservés - <Link className='footer__copyright__link' to='/cgu'>Mentions légales</Link> - 2023 - conception web vowd.fr
+              © 2B REALISATION - Tous droits réservés - <Link className='footer__copyright__link' to='https://www.2brealisation.com/cgu'>Mentions légales</Link> - 2023 - conception web VOWD.fr
           </p>
       </div>	
     </section>

@@ -20,7 +20,7 @@ const Login = () => {
 
     const [errorEmail, setErrorEmail] = useState([])
     const [errorPassword, setErrorPassword] = useState([])
-    const [errorMessages, setErrorMessages] = useState("")
+    const [errorMessages, setErrorMessages] = useState([])
     const [showPassword, setShowPassword] = useState(false);
 
 
@@ -48,22 +48,21 @@ const Login = () => {
             const result = await login(email, password)
             if (result.success === false) {
                 const errors = result?.error;
-                if (errors.status === 429) {
-                    console.log("error:", errors.data.error)
-                    setErrorMessages(errors.data.error)
+                if (errors.status === 401 || errors.status === 404) {
+                    setErrorMessages([errors.data.message])
                     setErrorEmail("")
                     setErrorPassword("")
+                    // console.log("erro:", errors.data.message)
                 } else {
-                    if (errors.data.error.errorEmail) {
-                        setErrorEmail(errors.data.error.errorEmail)
-                    }
-                    if (errors.data.error.errorPassword) {
-                        setErrorPassword(errors.data.error.errorPassword)
-                    }
+                    // console.log("erro:", errors)
+                    setErrorMessages(errors.data.message)
+                    setErrorEmail("")
+                    setErrorPassword("")
                 }
+
             } else {
                 const data = result.response.data
-                const token = data.token
+                const token = data.access_token
                 notifySuccess(data.message)
                 navigate("/dashboard/costumers");
                 setIsAuthenticated(true)
@@ -119,11 +118,11 @@ const Login = () => {
             if (errorMessages) {
                 setTimeout(() => {
                     setErrorMessages("")
-                }, 5000); // Réinitialiser après 5 secondes (5000 millisecondes)
+                }, 15000); // Réinitialiser après 5 secondes (5000 millisecondes)
             }
         }
         resetErrorMessages()
-        logout()
+        // logout()
     }, [errorMessages])
 
 
@@ -186,7 +185,9 @@ const Login = () => {
                         <span className='error-message'>{formik.errors.password}</span>
                     ) : null}
                     {errorPassword && <span className='error-message'>{errorPassword}</span>}
-                    {errorMessages && <span className='error-message'>{errorMessages}</span>}
+                    {errorMessages && errorMessages.map((error, index) => (
+                        <li key={index} className='error-message'>{error}</li>
+                    ))}
                 </div>
                 <button className="formSubmit contact-submit" type="submit">
                     {isLoading ? <Sentry color="white" size={25} speed={1} animating={true} /> : 'Se connecter'}

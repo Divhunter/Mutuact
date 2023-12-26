@@ -2,33 +2,26 @@
 /********************************************* about ******************************************/
 /**********************************************************************************************/
 
-.about__logo {
-    width: 10vw;
-    height: auto;
-}
-
 .button {
     display: inline-block;
     padding: 3vw 3vw 3vw 3vw;
     margin-top: 5vw;
     margin-bottom: 8vw;
     font-size: 4.5vw;
-    border-radius: 5px;
+    border-radius: .87vw;
     letter-spacing: .0237vw;
     font-weight: bold;
-    color: white;
-    background-color: rgb(0, 119, 255);
+    color: black;
+    background-color: rgb(255, 191, 0);
     cursor: pointer;
-    transition: 10s;
+    transition: color .4s, background-color .4s;
     box-shadow: rgba(0, 0, 0, 0.24) 0 .262vw .7vw;
-    transition: background-color 2s, box-shadow 2s;
 }
 
 .button:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(44, 143, 255);
-    box-shadow: rgba(0, 0, 0, 0.5) 0 .262vw .7vw;
-    transition: background-color .4s, box-shadow .4s;
+    background-color: orange;
+    transition: color .4s, background-color .4s;
 }
 
 .containerAbout {
@@ -36,9 +29,8 @@
     flex-direction: column;
     width: auto;
     height: auto;
-    background-color: rgb(244, 252, 250); 
+    background-image: linear-gradient(rgb(14, 78, 68), rgb(29, 156, 135));
     overflow: hidden;
-    color: black;
 }
 
 .containerAbout>p {
@@ -64,7 +56,7 @@
     margin-bottom: -1vw;
 }
 
-.containerAbout__bloc__coupleSenior {
+.containerAbout__bloc__handshake {
     margin-right: -5vw;
     width: 82vw;
     height: auto;
@@ -79,7 +71,7 @@
     width: auto;
     height: 13vw;
     padding-right: 54.3vw;
-    border: .175vw solid rgb(255, 238, 0);
+    border: .175vw solid rgb(255, 191, 0);
 }
 
 .containerAbout__bloc__pub {
@@ -91,7 +83,6 @@
     font-weight: 800;
     font-size: 5.5vw;
     line-height: 6vw;
-    color: white;
 }
 
 /********************************************* media queries ************************************************/
@@ -108,6 +99,7 @@
         margin-top: 2.963vw;
         margin-bottom: 4.74vw;
         font-size: 2.37vw;
+        border-radius: .515vw;
         letter-spacing: .014vw;
     }
 
@@ -135,7 +127,7 @@
         margin-bottom: -0.529vw;
     }
     
-    .containerAbout__bloc__coupleSenior {
+    .containerAbout__bloc__handshake {
         margin-right: -2.963vw;
         width: 100%;
     }

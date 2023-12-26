@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = `${process.env.REACT_APP_API_URL}/api/projets`;
+const API_URL = `${process.env.REACT_APP_API_URL}/api/projet`;
 export const getAllProjets = async (token) => {
   try {
     const headers = {
@@ -8,6 +8,7 @@ export const getAllProjets = async (token) => {
     };
     const response = await axios.get(API_URL, { headers });
     const projets = response.data;
+    // console.log("projet:",projets.data)
     return projets;
   } catch (error) {
     console.log('error lors de la récupération des projets:', error)
@@ -44,9 +45,10 @@ export const deleteProjet = async (projetId, token) => {
 export const createProjet = async (projetData) => {
 
   try {
-    const response = await axios.post(API_URL, projetData);
-    // console.log("response:", response)
-    if (response.status === 200) {
+    const response = await axios.post(`${API_URL}/new`, projetData);
+    console.log("response:", response)
+
+    if (response.status === 201) {
       // Succès de la création du projet
       return { success: true, data: response.data };
     } else {
@@ -92,7 +94,7 @@ export const isReadProjet = async (projetId, token) => {
       Authorization: `Bearer ${token}`,
 
     };
-   const  response = await axios.patch(`${API_URL}/read?projetId=${projetId}`, { headers });
+   const  response = await axios.put(`${API_URL}/read?projetId=${projetId}`, { headers });
    return response
   } catch (error) {
     console.error('Erreur lors de la mise à jour du projet comme lu :', error);

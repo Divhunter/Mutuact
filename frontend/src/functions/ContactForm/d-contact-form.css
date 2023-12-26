@@ -12,12 +12,12 @@
     .form-group > textarea {
         margin-bottom: auto;
         font-size: 1.8vw;
-        border: solid 2px rgb(180, 180, 180);
+        border: solid 2px rgb(29, 151, 131);
     }
 
     .form-group input:hover,
     .form-group textarea:hover {
-        border: solid 2px rgb(180, 180, 180);
+        border: solid 2px rgb(29, 151, 131);
     }
 
     .form-group > textarea {
@@ -76,6 +76,7 @@
         line-height: 0;
     }
 
+   
     .error-message {
         font-size: 1.2vw;
         line-height: 1.8vw;

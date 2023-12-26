@@ -12,8 +12,9 @@ export const ProjectProvider = ({ children }) => {
   const fetchProjets = async () => {
     if (token) {
       try {
-        const data = await getAllProjets(token)
-        setProjets(data);
+        const response = await getAllProjets(token)
+        // console.log(response)
+        setProjets(response.data);
       } catch (error) {
         console.error('Erreur lors de la récupération des projets :', error)
       } finally {

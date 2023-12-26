@@ -5,7 +5,7 @@ import { ProjectContext } from '../../../context/ProjetContext';
 
 const ModalNotification = ({ isOpen }) => {
     const { projets } = useContext(ProjectContext)
-    if (projets?.filter((projet) => projet.isRead === false).length === 0) {
+    if (projets && projets.length > 0 && projets?.filter((projet) => projet.isRead === false).length === 0) {
         return null;
     }
     if (!isOpen) return null;
@@ -14,7 +14,7 @@ const ModalNotification = ({ isOpen }) => {
             className='modal-container-notif'>
             <div className="modal-notif">
                 {
-                    projets?.filter((projet) => projet.isRead === false).sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate)).map((item, index) => (
+                   projets && projets.length > 0 && projets?.filter((projet) => projet.isRead === false).sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate)).map((item, index) => (
                         < Link key={index} to={`/dashboard/card/${item._id}`} className='link-modal'>
                             <div className='profil-modal'>
                                 <div className='photo-modal'>
