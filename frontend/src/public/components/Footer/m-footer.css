@@ -59,12 +59,12 @@
 }
 
 .mail-link {
-    color: rgb(255, 220, 113) !important; 
+    color: rgb(55, 255, 222) !important; 
 }
 
 .mail-link:hover {
     text-decoration: underline;
-    color: rgb(255, 220, 113);
+    color: rgb(55, 255, 222);
 }
 
 .footer__copyright {
@@ -80,11 +80,11 @@
 }
 
 .footer__copyright__link {
-    color: rgb(177, 148, 63) !important;
+    color: rgb(55, 255, 222) !important;
 }
 
 .footer__copyright__link:hover {
-    color: rgb(177, 148, 63) !important;
+    color: rgb(55, 255, 222) !important;
     text-decoration: underline;
 }
 

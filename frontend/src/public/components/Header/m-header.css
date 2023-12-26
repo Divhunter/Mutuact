@@ -208,12 +208,14 @@
     letter-spacing: .2vw;
 }
 
-.ici {
+.ici, 
+.vowd {
 	text-decoration: none;
-	color: rgb(0, 119, 255);
+	color: rgb(228, 0, 87);
 }
 
-.ici:hover {
+.ici:hover,
+.vowd:hover {
 	text-decoration: underline;
 	text-underline-position: under;
 }

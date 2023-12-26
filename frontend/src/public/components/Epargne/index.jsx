@@ -3,8 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
-import { faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logoEpargne from '../../assets/pictures/logo-epargne.png'
 
 // styles
 import './m-epargne.css'
@@ -30,9 +29,13 @@ const Epargne = () => {
                         <div>
                             {item.titleCol1}
                             <br/>
-                            <FontAwesomeIcon 
+                            <img
+                                src={logoEpargne} 
                                 className='header-logo'
-                                icon={faHandHoldingDollar} 
+                                width='615px'
+                                height='747px'
+                                loading='lazy'
+                                alt='logo-epargne'
                             />
                         </div>
                     }

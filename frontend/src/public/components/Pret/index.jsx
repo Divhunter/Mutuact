@@ -3,8 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
-import { faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logoPret from '../../assets/pictures/logo-pret.png'
 
 // styles
 import './m-pret.css'
@@ -30,9 +29,13 @@ const Pret = () => {
                         <div>
                             {item.titleCol1}
                             <br/>
-                            <FontAwesomeIcon 
+                            <img
+                                src={logoPret} 
                                 className='header-logo'
-                                icon={faHandHoldingHeart} 
+                                width='615px'
+                                height='747px'
+                                loading='lazy'
+                                alt='logo-pret'
                             />
                         </div>
                     }

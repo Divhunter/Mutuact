@@ -3,8 +3,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
-import { faUserTie } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logoPro from '../../assets/pictures/logo-pro.png'
+
 
 // styles
 import './m-pro.css'
@@ -30,9 +30,13 @@ const Prof = () => {
                         <div>
                             {item.titleCol1}
                             <br/>
-                            <FontAwesomeIcon 
+                            <img
+                                src={logoPro} 
                                 className='header-logo'
-                                icon={faUserTie} 
+                                width='615px'
+                                height='747px'
+                                loading='lazy'
+                                alt='logo-pro'
                             />
                         </div>
                     }

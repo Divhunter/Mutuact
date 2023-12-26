@@ -3,8 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
-import { faCar } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logoAuto from '../../assets/pictures/logo-auto.png'
 
 // styles
 import './m-auto.css'
@@ -30,9 +29,13 @@ const Auto = () => {
                         <div>
                             {item.titleCol1}
                             <br/>
-                            <FontAwesomeIcon 
+                            <img
+                                src={logoAuto} 
                                 className='header-logo'
-                                icon={faCar} 
+                                width='615px'
+                                height='747px'
+                                loading='lazy'
+                                alt='logo-auto'
                             />
                         </div>
                     }

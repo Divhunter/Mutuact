@@ -1,7 +1,6 @@
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
-import { faHandHoldingMedical } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logoSante from '../../assets/pictures/logo-sante.png'
 
 // styles
 import './m-sante.css'
@@ -22,9 +21,13 @@ const Sante = () => {
                         <div>
                             {item.titleCol1}
                             <br/>
-                            <FontAwesomeIcon 
+                            <img
+                                src={logoSante}
                                 className='header-logo'
-                                icon={faHandHoldingMedical} 
+                                width='615px'
+                                height='747px'
+                                loading='lazy'
+                                alt='logo-sante'
                             />
                         </div>
                     }

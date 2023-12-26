@@ -1,7 +1,6 @@
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
-import { faHandHoldingHand } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logoPrevoyance from '../../assets/pictures/logo-prevoyance.png'
 
 // styles
 import './m-prevoyance.css'
@@ -22,9 +21,13 @@ const Prevoyance = () => {
                         <div>
                             {item.titleCol1}
                             <br/>
-                            <FontAwesomeIcon 
+                            <img
+                                src={logoPrevoyance}
                                 className='header-logo'
-                                icon={faHandHoldingHand} 
+                                width='615px'
+                                height='747px'
+                                loading='lazy'
+                                alt='logo-prevoyance'
                             />
                         </div>
                     }

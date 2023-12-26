@@ -177,7 +177,14 @@ const Header = () => {
 					</strong>.
 					</p>
 					<p>
-					2- Nous sommes ravis de vous présenter notre nouveau site web réalisé par la société VOWD.fr.
+					2- Nous sommes ravis de vous présenter notre nouveau site web réalisé par la société&nbsp; 
+					<strong>
+						<a 
+							href='https://www.vowd.fr'
+							className='vowd'>
+								vowd.fr
+						</a>
+					</strong>.
 					</p>
 					<br/>
 				</div>

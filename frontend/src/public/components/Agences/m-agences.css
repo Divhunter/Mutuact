@@ -35,7 +35,7 @@
 
 .containerOffice__bloc__office__text__content > p > a,
 .agences-adress {
-    color: rgb(255, 220, 113) !important; 
+    color: rgb(163, 255, 240) !important; 
 }
 
 .agences-adress {
@@ -47,7 +47,7 @@
 .containerOffice__bloc__office__text__content > p > a:hover,
 .agences-adress:hover {
     text-decoration: underline;
-    color: rgb(255, 220, 113);
+    color: rgb(163, 255, 240);
 }
 
 /********************************************* media queries ************************************************/
