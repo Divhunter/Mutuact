@@ -11,7 +11,6 @@ import img22 from '../../assets/pictures/img2-2.jpg'
 import img32 from '../../assets/pictures/img3-2.jpg'
 import img42 from '../../assets/pictures/img4-2.jpg'
 import logoMutuacFull from '../../assets/pictures/logo-mutuact-full.png'
-//import Slogan from '../Slogan'
 
 // styles
 import './m-banner.css'
@@ -89,7 +88,7 @@ const Banner = () => {
 				onMouseEnter={onEnter}
 				onMouseLeave={onLeave}
 			>
-				<div> 
+				<div>
 					{slideArray1.map((items, index) => (
 						<div key={index}>
 							<img className={index === currentState ? 
@@ -117,9 +116,6 @@ const Banner = () => {
 						</div>
 					))}
 				</div>	
-				{/*<div id='bannerPubSection' className='banner__pub-section'>
-					<Slogan />
-				</div>*/}
 			</section>
 			<img 
 				className='banner__logo-mutuact' 
