@@ -72,8 +72,8 @@ const Costumers = () => {
 
     const ws = XLSX.utils.json_to_sheet(data); // Utilisez sortedProjets
     const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, 'Projets');
-    XLSX.writeFile(wb, 'projets.xlsx');
+    XLSX.utils.book_append_sheet(wb, ws, 'Clients');
+    XLSX.writeFile(wb, 'clients.xlsx');
   };
 
 

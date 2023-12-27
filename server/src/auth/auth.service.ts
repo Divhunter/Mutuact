@@ -33,7 +33,7 @@ export class AuthService implements IAuthService {
         const expireOtp = this.config.get<number>('OTP_CODE_EXPIRE');
 
         const user = await this.findUserByEmail(email);
-        if (!user) throw new NotFoundException("User not found!")
+        if (!user) throw new NotFoundException("Ce compte n'existe pas!")
 
         const match = speakeasy.totp.verify({
             secret: secretKey,
@@ -60,7 +60,7 @@ export class AuthService implements IAuthService {
         const expireOtp = this.config.get<number>('OTP_CODE_EXPIRE');
 
         const user = await this.findUserByEmail(email);
-        if (!user) throw new NotFoundException("User not found!");
+        if (!user) throw new NotFoundException("Ce compte n'existe pas!");
 
         const code = speakeasy.totp({
             secret: secretKey,
@@ -75,7 +75,7 @@ export class AuthService implements IAuthService {
     async login(user: UserModel): Promise<string> {
         const secretKey = this.config.get<string>('JWT_SECRET_KEY');
         const expireToken = this.config.get<number>('JWT_SECRET_EXPIRE');
-        const payload = { email: user.email, sub: user.id };
+        const payload = { email: user.email, sub: user.id, role:user.role };
         try {
             const access_token = this.jwtService.sign(payload, { secret: secretKey, expiresIn: expireToken })
             return access_token;
@@ -117,7 +117,7 @@ export class AuthService implements IAuthService {
     }
     async deleteUserById(userId: string): Promise<any> {
         const user = await this.authRepository.findUserById(userId);
-        if (!user) throw new NotFoundException("User not found")
+        if (!user) throw new NotFoundException("Ce compte n'existe pas")
         const userDeleted = await this.authRepository.deleteUserById(userId)
         Reflect.deleteProperty(userDeleted, "password");
         return userDeleted;
@@ -183,7 +183,7 @@ export class AuthService implements IAuthService {
             const user = await this.authRepository.findUserById(verificationToken.userId);
 
             if (!user) {
-                console.error('User not found')
+                console.error("Ce compte n'existe pas")
                 throw new NotFoundException('User of this token not found');
             }
 
@@ -309,9 +309,10 @@ export class AuthService implements IAuthService {
     // Methode qui se charge de la creation du token et le sauvegarder dans la base des données.
     async createVerificationToken(user: UserModel, tokenType: VerificationTokenTypeDto): Promise<VerificationTokenModel> {
         const secretKey = this.config.get<string>('EMAIL_VERIFICATION_SECRET')
+        const expireTokenVerification = this.config.get<string>('EMAIL_VERIFICATION_TOKEN_EXPIRE');
         let verificationToken = "";
         if (typeof secretKey === 'string') {
-            verificationToken = await this.generateToken(user.id, user.email, secretKey, '7h');
+            verificationToken = await this.generateToken(user.id, user.email, secretKey, expireTokenVerification);
         } else {
             console.error('La clé secrète n\'est pas définie ou n\'est pas une chaîne de caractères valide');
         }

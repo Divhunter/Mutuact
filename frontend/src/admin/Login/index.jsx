@@ -43,6 +43,7 @@ const Login = () => {
     });
 
     const auth = async (email, password) => {
+        setErrorMessages([])
         setIsLoading(true)
         try {
             const result = await login(email, password)
@@ -63,7 +64,11 @@ const Login = () => {
             } else {
                 const data = result.response.data
                 const token = data.access_token
-                notifySuccess(data.message)
+                // notifySuccess(data.message)
+                if(data.user && data.user.role !== 'admin'){
+                    setErrorMessages(["Vous n'avez pas le role de vous connecter."])
+                    navigate("/dashboard");
+                }
                 navigate("/dashboard/costumers");
                 setIsAuthenticated(true)
                 // Stockez le token dans le localStorage

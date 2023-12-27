@@ -3,6 +3,7 @@ import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { ProjetService } from './projet.service';
 import { CreateProjetDto } from './dto/create-projet.dto';
 import { RecaptchaGuard } from '../guards/recaptha.guard';
+import { JwtAuthGuard } from '../auth/strategies/local/jwt-auth.guard';
 
 @ApiTags('Projet')
 @Controller('projet')
@@ -29,8 +30,8 @@ export class ProjetController {
     }
   }
 
-  // @ApiBearerAuth()
-  // @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get()
   async getAllProjets() {
     try {
@@ -43,8 +44,8 @@ export class ProjetController {
     }
   }
 
-  // @ApiBearerAuth()
-  // @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get('email')
   async getProjetByEmail(@Query('email') email: string) {
     // Utilise Query pour obtenir les paramètres de requête
@@ -77,8 +78,8 @@ export class ProjetController {
     }
   }
 
-  // @ApiBearerAuth()
-  // @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Delete()
   async deleteProjet(@Query('projetId') projetId: string) {
     // Utilise Query pour obtenir les paramètres de requête
@@ -96,8 +97,8 @@ export class ProjetController {
   }
 
   // Fonction pour marquer une notification comme lue
-  // @ApiBearerAuth()
-  // @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Put('read')
   async markNotificationAsRead(@Query('projetId') projetId: string) {
     // Utilise Query pour obtenir les paramètres de requête
