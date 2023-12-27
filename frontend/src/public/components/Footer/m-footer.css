@@ -32,15 +32,15 @@
 
 .footer__link__icon {
 	position: relative;
-    color: rgb(240, 207, 109);
+    color: rgb(109, 255, 231);
     font-size: 9vw;
-    opacity: .5;
+    opacity: .8;
     cursor: pointer;
     transition: all .2s;
 }
 
 .footer__link__icon:hover {
-	color: rgb(238, 214, 142);
+	color: rgb(180, 255, 243);
     opacity: 1;
     transition: all .2s;
 }
@@ -71,7 +71,6 @@
     width: 100%;
     height: auto;
     padding: .25vw 7vw .25vw 7vw;
-    margin-top: 20vw;
     margin-bottom: 0;
     bottom: 0;
     font-size: 3.8vw;
@@ -123,7 +122,7 @@
     }
     
     .footer__copyright {
-        margin-top: 8.888vw;
+        margin-top: 0;
         padding: .15vw 7vw .15vw 7vw;
         font-size: 2.2vw;
         line-height: 3vw;
