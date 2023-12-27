@@ -1,3 +1,6 @@
+import { Link } from 'react-scroll'
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import background1 from '../../assets/pictures/background1.jpg'
 
 // styles

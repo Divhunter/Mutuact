@@ -8,7 +8,7 @@ import './d-error.css'
 
 const Error = () => {
 
-    localStorage.removeItem('token')
+    // localStorage.removeItem('token')
 
     useEffect(() => {
         window.scrollTo(0, 0)

@@ -15,7 +15,7 @@
 }
 
 .icon-style {
-    background-color: rgba(168, 140, 57, .7);
+    background-color: rgba(52, 190, 167, .6);
     border-radius: 6px;
     height: 50px;
     width: 50px;
@@ -26,8 +26,8 @@
 
 .icon-style:hover {
     animation: none;
-    background: rgb(21, 112, 97);
-    color: rgb(207, 180, 97);
+    background: rgb(52, 190, 167);
+    color: white;
 }
 
 /********************************************* media queries ************************************************/

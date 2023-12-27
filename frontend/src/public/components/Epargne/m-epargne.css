@@ -1,0 +1,61 @@
+/**********************************************************************************************/
+/******************************************** epargne *****************************************/
+/**********************************************************************************************/
+
+.why {
+    width: 100%;
+    text-align: center;
+    margin-top: -2.625vw;
+    margin-bottom: 4.375vw;
+    font-size: 5vw;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: rgb(80, 80, 80);
+}
+
+.why>header {
+    margin-bottom: 7.5vw;
+    padding: 2vw;
+    background-color: transparent;
+    z-index: 2000;
+}
+
+.why>p{
+    text-align: left;
+    margin-top: .875vw;
+    margin-left: 1.75vw;
+    margin-right: 1.75vw;
+    font-size: 4.5vw;
+    font-weight: 500;
+    line-height: 5.3vw;
+    color: rgb(80, 80, 80);
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /****************************************** epargne ***************************************/
+    /**********************************************************************************************/
+
+    .why {
+        margin-top: -1.555vw;
+        margin-bottom: 2.592vw;
+        font-size: 2.963vw;
+    }
+    
+    .why>header {
+        margin-bottom: 4.444vw;
+        padding: 1.185vw;
+    }
+    
+    .why>p{
+        margin-top: .518vw;
+        margin-left: 1.037vw;
+        margin-right: 1.037vw;
+        font-size: 2.37vw;
+        line-height: 3.141vw;
+    }
+}

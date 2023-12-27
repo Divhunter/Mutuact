@@ -6,8 +6,13 @@ import Background from '../../public/components/Background'
 import Header from '../../public/components/Header'
 import Banner from '../../public/components/Banner'
 import About from '../../public/components/About'
-import Prestations from '../../public/components/Prestations'
-import Realisations from '../../public/components/Realisations'
+import Epargne from '../../public/components/Epargne'
+import Prevoyance from '../../public/components/Prevoyance'
+import Sante from '../../public/components/Sante'
+import Vowd from '../../public/components/Vowd'
+import Prof from '../../public/components/Prof'
+import Pret from '../../public/components/Pret'
+import Auto from '../../public/components/Auto'
 import Agences from '../../public/components/Agences'
 import Contact from '../../public/components/Contact'
 import Footer from '../../public/components/Footer'
@@ -17,7 +22,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 const PublicContainer = () => {
 
 	window.onload = () => {
-		localStorage.removeItem('token')
+		// localStorage.removeItem('token')
 		window.scrollTo(0, 0)
 	}
 
@@ -47,22 +52,30 @@ const PublicContainer = () => {
     }, [])
 
     useEffect(() => {
-        slideInTop('#about')
+        slideInTop('#epargne')
     }, [])
 
     useEffect(() => {
-        slideInTop('#prestations')
+        slideInTop('#prevoyance')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#realisations')
+        slideInTop('#sante')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#agences')
+        slideInTop('#pro')
     }, [])
 
 	useEffect(() => {
+        slideInTop('#pret')
+    }, [])
+
+    useEffect(() => {
+        slideInTop('#auto')
+    }, [])
+
+    useEffect(() => {
         slideInTop('#contact')
     }, [])
 
@@ -72,9 +85,14 @@ const PublicContainer = () => {
 				<Header />
 				<Banner />
 				<About />
-				<Prestations />
-				<Realisations />
-				<Agences />
+				<Epargne />
+				<Prevoyance />
+				<Sante />
+                <Vowd />
+                <Prof />
+                <Pret />
+                <Auto />
+                <Agences />
 				<Contact />
 				<Footer />
                 <Background />

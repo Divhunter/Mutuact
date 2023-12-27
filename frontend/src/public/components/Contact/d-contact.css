@@ -48,14 +48,10 @@
         width: 43.75vw;
     }
 
-    .containerContact__bloc {
-        right: 0.2vw;
-    }
-
     .containerContact__bloc__woman {
         width: 64.8vw;
         margin-right: -10vw;
-        margin-top: 45.5vw;
+        margin-top: 45.7vw;
     }
 
     .containerContact__bloc__pub {
@@ -78,7 +74,6 @@
 
     .containerContact {
         height: 127.6vw;
-        border: .073vw solid rgba(26, 131, 113, .4);
     }
 
     .containerContact__text {
@@ -102,13 +97,13 @@
     }
 
     .containerContact__bloc {
-        right: 0.12vw;
+        right: 0.05vw;
     }
 
     .containerContact__bloc__woman {
         width: 48.5vw;
         margin-right: 0;
-        margin-top: 48.66vw;
+        margin-top: 38.4vw;
     }
 
     .containerContact__bloc__pub {

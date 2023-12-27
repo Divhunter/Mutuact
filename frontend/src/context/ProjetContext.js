@@ -30,7 +30,7 @@ export const ProjectProvider = ({ children }) => {
         await deleteProjet(projetId, token);
         // Mettez à jour la liste des projets localement en la filtrant pour exclure le projet supprimé
         setProjets((prevProjets) =>
-          prevProjets.filter((projet) => projet._id !== projetId)
+          prevProjets.filter((projet) => projet.id !== projetId)
         );
       } catch (error) {
         console.error('Erreur lors de la suppression du projet :', error)
@@ -47,7 +47,7 @@ export const ProjectProvider = ({ children }) => {
         // Mettre à jour localement le champ 'isRead' dans les données du projet dans le contexte
         if (isRead) {
           const updatedProjects = projets.map(project => {
-            if (project._id === projetId) {
+            if (project.id === projetId) {
               return { ...project, isRead: true };
             }
             return project;

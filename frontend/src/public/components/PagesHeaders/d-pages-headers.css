@@ -8,7 +8,7 @@
     /**********************************************************************************************/
     
     .header-rubrik {
-        padding-top: 0;
+        padding-top: 3vw;
         padding-bottom: 5vw;
     }
     
@@ -17,12 +17,21 @@
         letter-spacing: .0275vw;
     }
 
+    .header-logo {
+        font-size: 5vw;
+        margin-top: 2.7vw;
+        margin-bottom: 2vw;
+    }
+
     h3 {
         margin-top: 3vw;
         padding-left: 14vw;
         padding-right: 14vw;
         font-size: 3vw;
         letter-spacing: .0437vw;
+        background-image: 
+        url("https://www.transparenttextures.com/patterns/light-wool.png"),
+        linear-gradient(to right, rgb(52, 190, 167), rgb(10, 86, 109));
     }
 
     h4 {
@@ -127,7 +136,7 @@
     }
 
     .paragraph {
-        margin-top: .73vw;
+        margin-top: -6vw;
         margin-left: 7.884vw;
         margin-right: 7.884vw;
         margin-bottom: 5vw;

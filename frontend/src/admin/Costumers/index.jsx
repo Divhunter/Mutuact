@@ -96,12 +96,8 @@ const Costumers = () => {
     }));
   }
 
-  const totalMessagesNonLus = projets.reduce((total, projet) => {
-    return total + projet.messages.filter(message => message.isRead).length;
-  }, 0);
-  const totalMessagesLus = projets.reduce((total, projet) => {
-    return total + projet.messages.filter(message => !message.isRead).length;
-  }, 0);
+  const totalMessagesNonLus = projets?.filter((projet) => projet.isRead === false).length;
+  const totalMessagesLus = projets?.filter((projet) => projet.isRead === true).length;
 
   // console.log(totalMessagesLus);
 

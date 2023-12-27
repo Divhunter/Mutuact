@@ -33,44 +33,6 @@
     margin-top: -2vw;
 }
 
-.containerOffice__bloc__office__text__arrow {
-    cursor: pointer;
-    z-index: 3000;
-}
-
-.containerOffice__bloc__office__text__arrow__left {
-    float: left;
-    margin-left: 5vw;
-}
-
-.containerOffice__bloc__office__text__arrow__right {
-    float: right;
-    margin-right: 5vw;
-}
-
-.containerOffice__bloc__office__text__container__dote {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    right: 4vw;
-    width: 7vw;
-    bottom: 3.5vw;
-    z-index: 2000;
-}
-
-.agences-dot {
-    width: 2.2vw;
-    height: 2.2vw;
-    border-radius: 50%;
-    transition: background-color .5s;
-    cursor: pointer;
-}
-
-.agences-dot:hover {
-    background-color: rgb(255, 191, 0);
-    transition: background-color .5s;
-}
-
 .containerOffice__bloc__office__text__content > p > a,
 .agences-adress {
     color: rgb(163, 255, 240) !important; 
@@ -108,25 +70,6 @@
         margin-top: 13vw;
     }
     
-    .containerOffice__bloc__office__text__arrow__left {
-        margin-left: 4vw;
-    }
-    
-    .containerOffice__bloc__office__text__arrow__right {
-        margin-right: 4vw;
-    }
-    
-    .containerOffice__bloc__office__text__container__dote {
-        right: 4vw;
-        width: 4.148vw;
-        bottom: 3vw;
-    }
-    
-    .agences-dot {
-        width: 1.3vw;
-        height: 1.3vw;
-    }
-
     .agences-adress {
         margin-top: -1.6vw;
     }

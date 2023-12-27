@@ -6,7 +6,7 @@
     display: inline-block;
     width: 100%;
     height: 382.6vw;
-    border: 0.5px solid rgba(26, 131, 113, .4);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-bottom: 10vw;
     z-index: 1000;
     overflow: hidden;
@@ -28,7 +28,7 @@
     font-size: 5vw;
     font-weight: 600;
     line-height: 6.5vw;
-    color: rgb(26, 131, 113);
+    color: rgb(104, 104, 104);
 }
 
 .containerContact__text__form {
@@ -46,7 +46,7 @@
 .containerContact__bloc {
     position: absolute;
     display: inline-block;
-    right: .2vw;
+    right: 0vw;
     overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
     width: 70vw;
     height: auto;
     margin-right: -20vw;
-    margin-top: 280.2vw;
+    margin-top: 280.8vw;
 }
 
 .containerContact__bloc__pub {
@@ -103,14 +103,10 @@
         width: 43.75vw;
     }
 
-    .containerContact__bloc {
-        right: .16vw;
-    }
-
     .containerContact__bloc__woman {
         width: 64.8vw;
         margin-right: -15vw;
-        margin-top: 75.3vw;
+        margin-top: 75.6vw;
     }
 
     .containerContact__bloc__pub {

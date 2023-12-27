@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import { Link as GoTo} from 'react-router-dom'
 import { useState } from 'react'
-import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar, faPhoneFlip, faArrowCircleRight, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoMutuactW from '../../assets/pictures/logo-mutuact-blanc.png'
 
@@ -45,13 +45,37 @@ const Header = () => {
 				</GoTo>
 				
 				<div
-					className={
-						isOpen ? 
-						'nav__menu__link-header actu white' : 'nav__menu__link-header actu gold'}
+					className='nav__menu__link-header actu'
 					onClick={isActuState}
 				>
 					Nos actualités
 				</div>
+
+				<Link to='agences'>
+					<div className='nav__menu__link-header b-contact'>
+						Nous contacter&nbsp;&nbsp;
+						<FontAwesomeIcon 
+							icon={faPhoneFlip} 
+						/>&nbsp;&nbsp;
+						<FontAwesomeIcon 
+							icon={faLocationDot} 
+						/>
+					</div>
+				</Link>
+				
+				<Link to='contact'>
+					<div className={
+						isOpen?
+						'nav__menu__link-header devis devis-hidden':
+						'nav__menu__link-header devis devis-visible'
+						}
+					>
+						Devis sous 48h&nbsp;&nbsp;
+						<FontAwesomeIcon 
+							icon={faArrowCircleRight} 
+						/>
+					</div>
+				</Link>
 
 				<div className='navbar__separator'></div>	
 
@@ -72,6 +96,8 @@ const Header = () => {
 					icon={faXmark} 
 				/>
 
+				<p className='nav__menu__bienvenue'>Bienvenue chez mutuact</p>
+
 				<menu className={
 						isOpen ?
 						'navbar__menu navbar__menu-open':
@@ -79,47 +105,47 @@ const Header = () => {
 					}
 				>
 					
-					<Link onClick={isOpenState} to='/'>
+					<Link onClick={isOpenState} to='epargne'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingDollar} 
 						/>
-						<p className='nav__menu__text'>Epargne</p>
+						<p className='nav__menu__text'>Épargne</p>
 					</Link>
-					<Link onClick={isOpenState} to='about'>
+					<Link onClick={isOpenState} to='prevoyance'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingHand} 
 						/>
 						<p className='nav__menu__text'>Prévoyance</p>
 					</Link>
-					<Link onClick={isOpenState} to='prestations'>
+					<Link onClick={isOpenState} to='sante'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingMedical} 
 						/>
 						<p className='nav__menu__text'>Santé</p>
 					</Link>
-					<Link onClick={isOpenState} to='realisations'>
+					<Link onClick={isOpenState} to='pro'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faUserTie} 
 						/>
 						<p className='nav__menu__text'>Pro.</p>
 					</Link>
-					<Link onClick={isOpenState} to='agences'>
+					<Link onClick={isOpenState} to='pret'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingHeart} 
 						/>
 						<p className='nav__menu__text'>Prêt</p>
 					</Link>
-					<Link onClick={isOpenState} to='contact'>
+					<Link onClick={isOpenState} to='auto'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faCar} 
 						/>
-						<p className='nav__menu__text'>Auto</p>
+						<p className='nav__menu__text'>Auto...</p>
 					</Link>
 				</menu> 
 			</nav>
@@ -142,9 +168,17 @@ const Header = () => {
 					</header>
 					<h2>Bonjour à tous,</h2>
 					<p>
-					1- Nous sommes ravis d'annoncer notre partenariat avec BCRA.
+					1- Mutuact recrute!
 					<br/>
-					Ensemble, nous unissons nos forces et notre expertise pour offrir des solutions exceptionnelles à nos clients communs.
+					Pour postuler, veuillez nous contacter directement, c'est par&nbsp;
+					<strong>
+						<a 
+							href='mailto:mutuact@mutuact.fr'
+							className='ici'
+						>
+							ici
+						</a>
+					</strong>.
 					</p>
 					<p>
 					2- Nous sommes ravis de vous présenter notre nouveau site web réalisé par la société&nbsp; 
