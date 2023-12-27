@@ -97,8 +97,8 @@ export class ProjetController {
   }
 
   // Fonction pour marquer une notification comme lue
-  @ApiBearerAuth()
-  @UseGuards(JwtAuthGuard)
+  // @ApiBearerAuth()
+  // @UseGuards(JwtAuthGuard)
   @Put('read')
   async markNotificationAsRead(@Query('projetId') projetId: string) {
     // Utilise Query pour obtenir les paramètres de requête

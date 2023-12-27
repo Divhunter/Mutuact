@@ -14,7 +14,8 @@ import { MdCancelPresentation } from 'react-icons/md'
 import { FaAngleDown, FaAngleUp, FaDownload, FaTrashAlt } from 'react-icons/fa'
 import * as XLSX from 'xlsx';
 import { motion } from "framer-motion";
-import io from 'socket.io-client';
+import Spinner from "react-activity/dist/Dots";
+import "react-activity/dist/Dots.css";
 
 // styles
 import './m-costumers.css'
@@ -24,14 +25,11 @@ import ModalConfirmation from '../../functions/Modals/ModalConfirmation '
 import Search from '../../functions/SearchComponent/Search'
 import Pagination from '../Pagination/Pagination'
 import Notification from '../Notification/Notification'
-import addNotification from 'react-push-notification'
-import notifSound from '../../_utils/notifSound.wav'
-import logo from '../../_utils/logo-icon.png'
 
 const Costumers = () => {
 
   const { isAuthenticated, logout } = useContext(AuthContext);
-  const { projets, fetchProjets, handleDeleteProjet, isLoading, setIsLoading, setProjets } = useContext(ProjectContext)
+  const { projets, fetchProjets, handleDeleteProjet, isLoading, setIsLoading, deleteLoading } = useContext(ProjectContext)
   const [data, setData] = useState([])
   // État pour le tri par date (ascendant ou descendant)
   const [sortByDateAscending, setSortByDateAscending] = useState(false);
@@ -207,9 +205,9 @@ const Costumers = () => {
   // Utilisez windowWidth pour conditionner la taille du composant
   const checkboxSize = windowWidth <= 551 ? '20' : '30';
 
-  if (isLoading) {
-    return <Loader />
-  }
+  if (isLoading && (!projets || projets.length === 0)) {
+    return <Loader />;
+  }  
 
   return (
     <Fragment>
@@ -229,150 +227,154 @@ const Costumers = () => {
       </div>
       <section className='costumers'>
         <ModalConfirmation isOpen={showModalConfirm} message={`Êtes vous sûre de vouloir supprimer ${selectedProjetIds?.length} client(s) ?`} onClose={onToggleModelConfrm} onConfirm={handleDeleteAllProjets} />
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className='dashboard'>
-          <div className='dashboard-left'>
+        {
+          projets && projets.length > 0 &&
 
-            <div id='clients' className='item-stat' onClick={() => setData(projets)}>
-              <FontAwesomeIcon
-                className='icon-stat'
-                icon={faUsers}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className='dashboard'>
+            <div className='dashboard-left'>
+
+              <div id='clients' className='item-stat' onClick={() => setData(projets)}>
+                <FontAwesomeIcon
+                  className='icon-stat'
+                  icon={faUsers}
+                />
+                <span >{projets?.length}</span>
+              </div>
+              <Tooltip
+                className='tooltip-content'
+                anchorSelect="#clients"
+                content="tous les clients"
               />
-              <span >{projets?.length}</span>
-            </div>
-            <Tooltip
-              className='tooltip-content'
-              anchorSelect="#clients"
-              content="tous les clients"
-            />
-            <div id='lu' className='item-stat' onClick={handlSortByRead}>
-              <IoCheckmarkDoneSharp
-                className='icon-stat lu'
+              <div id='lu' className='item-stat' onClick={handlSortByRead}>
+                <IoCheckmarkDoneSharp
+                  className='icon-stat lu'
+                />
+                {projets.length > 0 ? (
+                  <span className='notif-counte'>
+                    {totalMessagesLus}
+                  </span>
+                ) : (
+                  <span className='notif-counte'>0</span>
+                )}
+              </div>
+              <Tooltip
+                className='tooltip-content'
+                anchorSelect="#lu"
+                content="les message lus"
               />
-              {projets.length > 0 ? (
-                <span className='notif-counte'>
-                  {totalMessagesLus}
-                </span>
-              ) : (
-                <span className='notif-counte'>0</span>
-              )}
-            </div>
-            <Tooltip
-              className='tooltip-content'
-              anchorSelect="#lu"
-              content="les message lus"
-            />
-            <div id='nonlu' className='item-stat' onClick={handlSortByNoRead}>
-              <IoCheckmarkDoneOutline
-                className='icon-stat nonlu'
+              <div id='nonlu' className='item-stat' onClick={handlSortByNoRead}>
+                <IoCheckmarkDoneOutline
+                  className='icon-stat nonlu'
+                />
+
+                {projets.length > 0 ? (
+                  <span className='notif-counte'>
+                    {totalMessagesNonLus}
+                  </span>
+                ) : (
+                  <span className='notif-counte'>0</span>
+                )}
+              </div>
+              <Tooltip
+                className='tooltip-content'
+                anchorSelect="#nonlu"
+                content="les messages non lus"
               />
 
-              {projets.length > 0 ? (
-                <span className='notif-counte'>
-                  {totalMessagesNonLus}
-                </span>
-              ) : (
-                <span className='notif-counte'>0</span>
-              )}
             </div>
-            <Tooltip
-              className='tooltip-content'
-              anchorSelect="#nonlu"
-              content="les messages non lus"
-            />
+            <div className='dashboard-right'>
+              {
+                selectMultipl ? (
+                  <Fragment>
 
-          </div>
-          <div className='dashboard-right'>
-            {
-              selectMultipl ? (
-                <Fragment>
-
-                  <div id='cancel' onClick={() => { setSelectMultipl(!selectMultipl); setSelectedProjetIds([]) }} >
-                    <MdCancelPresentation className="icon-right x-cancel" />
-                    <Tooltip
-                      className='tooltip-content'
-                      anchorSelect="#cancel"
-                      content="annuler"
-                    />
-                  </div>
-                  {
-                    selectedProjetIds.length !== 0 &&
+                    <div id='cancel' onClick={() => { setSelectMultipl(!selectMultipl); setSelectedProjetIds([]) }} >
+                      <MdCancelPresentation className="icon-right x-cancel" />
+                      <Tooltip
+                        className='tooltip-content'
+                        anchorSelect="#cancel"
+                        content="annuler"
+                      />
+                    </div>
+                    {
+                      selectedProjetIds.length !== 0 &&
+                      <Fragment>
+                        <div id='deleteAll' onClick={onToggleModelConfrm}>
+                          <FaTrashAlt className="icon-right trash-delete" />
+                        </div>
+                        <Tooltip
+                          className='tooltip-content'
+                          anchorSelect="#deleteAll"
+                          content="supprimer"
+                        />
+                      </Fragment>
+                    }
+                    <div id='checkedAll' >
+                      <CheckboxCustom checked={projets?.length && selectedProjetIds.length === data?.length} size={checkboxSize} handleCheckedChange={handleCheckedSelectMultiplChange} />
+                      <Tooltip
+                        className='tooltip-content'
+                        anchorSelect="#checkedAll"
+                        content="coché tout"
+                      />
+                    </div>
+                  </Fragment>
+                ) : (
+                  <Fragment>
                     <Fragment>
-                      <div id='deleteAll' onClick={onToggleModelConfrm}>
-                        <FaTrashAlt className="icon-right trash-delete" />
+                      <div id='selectAll' onClick={() => setSelectMultipl(!selectMultipl)}>
+                        <BiSolidSelectMultiple className="icon-right select-all" />
                       </div>
                       <Tooltip
                         className='tooltip-content'
-                        anchorSelect="#deleteAll"
-                        content="supprimer"
+                        anchorSelect="#selectAll"
+                        content="selection multiple"
                       />
                     </Fragment>
-                  }
-                  <div id='checkedAll' >
-                    <CheckboxCustom checked={projets?.length && selectedProjetIds.length === data?.length} size={checkboxSize} handleCheckedChange={handleCheckedSelectMultiplChange} />
-                    <Tooltip
-                      className='tooltip-content'
-                      anchorSelect="#checkedAll"
-                      content="coché tout"
-                    />
-                  </div>
-                </Fragment>
-              ) : (
-                <Fragment>
-                  <Fragment>
-                    <div id='selectAll' onClick={() => setSelectMultipl(!selectMultipl)}>
-                      <BiSolidSelectMultiple className="icon-right select-all" />
+                    <div className='filter'>
+                      <BsFilterSquare id='filter' onClick={() => setShowFilter(!showFilter)} className="icon-right" />
+                      <Tooltip
+                        className='tooltip-content'
+                        anchorSelect="#filter"
+                        content="trier par"
+                      />
+                      {
+                        showFilter && (
+                          <div onMouseLeave={() => setShowFilter(!showFilter)} className='filter-modal'>
+                            <div className='filter-content'>
+                              <span onClick={handlSortByDate} className='filter-item'> Trier par date </span>
+                              {
+                                !sortByDateAscending ?
+                                  <FaAngleUp /> : <FaAngleDown />
+                              }
+                            </div>
+                            <div className='filter-content'>
+                              <span onClick={handlSortByName} className='filter-item'>Trier par nom </span>
+                              {
+                                sortByNameAscending ?
+                                  <FaAngleUp /> : <FaAngleDown />
+                              }
+                            </div>
+                          </div>
+                        )
+                      }
+                    </div>
+                    <div id='dowload' onClick={exportDataToExcel}>
+                      <FaDownload className="icon-right" />
                     </div>
                     <Tooltip
                       className='tooltip-content'
-                      anchorSelect="#selectAll"
-                      content="selection multiple"
+                      anchorSelect="#dowload"
+                      content="télecharger les donneés"
                     />
                   </Fragment>
-                  <div className='filter'>
-                    <BsFilterSquare id='filter' onClick={() => setShowFilter(!showFilter)} className="icon-right" />
-                    <Tooltip
-                      className='tooltip-content'
-                      anchorSelect="#filter"
-                      content="trier par"
-                    />
-                    {
-                      showFilter && (
-                        <div onMouseLeave={() => setShowFilter(!showFilter)} className='filter-modal'>
-                          <div className='filter-content'>
-                            <span onClick={handlSortByDate} className='filter-item'> Trier par date </span>
-                            {
-                              !sortByDateAscending ?
-                                <FaAngleUp /> : <FaAngleDown />
-                            }
-                          </div>
-                          <div className='filter-content'>
-                            <span onClick={handlSortByName} className='filter-item'>Trier par nom </span>
-                            {
-                              sortByNameAscending ?
-                                <FaAngleUp /> : <FaAngleDown />
-                            }
-                          </div>
-                        </div>
-                      )
-                    }
-                  </div>
-                  <div id='dowload' onClick={exportDataToExcel}>
-                    <FaDownload className="icon-right" />
-                  </div>
-                  <Tooltip
-                    className='tooltip-content'
-                    anchorSelect="#dowload"
-                    content="télecharger les donneés"
-                  />
-                </Fragment>
-              )
-            }
-          </div>
-        </motion.div>
+                )
+              }
+            </div>
+          </motion.div>
+        }
         <div className='all-clients'>
           {data && projets.length > 0 ? (
             data.slice(pageNumber * itemsPerPage, (pageNumber + 1) * itemsPerPage).map((item, id) => (
@@ -387,16 +389,20 @@ const Costumers = () => {
                       handleCheckedChange={() => handleProjetSelectionChange(item.id)} />
                   ) : (
                     <div className='icons-delete'>
+                      {deleteLoading ? <Spinner color="red" size={15} speed={1} animating={true} className={` ${confirmVisible[item.id] ? '' : 'confirm-hidden'}`} /> :
+                        <FontAwesomeIcon
+                          onClick={() => deleteProjetById(item.id)}
+                          className={`x-delete icon-delete ${confirmVisible[item.id] ? '' : 'confirm-hidden'}`}
+                          icon={faTrash}
+                        />
+                      }
+
                       <FontAwesomeIcon
                         onClick={() => handleIconClick(item.id)}
                         className={`x-delete  ${confirmVisible[item.id] ? 'confirm-hidden' : ''}`}
                         icon={faXmark}
                       />
-                      <FontAwesomeIcon
-                        onClick={() => deleteProjetById(item.id)}
-                        className={`x-delete icon-delete ${confirmVisible[item.id] ? '' : 'confirm-hidden'}`}
-                        icon={faTrash}
-                      />
+
                       <FontAwesomeIcon
                         onClick={() => handleIconClick(item.id)}
                         className={`x-delete icon-back ${confirmVisible[item.id] ? '' : 'confirm-hidden'}`}

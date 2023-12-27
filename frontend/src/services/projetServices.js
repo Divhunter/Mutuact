@@ -34,7 +34,8 @@ export const deleteProjet = async (projetId, token) => {
       Authorization: `Bearer ${token}`,
 
     };
-    await axios.delete(`${API_URL}?projetId=${projetId}`, { headers });
+   const userDeleted = await axios.delete(`${API_URL}?projetId=${projetId}`, { headers });
+   return userDeleted;
   } catch (error) {
     console.error('Erreur lors de la suppression du projet :', error);
     return error;
