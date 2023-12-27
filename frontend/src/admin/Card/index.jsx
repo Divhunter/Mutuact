@@ -31,17 +31,19 @@ const Card = () => {
       fetchProjets();
     }
     // Recherchez le projet correspondant dans la liste des projets
-    const foundProject = projets.find((project) => project._id === id)
+    const foundProject = projets.find((project) => project.id === id)
 
     if (foundProject) {
       setCostumerCard(foundProject)
 
     }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [projets, id])
 
   useEffect(() => {
     handleIsReadProjetProjet(id)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
   const backToWebSite = () => navigate('/dashboard/costumers')

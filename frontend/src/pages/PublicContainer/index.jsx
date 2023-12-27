@@ -22,7 +22,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 const PublicContainer = () => {
 
 	window.onload = () => {
-		localStorage.removeItem('token')
+		// localStorage.removeItem('token')
 		window.scrollTo(0, 0)
 	}
 

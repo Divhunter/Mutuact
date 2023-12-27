@@ -8,7 +8,7 @@ import './d-cgu.css'
 
 const CGU = () => {
 
-    localStorage.removeItem('token')
+    // localStorage.removeItem('token')
 
     useEffect(() => {
         window.scrollTo(0, 0)

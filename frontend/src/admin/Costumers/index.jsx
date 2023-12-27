@@ -60,7 +60,7 @@ const Costumers = () => {
 
   const exportDataToExcel = () => {
     const data = projets?.map((projet) => ({
-      id: projet._id,
+      id: projet.id,
       nom: projet.firstName,
       prenom: projet.lastName,
       email: projet.email,
@@ -95,6 +95,11 @@ const Costumers = () => {
       [itemId]: !prevState[itemId],
     }));
   }
+
+  const totalMessagesNonLus = projets?.filter((projet) => projet.isRead === false).length;
+  const totalMessagesLus = projets?.filter((projet) => projet.isRead === true).length;
+
+  // console.log(totalMessagesLus);
 
   const deleteProjetById = (id) => {
     handleDeleteProjet(id)
@@ -133,12 +138,12 @@ const Costumers = () => {
   }
 
   const handlSortByRead = () => {
-    const sortedDataByRead = projets.filter(projet => projet.isRead === true); // Triez  par nom
+    const sortedDataByRead = projets?.filter(projet => projet.isRead === true); // Triez  par lu
     setData(sortedDataByRead);
   }
 
   const handlSortByNoRead = () => {
-    const sortedDataByNoRead = projets.filter(projet => projet.isRead === false); // Triez  par nom
+    const sortedDataByNoRead = projets?.filter(projet => projet.isRead === false); // Triez  par nonlu
     setData(sortedDataByNoRead);
   }
 
@@ -155,7 +160,7 @@ const Costumers = () => {
       setSelectedProjetIds([]);
     } else {
       // Obtenez un tableau des ID de tous les projets
-      const allProjetIds = projets.map((projet) => projet._id);
+      const allProjetIds = projets.map((projet) => projet.id);
       setSelectedProjetIds(allProjetIds);
     }
   };
@@ -247,8 +252,13 @@ const Costumers = () => {
               <IoCheckmarkDoneSharp
                 className='icon-stat lu'
               />
-              <span > {projets?.filter((projet) => projet.isRead === true).length
-              }</span>
+              {projets.length > 0 ? (
+                <span className='notif-counte'>
+                  {totalMessagesLus}
+                </span>
+              ) : (
+                <span className='notif-counte'>0</span>
+              )}
             </div>
             <Tooltip
               className='tooltip-content'
@@ -259,15 +269,21 @@ const Costumers = () => {
               <IoCheckmarkDoneOutline
                 className='icon-stat nonlu'
               />
-              <span > {projets?.filter((projet) => projet.isRead === false).length
-              }</span>
+
+              {projets.length > 0 ? (
+                <span className='notif-counte'>
+                  {totalMessagesNonLus}
+                </span>
+              ) : (
+                <span className='notif-counte'>0</span>
+              )}
             </div>
             <Tooltip
               className='tooltip-content'
               anchorSelect="#nonlu"
               content="les messages non lus"
             />
-            
+
           </div>
           <div className='dashboard-right'>
             {
@@ -367,29 +383,29 @@ const Costumers = () => {
                 className='costumers__card' id={`id-${id}`} key={id}>
                 {
                   selectMultipl ? (
-                    <CheckboxCustom key={id} checked={selectedProjetIds?.includes(item._id)}
-                      handleCheckedChange={() => handleProjetSelectionChange(item._id)} />
+                    <CheckboxCustom key={id} checked={selectedProjetIds?.includes(item.id)}
+                      handleCheckedChange={() => handleProjetSelectionChange(item.id)} />
                   ) : (
                     <div className='icons-delete'>
                       <FontAwesomeIcon
-                        onClick={() => handleIconClick(item._id)}
-                        className={`x-delete  ${confirmVisible[item._id] ? 'confirm-hidden' : ''}`}
+                        onClick={() => handleIconClick(item.id)}
+                        className={`x-delete  ${confirmVisible[item.id] ? 'confirm-hidden' : ''}`}
                         icon={faXmark}
                       />
                       <FontAwesomeIcon
-                        onClick={() => deleteProjetById(item._id)}
-                        className={`x-delete icon-delete ${confirmVisible[item._id] ? '' : 'confirm-hidden'}`}
+                        onClick={() => deleteProjetById(item.id)}
+                        className={`x-delete icon-delete ${confirmVisible[item.id] ? '' : 'confirm-hidden'}`}
                         icon={faTrash}
                       />
                       <FontAwesomeIcon
-                        onClick={() => handleIconClick(item._id)}
-                        className={`x-delete icon-back ${confirmVisible[item._id] ? '' : 'confirm-hidden'}`}
+                        onClick={() => handleIconClick(item.id)}
+                        className={`x-delete icon-back ${confirmVisible[item.id] ? '' : 'confirm-hidden'}`}
                         icon={faArrowLeft}
                       />
                     </div>
                   )
                 }
-                <Link to={`/dashboard/card/${item._id}`} className='link-card'>
+                <Link to={`/dashboard/card/${item.id}`} className='link-card'>
                   <div className='profil'>
                     <div className='photoco'>
                       <span className='profil-initialco'>{item.firstName[0]}</span>
