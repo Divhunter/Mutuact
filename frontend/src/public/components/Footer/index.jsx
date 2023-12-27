@@ -8,9 +8,11 @@ import logoAlpis from '../../assets/brands/logo-alpis.png'
 import logoHenner from '../../assets/brands/logo-henner.png'
 import logoSwiss from '../../assets/brands/logo-swiss.png'
 import logoApivia from '../../assets/brands/logo-apivia.png'
-//import logoZenioo from '../../assets/brands/logo-zenioo.png'
-//import logoEntoria from '../../assets/brands/logo-entoria.png'
-//import logoApivia from '../../assets/brands/logo-apivia.png'
+import logoAirbag from '../../assets/brands/logo-airbag.png'
+import logoZenioo from '../../assets/brands/logo-zenioo.png'
+import logoEntoria from '../../assets/brands/logo-entoria.png'
+import logoTetris from '../../assets/brands/logo-tetris.png'
+import logoMetlife from '../../assets/brands/logo-metlife.png'
 
 // styles
 import './m-footer.css'
@@ -112,7 +114,7 @@ const Footer = () => {
           loading='lazy'  
           alt='logo assureur'
         />
-        {/*<img 
+        <img 
           className='footer__partenaires__logo'
           src={logoZenioo} 
           width='2136px'
@@ -122,12 +124,36 @@ const Footer = () => {
         />
         <img 
           className='footer__partenaires__logo'
+          src={logoAirbag} 
+          width='1222px'
+          height='598px'
+          fetchpriority='high'   
+          alt='logo assureur'
+        />
+        <img 
+          className='footer__partenaires__logo'
           src={logoEntoria} 
           width='1011px'
           height='596px'
           fetchpriority='high'   
           alt='logo assureur'
-        />*/}
+        />
+        <img 
+          className='footer__partenaires__logo'
+          src={logoTetris} 
+          width='1234px'
+          height='598px'
+          fetchpriority='high' 
+          alt='logo assureur'
+        />
+        <img 
+          className='footer__partenaires__logo'
+          src={logoMetlife} 
+          width='470px'
+          height='598px'
+          loading='lazy'  
+          alt='logo assureur'
+        />
       </div>
       <div className='footer__copyright'>
           <p>

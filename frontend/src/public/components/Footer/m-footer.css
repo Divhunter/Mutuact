@@ -32,15 +32,15 @@
 
 .footer__link__icon {
 	position: relative;
-    color: rgb(240, 207, 109);
+    color: rgb(109, 255, 231);
     font-size: 9vw;
-    opacity: .5;
+    opacity: .8;
     cursor: pointer;
     transition: all .2s;
 }
 
 .footer__link__icon:hover {
-	color: rgb(238, 214, 142);
+	color: rgb(180, 255, 243);
     opacity: 1;
     transition: all .2s;
 }
