@@ -20,7 +20,7 @@ export class ProjetController {
         console.log('projet created');
         return {
           success: true,
-          message: 'Votre Message a bien été créé avec succès! ',
+          message: 'Votre Message a bien été créé avec succès!',
           data: newProjet,
         };
       }

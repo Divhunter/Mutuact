@@ -17,6 +17,9 @@ async function bootstrap() {
   // app.setGlobalPrefix("api");
   app.enableCors({
     origin: configService.get<string>('ORIGIN_URL'), // Remplacez par votre origine
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type,Authorization',
+    credentials: true,
   });
 
   const PORT = configService.get<number>('PORT') || 9000;
