@@ -11,17 +11,22 @@ export const ProjectProvider = ({ children }) => {
   // Récupérer tous les projets
   const fetchProjets = async () => {
     if (token) {
+      let timerId;
       try {
-        const response = await getAllProjets(token)
-        // console.log(response)
+        const response = await getAllProjets(token);
+        // console.log(response);
         setProjets(response.data);
+        timerId = setTimeout(() => {
+          setIsLoading(false); // Fin du chargement après 3 secondes
+        }, 30000); // Définir le délai de 3 secondes (3000 ms)
       } catch (error) {
-        console.error('Erreur lors de la récupération des projets :', error)
-      } finally {
-        setIsLoading(false); // Fin du chargement, quelle que soit l'issue
+        console.error('Erreur lors de la récupération des projets :', error);
+        clearTimeout(timerId); // En cas d'erreur, annuler le délai
+        setIsLoading(false); // Arrêter le chargement
       }
     }
   };
+  
 
   // Supprimer un projet
   const handleDeleteProjet = async (projetId) => {

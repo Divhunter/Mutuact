@@ -36,11 +36,11 @@ export class LocalStrategy extends PassportStrategy(Strategy) {
     }
 
     const user = await this.authService.findUserByEmail(email);
-    if (!user) throw new NotFoundException('User not found');
+    if (!user) throw new NotFoundException("Ce compte n'existe pas!");
     if (user.emailVerified !== true) throw new UnauthorizedException("Email non confirmé, veillez le confirmé d'abord!");
 
     const matchPassword = await bcrypt.compare(password, user.password);
-    if (!matchPassword) throw new UnauthorizedException('Password does not match');
+    if (!matchPassword) throw new UnauthorizedException('Mot de passe incorrect!');
 
     Reflect.deleteProperty(user, 'password');
     return user;
