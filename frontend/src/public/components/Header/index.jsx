@@ -61,7 +61,7 @@ const Header = () => {
 							icon={faLocationDot} 
 						/>
 					</div>
-				</Link>
+				</Link>	
 				
 				<Link to='contact'>
 					<div className={
@@ -76,8 +76,6 @@ const Header = () => {
 						/>
 					</div>
 				</Link>
-
-				<div className='navbar__separator'></div>	
 
 				<FontAwesomeIcon 
 					onClick={isOpenState} 

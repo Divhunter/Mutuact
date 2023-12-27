@@ -9,6 +9,7 @@
     font-family: Open, sans-serif;
     color: white;
     background-color: black;
+    margin-bottom: -5vw;
 }
 
 .footer > h1 {
@@ -67,6 +68,27 @@
     color: rgb(55, 255, 222);
 }
 
+.footer__partenaires {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    background-color: white;
+    margin-top: 10vw;
+    padding: 5vw 5vw 0 5vw;
+}
+
+.footer__partenaires__logo {
+    height: 6vw;
+    width: auto;
+    margin-bottom: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
 .footer__copyright {
     width: 100%;
     height: auto;
@@ -122,7 +144,6 @@
     }
     
     .footer__copyright {
-        margin-top: 0;
         padding: .15vw 7vw .15vw 7vw;
         font-size: 2.2vw;
         line-height: 3vw;
