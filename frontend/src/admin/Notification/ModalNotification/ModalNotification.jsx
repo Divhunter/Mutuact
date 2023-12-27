@@ -15,7 +15,7 @@ const ModalNotification = ({ isOpen }) => {
             <div className="modal-notif">
                 {
                    projets && projets.length > 0 && projets?.filter((projet) => projet.isRead === false).sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate)).map((item, index) => (
-                        < Link key={index} to={`/dashboard/card/${item._id}`} className='link-modal'>
+                        < Link key={index} to={`/dashboard/card/${item.id}`} className='link-modal'>
                             <div className='profil-modal'>
                                 <div className='photo-modal'>
                                     <span className='profil-initial-modal'>{item.firstName[0]}</span>

@@ -42,44 +42,47 @@ const Login = () => {
         },
     });
 
+    const ERROR_MESSAGES = {
+        UNAUTHORIZED_ROLE: "Vous n'avez pas le rôle pour vous connecter.",
+        INVALID_CREDENTIALS: "Identifiants invalides.",
+        OTHER_ERROR: "Une erreur est survenue lors de l'authentification.",
+    };
+
     const auth = async (email, password) => {
-        setErrorMessages([])
-        setIsLoading(true)
+        setErrorMessages([]);
+        setIsLoading(true);
+
         try {
-            const result = await login(email, password)
+            const result = await login(email, password);
+
             if (result.success === false) {
                 const errors = result?.error;
                 if (errors.status === 401 || errors.status === 404) {
-                    setErrorMessages([errors.data.message])
-                    setErrorEmail("")
-                    setErrorPassword("")
-                    // console.log("erro:", errors.data.message)
+                    setErrorMessages([ERROR_MESSAGES.INVALID_CREDENTIALS]);
                 } else {
-                    // console.log("erro:", errors)
-                    setErrorMessages(errors.data.message)
-                    setErrorEmail("")
-                    setErrorPassword("")
+                    setErrorMessages([errors.data.message || ERROR_MESSAGES.OTHER_ERROR]);
                 }
-
             } else {
-                const data = result.response.data
-                const token = data.access_token
-                // notifySuccess(data.message)
-                if(data.user && data.user.role !== 'admin'){
-                    setErrorMessages(["Vous n'avez pas le role de vous connecter."])
+                const data = result.response.data;
+                const token = data.access_token;
+
+                if (data.user && data.user.role === 'admin') {
+                    localStorage.setItem("token", token);
+                    setIsAuthenticated(true);
+                    navigate("/dashboard/costumers");
+                } else {
                     navigate("/dashboard");
+                    setErrorMessages([ERROR_MESSAGES.UNAUTHORIZED_ROLE]);
                 }
-                navigate("/dashboard/costumers");
-                setIsAuthenticated(true)
-                // Stockez le token dans le localStorage
-                localStorage.setItem("token", token)
             }
         } catch (error) {
-            console.log(error)
+            setErrorMessages([ERROR_MESSAGES.OTHER_ERROR]);
+            console.error(error);
         } finally {
-            setIsLoading(false)
+            setIsLoading(false);
         }
-    }
+    };
+
 
     const onChangeColor = (e) => {
         if (e.target.focus() === true) {
@@ -199,6 +202,7 @@ const Login = () => {
                 </button>
 
             </form>
+
         </section>
     )
 }

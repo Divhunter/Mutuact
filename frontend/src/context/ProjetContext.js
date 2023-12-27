@@ -6,6 +6,8 @@ export const ProjectContext = createContext()
 export const ProjectProvider = ({ children }) => {
   const [projets, setProjets] = useState([])
   const [isLoading, setIsLoading] = useState(true)
+  const [deleteLoading, setDeleteLoading] = useState(false)
+
   const token = localStorage.getItem('token')
 
   // Récupérer tous les projets
@@ -18,7 +20,7 @@ export const ProjectProvider = ({ children }) => {
         setProjets(response.data);
         timerId = setTimeout(() => {
           setIsLoading(false); // Fin du chargement après 3 secondes
-        }, 30000); // Définir le délai de 3 secondes (3000 ms)
+        }, 3000); // Définir le délai de 3 secondes (3000 ms)
       } catch (error) {
         console.error('Erreur lors de la récupération des projets :', error);
         clearTimeout(timerId); // En cas d'erreur, annuler le délai
@@ -26,18 +28,23 @@ export const ProjectProvider = ({ children }) => {
       }
     }
   };
-  
+
 
   // Supprimer un projet
   const handleDeleteProjet = async (projetId) => {
+    setDeleteLoading(true)
     if (token) {
       try {
-        await deleteProjet(projetId, token);
-        // Mettez à jour la liste des projets localement en la filtrant pour exclure le projet supprimé
-        setProjets((prevProjets) =>
-          prevProjets.filter((projet) => projet.id !== projetId)
-        );
+        const response = await deleteProjet(projetId, token);
+        if (response?.status === 200) {
+          // Mettez à jour la liste des projets localement en la filtrant pour exclure le projet supprimé
+          setProjets((prevProjets) =>
+            prevProjets.filter((projet) => projet.id !== projetId)
+          );
+          setDeleteLoading(false)
+        }
       } catch (error) {
+        setDeleteLoading(false)
         console.error('Erreur lors de la suppression du projet :', error)
       }
     }
@@ -69,7 +76,7 @@ export const ProjectProvider = ({ children }) => {
 
 
   return (
-    <ProjectContext.Provider value={{ projets, isLoading, setIsLoading, fetchProjets, handleDeleteProjet, setProjets, handleIsReadProjetProjet }}>
+    <ProjectContext.Provider value={{ projets, isLoading, setIsLoading, fetchProjets, handleDeleteProjet, setProjets, handleIsReadProjetProjet, deleteLoading }}>
       {children}
     </ProjectContext.Provider>
   );
