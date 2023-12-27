@@ -53,7 +53,7 @@ const About = () => {
                                 <br/><br/>
                                 Fort de plus de deux décennies d'expérience en tant qu'agence d'assurance établie dans la pittoresque région du Sud-Ouest, nous nous consacrons à offrir à nos nombreux clients une tranquillité d'esprit inégalée. Notre mission est claire : garantir le meilleur comparatif d'assurances et de mutuelles, sur mesure pour répondre à leurs besoins spécifiques.
                                 <br/><br/>
-                                Au fil des années, nous avons établi des relations solides avec une clientèle diversifiée, et la satisfaction de nos clients demeure ma priorité absolue. Nous comprenons l'importance de fournir des solutions d'assurance fiables et adaptées, tout en simplifiant le processus pour nos clients.
+                                Au fil des années, nous avons établi des relations solides avec une clientèle diversifiée, et la satisfaction de nos clients demeure notre priorité absolue. Nous comprenons l'importance de fournir des solutions d'assurance fiables et adaptées, tout en simplifiant le processus pour nos clients.
                                 <br/><br/>
                                 Notre devise est bien plus qu'une simple phrase : c'est un engagement envers l'excellence et l'intégrité. Nous nous efforçons constamment de rester à l'avant-garde des évolutions du secteur de l'assurance, afin de garantir à nos clients les options les plus avantageuses et les plus actuelles.
                                 <br/><br/>

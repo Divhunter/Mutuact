@@ -2,6 +2,15 @@ import { Link } from 'react-router-dom'
 import {fab, faFacebook, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import iconMutuact from '../../assets/pictures/logo-mutuact-blanc.png'
+import logoMalakoff from '../../assets/brands/logo-malakoff.png'
+import logoCegema from '../../assets/brands/logo-cegema.png'
+import logoAlpis from '../../assets/brands/logo-alpis.png'
+import logoHenner from '../../assets/brands/logo-henner.png'
+import logoSwiss from '../../assets/brands/logo-swiss.png'
+import logoApivia from '../../assets/brands/logo-apivia.png'
+//import logoZenioo from '../../assets/brands/logo-zenioo.png'
+//import logoEntoria from '../../assets/brands/logo-entoria.png'
+//import logoApivia from '../../assets/brands/logo-apivia.png'
 
 // styles
 import './m-footer.css'
@@ -28,7 +37,11 @@ const Footer = () => {
       <Link to='https://www.mutuact.fr/mutuact'>
         <img 
             className='footer__logo-mutuact' 
-            src={iconMutuact} alt='mutuact-icon' 
+            src={iconMutuact}
+            width='2035px'
+            height='960px'
+            fetchpriority='high'  
+            alt='mutuact-icon' 
         />
       </Link>
       <p className='footer__logo-info'>
@@ -50,7 +63,72 @@ const Footer = () => {
         </span>
         <br/>
         41 Rue de la Découverte CS37621 - 31670 Labège - France
-      </p>
+      </p><div className='footer__partenaires'>
+        <img 
+          className='footer__partenaires__logo'
+          src={logoMalakoff} 
+          width='1831px'
+          height='596px'
+          fetchpriority='high'  
+          alt='logo assureur'
+        />
+        <img 
+          className='footer__partenaires__logo'
+          src={logoAlpis} 
+          width='654px'
+          height='596px'
+          loading='lazy'  
+          alt='logo assureur'
+        />
+        <img 
+          className='footer__partenaires__logo'
+          src={logoCegema} 
+          width='850px'
+          height='596px'
+          loading='lazy'  
+          alt='logo assureur'
+        />
+        <img 
+          className='footer__partenaires__logo'
+          src={logoSwiss} 
+          width='856px'
+          height='596px'
+          loading='lazy'  
+          alt='logo assureur'
+        />
+        <img 
+          className='footer__partenaires__logo'
+          src={logoHenner} 
+          width='596px'
+          height='596px'
+          loading='lazy'  
+          alt='logo assureur'
+        />
+        <img 
+          className='footer__partenaires__logo'
+          src={logoApivia} 
+          width='846px'
+          height='598px'
+          loading='lazy'  
+          alt='logo assureur'
+        />
+        {/*<img 
+          className='footer__partenaires__logo'
+          src={logoZenioo} 
+          width='2136px'
+          height='596px'
+          fetchpriority='high'    
+          alt='logo assureur'
+        />
+        <img 
+          className='footer__partenaires__logo'
+          src={logoEntoria} 
+          width='1011px'
+          height='596px'
+          fetchpriority='high'   
+          alt='logo assureur'
+        />*/}
+      </div>
       <div className='footer__copyright'>
           <p>
               © MUTUACT - Tous droits réservés - <Link className='footer__copyright__link' to='/cgu'>Mentions légales</Link> - 2023 - conception web vowd.fr
