@@ -100,6 +100,7 @@
     top: 95%;
     transform: translate(0, -95%);
     padding: .6vw 1vw .6vw 1vw;
+    font-family: 'Open', sans-serif;
     font-size: 1.24vw;
     letter-spacing: .073vw;
     border: solid 1px rgba(0, 119, 255, .3);
@@ -127,7 +128,7 @@
     /**********************************************************************************************/
     
     .background__button {
-        top: -15vw;
+        top: -17vw;
         padding-left: .5vw;
         width: 22.7vw;
         height: 6vw;

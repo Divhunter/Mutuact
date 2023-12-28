@@ -15,8 +15,9 @@
 	}
 
 	.navbar__logoMutuactW {
-		top: 2vw;
-		width: 10vw;
+		top: 1.6vw;
+		width: 6vw;
+		filter: brightness(130%)
 	}
 
 	.navbar__button-x {
@@ -51,15 +52,10 @@
 		letter-spacing: .175vw;
 		font-size: 3vw;
 	}
-	
-	.nav__menu__link:hover {
-		padding-left: 0;
-		font-size: 3.57vw;
-	}
 
 	.nav__menu__link-header {
-        margin-top: 2.5vw;
-		font-size: 1.8vw;
+        margin-top: 2.2vw;
+		font-size: 2vw;
         letter-spacing: .087vw;
     }
 	
@@ -78,12 +74,6 @@
 	.devis {
 		margin-left: 4vw;
 	}
-
-	.nav__menu__bienvenue {
-		margin-top: -2.1vw;
-		transform: translate(-91%, 0);
-		font-size: 2vw;
-	}
 }
 
 /********************************************* media queries ************************************************/
@@ -95,36 +85,53 @@
     /********************************************* header *****************************************/
     /**********************************************************************************************/
 
-	.navbar__logoMutuactW {
-		width: 16vw;
+	.navbar-closed {
+		height: 6vw;
 	}
 
-	.navbar__separator {
-		margin-top: 4vw;
-		width: 100%;
-		height: 1px;
-		background-color: white;
-		opacity: .3;
+	.navbar__logoMutuactW {
+		left: 4vw;
+		width: 6vw;
 	}
 
 	.navbar__button-x {
-		right: 3.5vw;
-		font-size: 2.187vw;
+		top: 1.8vw;
 	}
 	
 	.navbar__button-bars {
-		right: 3.5vw;
-		font-size: 1.75vw;
+		top: 2vw;
 	}
 
 	.nav__menu__link-header {
-		margin-top: 4.6vw;
-		font-size: 1.8vw;
+        margin-top: 1.5vw;
+		font-size: 1.7vw;
+        letter-spacing: .073vw;
     }
 
-	.actu:hover {
-        text-decoration-thickness: .14vw;
+	.nav__menu__text {
+		font-size: 1.5vw;
+	}
+
+    .actu {
+        margin-right: 8.2vw;
     }
+
+	.b-contact {
+		margin-right: .6vw;
+	}
+
+	.devis {
+		float: left;
+		margin-left: 3vw;
+	}
+
+	.devis-hidden {
+		display: none;
+	}
+
+	.devis-visible {
+		display: block;
+	}
 }
 
 /********************************************* media queries ************************************************/
@@ -144,25 +151,9 @@
 	}
 
 	.navbar__logoMutuactW {
-		top: 2.2vw;
-		width: 12vw;
+		top: 1.5vw;
+		width: 6vw;
 		left: 2vw;
-	}
-
-	.navbar__separator {
-		margin-top: 4vw;
-		width: 100%;
-		height: 1px;
-		background-color: white;
-		opacity: .3;
-	}
-
-	.contact-hidden {
-		display: block;
-	}
-
-	.contact-visible {
-		display: block;
 	}
 
 	.navbar__button-x {
@@ -183,7 +174,7 @@
 	}
 	
 	.navbar__menu-open {
-		top: -.35vw;
+		top: 2.5vw;
 		height: auto;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -191,29 +182,8 @@
 	
 	.nav__menu__link {
 		line-height: 2.19vw;
-		padding-top: 0;
-		padding-left: 0;
-		padding-bottom: 0;
 		letter-spacing: .146vw;
 		font-size: 35px;
-		color: rgb(255, 255, 255);
-		transition: color .4s;
-	}
-	
-	.nav__menu__link:hover {
-		padding-left: 0;
-		font-size: 35px;
-		color: rgb(205, 255, 247);
-		transition: color .4s;
-	}
-
-	.nav__menu__text {
-		cursor: pointer;
-	}
-
-	.nav__menu__text:hover {
-		text-decoration: underline;
-		text-underline-position: under;
 	}
     
     .nav__menu__link-header {
@@ -226,6 +196,10 @@
 		display: inline-block;
 		color: white;
     }
+
+	.nav__menu__text {
+		font-size: 1.3vw;
+	}
 
     .actu {
 		border: solid 1px white;
