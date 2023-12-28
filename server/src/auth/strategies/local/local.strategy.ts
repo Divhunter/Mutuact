@@ -34,8 +34,8 @@ export class LocalStrategy extends PassportStrategy(Strategy) {
 
       throw new BadRequestException({ message: flattenedErrorMessages });
     }
-
-    const user = await this.authService.findUserByEmail(email);
+    const normaliseEmail = email.toLowerCase();
+    const user = await this.authService.findUserByEmail(normaliseEmail);
     if (!user) throw new NotFoundException("Ce compte n'existe pas!");
     if (user.emailVerified !== true) throw new UnauthorizedException("Email non confirmé, veillez le confirmé d'abord!");
 

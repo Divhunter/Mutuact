@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { Navigate, useNavigate } from "react-router-dom"
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +15,7 @@ import "./m-login.css"
 
 const Login = () => {
     const navigate = useNavigate();
-    const { setIsAuthenticated, logout } = useContext(AuthContext)
+    const { setIsAuthenticated, isAuthenticated } = useContext(AuthContext)
     const [isLoading, setIsLoading] = useState(false);
 
     const [errorEmail, setErrorEmail] = useState([])
@@ -58,7 +58,8 @@ const Login = () => {
             if (result.success === false) {
                 const errors = result?.error;
                 if (errors.status === 401 || errors.status === 404) {
-                    setErrorMessages([ERROR_MESSAGES.INVALID_CREDENTIALS]);
+                    console.log(errors.data.message)
+                    setErrorMessages([errors.data.message ]);
                 } else {
                     setErrorMessages([errors.data.message || ERROR_MESSAGES.OTHER_ERROR]);
                 }
@@ -69,9 +70,7 @@ const Login = () => {
                 if (data.user && data.user.role === 'admin') {
                     localStorage.setItem("token", token);
                     setIsAuthenticated(true);
-                    navigate("/dashboard/costumers");
                 } else {
-                    navigate("/dashboard");
                     setErrorMessages([ERROR_MESSAGES.UNAUTHORIZED_ROLE]);
                 }
             }
@@ -133,78 +132,81 @@ const Login = () => {
         // logout()
     }, [errorMessages])
 
-
-    return (
-        <section className="login">
-            <p className="login__header">
-                Cet espace est strictement réservé à l'administrateur du site.
-                <br />
-                Veuillez retourner à la <a href="/2br">page d'accueil</a>.
-            </p>
-            <h1 className="login__title">Connexion</h1>
-            <form
-                onSubmit={formik.handleSubmit}
-                id="form-login"
-                className=" form-login"
-                method="post"
-            >
-                <div className='form-group'>
-                    <label htmlFor='email'>Email</label>
-                    <input
-                        onChange={(e) => { formik.handleChange(e); onChangeColor(e); setErrorEmail('') }}
-                        onBlur={(e) => { formik.handleBlur(e); onBlurColor(e); onBlurErrorEmail() }}
-                        onFocus={(e) => { formik.handleBlur(e); onFocusColor(e); }}
-                        id='email'
-                        type='text'
-                        name='email'
-                        placeholder='Email*'
-                        className='form-control'
-                        aria-label='email'
-                    />
-                    {formik.touched.email && formik.errors.email ? (
-                        <span className='error-message'>{formik.errors.email}</span>
-                    ) : null}
-                    {errorEmail && <span className='error-message'>{errorEmail}</span>}
-                </div>
-                <div className='input-password'>
-                    <div className="password form-group">
-                        <label htmlFor='password'>Password</label>
+    console.log("auth:", isAuthenticated)
+    if (isAuthenticated) {
+        return <Navigate to="/dashboard/costumers" />
+    } else
+        return (
+            <section className="login">
+                <p className="login__header">
+                    Cet espace est strictement réservé à l'administrateur du site.
+                    <br />
+                    Veuillez retourner à la <a href="/2br">page d'accueil</a>.
+                </p>
+                <h1 className="login__title">Connexion</h1>
+                <form
+                    onSubmit={formik.handleSubmit}
+                    id="form-login"
+                    className=" form-login"
+                    method="post"
+                >
+                    <div className='form-group'>
+                        <label htmlFor='email'>Email</label>
                         <input
-                            onChange={(e) => { formik.handleChange(e); onChangeColor(e); setErrorPassword('') }}
-                            onBlur={(e) => { formik.handleBlur(e); onBlurColor(e); onBlurErrorPassword() }}
+                            onChange={(e) => { formik.handleChange(e); onChangeColor(e); setErrorEmail('') }}
+                            onBlur={(e) => { formik.handleBlur(e); onBlurColor(e); onBlurErrorEmail() }}
                             onFocus={(e) => { formik.handleBlur(e); onFocusColor(e); }}
-                            id='password'
-                            type={showPassword ? 'text' : 'password'}
-                            name='password'
-                            placeholder='Password*'
-                            className='form-control '
-                            aria-label='password'
+                            id='email'
+                            type='text'
+                            name='email'
+                            placeholder='Email*'
+                            className='form-control'
+                            aria-label='email'
                         />
-                        {
-                            formik.values.password && <FontAwesomeIcon
-                                icon={!showPassword ? faEye : faEyeSlash}
-                                className="icon-password"
-                                onClick={() => setShowPassword(!showPassword)}
-                            />
-                        }
+                        {formik.touched.email && formik.errors.email ? (
+                            <span className='error-message'>{formik.errors.email}</span>
+                        ) : null}
+                        {errorEmail && <span className='error-message'>{errorEmail}</span>}
                     </div>
+                    <div className='input-password'>
+                        <div className="password form-group">
+                            <label htmlFor='password'>Password</label>
+                            <input
+                                onChange={(e) => { formik.handleChange(e); onChangeColor(e); setErrorPassword('') }}
+                                onBlur={(e) => { formik.handleBlur(e); onBlurColor(e); onBlurErrorPassword() }}
+                                onFocus={(e) => { formik.handleBlur(e); onFocusColor(e); }}
+                                id='password'
+                                type={showPassword ? 'text' : 'password'}
+                                name='password'
+                                placeholder='Password*'
+                                className='form-control '
+                                aria-label='password'
+                            />
+                            {
+                                formik.values.password && <FontAwesomeIcon
+                                    icon={!showPassword ? faEye : faEyeSlash}
+                                    className="icon-password"
+                                    onClick={() => setShowPassword(!showPassword)}
+                                />
+                            }
+                        </div>
 
-                    {formik.touched.password && formik.errors.password ? (
-                        <span className='error-message'>{formik.errors.password}</span>
-                    ) : null}
-                    {errorPassword && <span className='error-message'>{errorPassword}</span>}
-                    {errorMessages && errorMessages.map((error, index) => (
-                        <li key={index} className='error-message'>{error}</li>
-                    ))}
-                </div>
-                <button className="formSubmit contact-submit" type="submit">
-                    {isLoading ? <Sentry color="white" size={25} speed={1} animating={true} /> : 'Se connecter'}
-                </button>
+                        {formik.touched.password && formik.errors.password ? (
+                            <span className='error-message'>{formik.errors.password}</span>
+                        ) : null}
+                        {errorPassword && <span className='error-message'>{errorPassword}</span>}
+                        {errorMessages && errorMessages.map((error, index) => (
+                            <li key={index} className='error-message'>{error}</li>
+                        ))}
+                    </div>
+                    <button className="formSubmit contact-submit" type="submit">
+                        {isLoading ? <Sentry color="white" size={25} speed={1} animating={true} /> : 'Se connecter'}
+                    </button>
 
-            </form>
+                </form>
 
-        </section>
-    )
+            </section>
+        )
 }
 
 export default Login

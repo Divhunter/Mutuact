@@ -33,6 +33,9 @@ export class InitService implements OnModuleInit {
         emailVerifiedDate: new Date(),
       };
 
+      const normaliseEmail = createAdmin.email.toLowerCase();
+      createAdmin.email = normaliseEmail;
+
       Reflect.deleteProperty(createAdmin, 'id');
       await this.prismaService.user.create({
         data: createAdmin,

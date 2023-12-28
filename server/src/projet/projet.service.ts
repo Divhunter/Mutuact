@@ -18,7 +18,7 @@ export class ProjetService implements IProjetService {
   }
 
   async getProjetByEmail(email: string): Promise<Projet> {
-    return await this.projetRepository.findProjetByEmail(email);
+    return await this.projetRepository.findProjetByEmail(email.toLowerCase());
   }
 
   async createProjet(createProjetDto: CreateProjetDto): Promise<Projet | Message> {
@@ -36,7 +36,7 @@ export class ProjetService implements IProjetService {
         const newProjet: CreateProjetDto = {
           firstName: createProjetDto.firstName,
           lastName: createProjetDto.lastName,
-          email: createProjetDto.email,
+          email: createProjetDto.email.toLowerCase(),
           phone: createProjetDto.phone,
         };
         const messageDto: MessageDto = {
