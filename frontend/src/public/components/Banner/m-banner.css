@@ -60,6 +60,7 @@
     .banner {
         padding-left: 2.963vw;
         height: 66vw;
+        margin-bottom: -3vw;
     }
 
     .banner__picture1 {
@@ -74,6 +75,15 @@
         object-fit: contain;
         width: 100%;
         height: auto;
-        margin-bottom: -1.185vw;
+        margin-bottom: -3vw;
+        filter: brightness(50%);
+    }
+
+    .banner__logo-mutuact {
+        top: -35vw;
+        margin-top: -80vw;
+        width: 40vw;
+        height: auto;   
+        z-index: 3000;
     }
 }

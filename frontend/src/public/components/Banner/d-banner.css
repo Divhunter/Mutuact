@@ -16,19 +16,11 @@
     .banner__picture1 {
         display: none;
     }
-    
-    .banner__picture2 {
-       display: block;
-       margin-bottom: -3vw;
-       filter: brightness(50%);
-    }
 
     .banner__logo-mutuact {
         top: -20vw;
         margin-top: -50vw;
         width: 60vw;
-        height: auto;   
-        z-index: 3000;
     }
 }
 

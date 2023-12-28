@@ -65,16 +65,13 @@
     .pagination {
         top: 5.3vw;
         left: 50vw;
-        max-width: 6vw;
-        height: 6vw;
-        font-size: 3vw;
-        border-radius: 4px;
     }
 
     .why>p{
         margin-top: 0;
         margin-left: 1.75vw;
         margin-right: 1.75vw;
+        margin-bottom: 4vw;
         font-size: 2vw;
         line-height: 2.5vw;
     }

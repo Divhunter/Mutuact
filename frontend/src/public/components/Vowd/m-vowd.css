@@ -60,7 +60,13 @@
     } 
     
     .vowd__filtre__text {
-        margin-top: 25vw;
+        width: 40vw;
+        margin-top: 35vw;
+    }
+
+    .vowd__logo {
+        top: 12vw;
+        width: 15vw;
     }
 }
 
@@ -79,12 +85,6 @@
     }  
     
     .vowd__filtre__text {
-        width: 40vw;
         margin-top: 35vw;
-    }
-
-    .vowd__logo {
-        top: 12.5vw;
-        width: 15vw;
     }
 }
