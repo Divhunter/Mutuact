@@ -18,9 +18,9 @@
     }
 
     .header-logo {
-        font-size: 5vw;
-        margin-top: 2.7vw;
-        margin-bottom: 2vw;
+        width: 6vw;
+        margin-top: 2vw;
+        margin-bottom: 1.5vw;
     }
 
     h3 {
@@ -42,7 +42,6 @@
     }
 
     .paragraph {
-        margin-top: .875vw;
         margin-left: 9.45vw;
         margin-right: 9.45vw;
         margin-bottom: 4.8vw;
@@ -55,6 +54,7 @@
     .why {
         margin-top: -2.625vw;
         margin-bottom: 4.375vw;
+        padding: 0 5vw 5vw 5vw;
         font-size: 2.6vw;
     }
 
@@ -62,8 +62,17 @@
         margin-bottom: 3.5vw;
     }
 
+    .pagination {
+        top: 5.3vw;
+        left: 50vw;
+        max-width: 6vw;
+        height: 6vw;
+        font-size: 3vw;
+        border-radius: 4px;
+    }
+
     .why>p{
-        margin-top: .875vw;
+        margin-top: 0;
         margin-left: 1.75vw;
         margin-right: 1.75vw;
         font-size: 2vw;
@@ -91,10 +100,7 @@
     }
 
     .header-logo {
-        width: 5.5vw;
-        height: auto;
-        margin-top: 2vw;
-        margin-bottom: 1.5vw;
+        width: 5vw;
     }
 
     h3 {
@@ -110,7 +116,6 @@
     }
 
     .paragraph {
-        margin-top: .875vw;
         margin-left: 9.45vw;
         margin-right: 9.45vw;
         margin-bottom: 4.8vw;
@@ -120,13 +125,23 @@
     }
 
     .why {
-        margin-top: -4.625vw;
+        margin-top: -2.625vw;
         margin-bottom: 4.375vw;
+        padding: 0 4vw 4vw 4vw;
         font-size: 2.3vw;
     }
 
     .why>header {
-        margin-bottom: 1.5vw;
+        margin-bottom: 3vw;
+    }
+
+    .pagination {
+        top: 4.5vw;
+        left: 49.7vw;
+        max-width: 4vw;
+        height: 4vw;
+        font-size: 2.5vw;
+        border-radius: 4px;
     }
 
     .why>p{
@@ -157,6 +172,10 @@
         letter-spacing: .073vw;
     }
 
+    .header-logo {
+        font-size: 4.5vw;
+    }
+
     h3 {
         margin-top: .73vw;
         padding-left: 10vw;
@@ -172,7 +191,6 @@
     }
 
     .paragraph {
-        margin-top: 0;
         margin-left: 7.884vw;
         margin-right: 7.884vw;
         margin-bottom: 5vw;
@@ -195,19 +213,12 @@
     }
 
     .pagination {
-        position: absolute;
-        display: inline-block;
-        top: 5.3vw;
-        padding: auto;
+        top: 5vw;
         left: 48.7vw;
         max-width: 6vw;
         height: 6vw;
         font-size: 4vw;
-        font-weight: 800;
-        background-color: rgb(80, 197, 178);
-        color: white;
         border-radius: 8px;
-        z-index: -1;
     }
 
     .why>p{

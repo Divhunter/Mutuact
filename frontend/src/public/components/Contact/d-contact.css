@@ -7,10 +7,21 @@
     /******************************************** contact *****************************************/
     /**********************************************************************************************/
 
+    .containerContact {
+        margin-top: -7vw;
+        margin-bottom: 7vw;
+    }
+
+    .containerContact__bloc__woman {
+        width: 48.8vw;
+        margin-right: 0;
+        margin-top: 80.2vw;
+    }
+
     .containerContact__bloc__pub {
         top: 132vw;
         margin-left: 0;
-        margin-right: 3vw;
+        margin-right: 0;
         font-size: 3vw;
         line-height: 3.5vw;
     }
@@ -26,6 +37,8 @@
     /**********************************************************************************************/
 
     .containerContact {
+        margin-top: -6.3vw;
+        margin-bottom: 6.3vw;
         height: 140.1vw;
     }
 
@@ -49,15 +62,13 @@
     }
 
     .containerContact__bloc__woman {
-        width: 64.8vw;
-        margin-right: -10vw;
-        margin-top: 45.7vw;
+        width: 50vw;
+        margin-top: 48.1vw;
     }
 
     .containerContact__bloc__pub {
-        top: 104vw;
+        top: 100vw;
         margin-left: -5vw;
-        margin-right: 2vw;
         font-size: 2.7vw;
         line-height: 3.5vw;
     }
@@ -74,6 +85,8 @@
 
     .containerContact {
         height: 127.6vw;
+        margin-top: -4.5vw;
+        margin-bottom: 4.5vw;
     }
 
     .containerContact__text {
@@ -107,9 +120,8 @@
     }
 
     .containerContact__bloc__pub {
-        top: 98.84vw;
-        margin-left: 3vw;
-        margin-right: 1vw;
+        top: 91vw;
+        margin-left: 7vw;
         font-weight: 800;
         font-size: 2.555vw;
         line-height: 2.92vw;

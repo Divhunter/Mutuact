@@ -13,12 +13,12 @@ const Background = () => {
 	return (
 		<>
 			<div className='background'>
-				<Video  className='banner__button' to='https://www.youtube.com/watch?v=7lTbwvRQAxE'>
+				<Video  className='background__button' to='https://www.youtube.com/watch?v=7lTbwvRQAxE'>
 					<FontAwesomeIcon 
-						className='banner__button__btn' 
+						className='background__button__btn' 
 						icon={faCirclePlay} 
 					/>
-					<p className='banner__button__text'>
+					<p className='background__button__text'>
 						Réforme 2021
 						<br/>
 						le 100% santé

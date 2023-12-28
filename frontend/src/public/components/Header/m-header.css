@@ -75,20 +75,23 @@
 	display: block;
 }
 
-/*menu {
-	position: relative;
+menu {
+	position: absolute;
+	text-align: center;
 	display: flex;
-	flex-direction: column;
-	background-color: transparent;
-	width: 70vw;
-	top: 15vw;
-	left: -5vw;
-	margin: 0;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	margin-top: 7vw;
+	padding: 0;
+	right: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
 	overflow: hidden;
-}*/
+	width: 70vw;
+}
 
 .navbar__menu {
-	margin-left: 1.5vw;
+	margin-left: 0;
 }
 
 .navbar__menu-open {
@@ -102,6 +105,14 @@
 
 .navbar__menu-closed {
 	height: 0;
+}
+
+.devis-hidden {
+	display: none;
+}
+
+.devis-visible {
+	display: block;
 }
 
 .nav__menu__link {
@@ -120,9 +131,7 @@
 
 .nav__menu__link:hover {
 	text-decoration: none;
-	padding-left: 6vw;
-	font-size: 4.8vw;
-	color: white;
+	color: rgb(142, 252, 233);
 	transition: all .2s;
 }
 
@@ -134,6 +143,19 @@
 	font-weight: 400;
 	letter-spacing: .075vw;
 	cursor: pointer;
+	width: auto;
+	border-radius: 4px;
+	padding: .6vw 1vw .6vw 1vw;
+	color: white;
+}
+
+.nav__menu__text {
+	cursor: pointer;
+}
+
+.nav__menu__text:hover {
+	text-decoration: underline;
+	text-underline-position: under;
 }
 
 .actu {
@@ -173,6 +195,25 @@
 	border: solid 1px rgb(44, 151, 133);
 	background-color: rgb(44, 151, 133); 
 	transition: .4s;
+}
+
+.devis-hidden {
+	display: none;
+}
+
+.devis-visible {
+	display: block;
+}
+
+.nav__menu__bienvenue {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-top: -8.7vw;
+	font-size: 1.5vw;
+	font-weight: 600;
+	color: white; 
+	letter-spacing: .08vw;
 }
 
 .actu {
@@ -324,10 +365,6 @@
 		width: 36.74vw;
 	}
 	
-	.navbar__menu {
-		margin-left: 0.888vw;
-	}
-	
 	.navbar__menu-open {
 		top: 11.851vw;
 		height: 37.067vw;
@@ -343,11 +380,6 @@
 		letter-spacing: .045vw;
 		font-size: 2.37vw;
 	}
-	
-	.nav__menu__link:hover {
-		padding-left: 3.555vw;
-		font-size: 2.548vw;
-	}
 
 	.nav__menu__link-header {
         margin-top: 8.474vw;
@@ -362,4 +394,12 @@
     .actu:hover {
         text-decoration-thickness: .175vw;
     }
+
+	.devis-hidden {
+		display: none;
+	}
+
+	.devis-visible {
+		display: block;
+	}
 }

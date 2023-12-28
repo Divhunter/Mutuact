@@ -35,6 +35,16 @@
     color: rgb(0, 255, 221);
 }
 
+.vowd__logo {
+    position: absolute;
+    top: 90px;
+    left: 52%;
+    transform: translate(-52%, 0);
+    width: 130px;
+    height: auto;
+    opacity: .2;
+}
+
 /********************************************* media queries ************************************************/
 /************************** New rules if the screen is at more 450px ****************************************/
 
@@ -64,12 +74,17 @@
     /**********************************************************************************************/
 
     .vowd__filtre {
-        font-size: 35px;
-        line-height: 45px;
+        font-size: 4.5vw;
+        line-height: 5.5vw;
     }  
     
     .vowd__filtre__text {
-        width: 300px;
-        margin-top: 30vw;
+        width: 40vw;
+        margin-top: 35vw;
+    }
+
+    .vowd__logo {
+        top: 12.5vw;
+        width: 15vw;
     }
 }

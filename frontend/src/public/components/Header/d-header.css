@@ -7,7 +7,7 @@
     /********************************************* header *****************************************/
     /**********************************************************************************************/
 	.navbar-closed {
-		height: 10.5vw;
+		height: 8vw;
 	}
 	
 	.navbar-open {
@@ -15,65 +15,65 @@
 	}
 
 	.navbar__logoMutuactW {
-		top: 3vw;
-		width: 17vw;
+		top: 1.6vw;
+		width: 6vw;
+		filter: brightness(130%)
 	}
 
 	.navbar__button-x {
-		top: 4.55vw;
+		top: 3vw;
 		right: 4.2vw;
 		font-size: 2.624vw;
 	}
 	
 	.navbar__button-bars {
-		top: 4.725vw;
+		top: 3.3vw;
 		right: 4.2vw;
 		font-size: 2.1vw;
 	}
 	
 	menu {
-		width: 52.5vw;
-		margin: 0;
-	}
-	
-	.navbar__menu {
-		margin-left: .437vw;
+		margin-top: 7vw;
+		width: 80vw;
 	}
 	
 	.navbar__menu-open {
-		top: 5.25vw;
-		height: 40.187vw;
-		padding-top: 4.3vw;
-		padding-bottom: 1.75vw;
+		top: 3.5vw;
+		height: 20vw;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	
 	.nav__menu__link {
-		line-height: 2.625vw;
-		padding-top: .875vw;
-		padding-left: 6.125vw;
-		padding-bottom: 1.8vw;
+		line-height: 0;
+		padding-top: 0;
+		padding-left: 0;
+		padding-bottom: 0;
 		letter-spacing: .175vw;
-		font-size: 2.5vw;
+		font-size: 3vw;
 	}
-	
-	.nav__menu__link:hover {
-		padding-left: 7vw;
-		font-size: 2.7vw;
-	}
-    
-    .nav__menu__link-header {
-        margin-top: 4.6vw;
+
+	.nav__menu__link-header {
+        margin-top: 2.2vw;
 		font-size: 2vw;
         letter-spacing: .087vw;
     }
+	
+	.nav__menu__text {
+		font-size: 1.8vw;
+	}
 
     .actu {
-        margin-right: 8.75vw;
+        margin-right: 8vw;
     }
 
-    .actu:hover {
-        text-decoration-thickness: .17vw;
-    }
+	.b-contact {
+		margin-right: .6vw;
+	}
+
+	.devis {
+		margin-left: 4vw;
+	}
 }
 
 /********************************************* media queries ************************************************/
@@ -85,28 +85,53 @@
     /********************************************* header *****************************************/
     /**********************************************************************************************/
 
+	.navbar-closed {
+		height: 6vw;
+	}
+
 	.navbar__logoMutuactW {
-		width: 16vw;
+		left: 4vw;
+		width: 6vw;
 	}
 
 	.navbar__button-x {
-		right: 3.5vw;
-		font-size: 2.187vw;
+		top: 1.8vw;
 	}
 	
 	.navbar__button-bars {
-		right: 3.5vw;
-		font-size: 1.75vw;
+		top: 2vw;
 	}
 
 	.nav__menu__link-header {
-		margin-top: 4.6vw;
-		font-size: 1.8vw;
+        margin-top: 1.5vw;
+		font-size: 1.7vw;
+        letter-spacing: .073vw;
     }
 
-	.actu:hover {
-        text-decoration-thickness: .14vw;
+	.nav__menu__text {
+		font-size: 1.5vw;
+	}
+
+    .actu {
+        margin-right: 8.2vw;
     }
+
+	.b-contact {
+		margin-right: .6vw;
+	}
+
+	.devis {
+		float: left;
+		margin-left: 3vw;
+	}
+
+	.devis-hidden {
+		display: none;
+	}
+
+	.devis-visible {
+		display: block;
+	}
 }
 
 /********************************************* media queries ************************************************/
@@ -121,30 +146,14 @@
 		height: 4.5vw;
 	}
 	
-	.padding-open {
+	.navbar-open {
 		height: 47.085vw;
 	}
 
 	.navbar__logoMutuactW {
-		top: 2.2vw;
-		width: 12vw;
+		top: 1.5vw;
+		width: 6vw;
 		left: 2vw;
-	}
-
-	.navbar__separator {
-		margin-top: 4vw;
-		width: 100%;
-		height: 1px;
-		background-color: white;
-		opacity: .3;
-	}
-
-	.contact-hidden {
-		display: block;
-	}
-
-	.contact-visible {
-		display: block;
 	}
 
 	.navbar__button-x {
@@ -160,26 +169,12 @@
 	}
 	
 	menu {
-		position: absolute;
-		text-align: center;
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-around;
 		margin-top: 7vw;
-		padding: 0;
-		right: 0;
-		left: 50%;
-		transform: translate(-50%, 0);
-		overflow: hidden;
 		width: 70vw;
 	}
 	
-	.navbar__menu {
-		margin-left: 0;
-	}
-	
 	.navbar__menu-open {
-		top: -.35vw;
+		top: 2.5vw;
 		height: auto;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -187,29 +182,8 @@
 	
 	.nav__menu__link {
 		line-height: 2.19vw;
-		padding-top: 0;
-		padding-left: 0;
-		padding-bottom: 0;
 		letter-spacing: .146vw;
 		font-size: 35px;
-		color: rgb(255, 255, 255);
-		transition: color .4s;
-	}
-	
-	.nav__menu__link:hover {
-		padding-left: 0;
-		font-size: 35px;
-		color: rgb(205, 255, 247);
-		transition: color .4s;
-	}
-
-	.nav__menu__text {
-		cursor: pointer;
-	}
-
-	.nav__menu__text:hover {
-		text-decoration: underline;
-		text-underline-position: under;
 	}
     
     .nav__menu__link-header {
@@ -223,6 +197,10 @@
 		color: white;
     }
 
+	.nav__menu__text {
+		font-size: 1.3vw;
+	}
+
     .actu {
 		border: solid 1px white;
         margin-right: 7.3vw;
@@ -230,36 +208,13 @@
 		transition: background-color .4s;
     }
 
-	.actu:hover {
-		background-color: rgba(255, 255, 255, .3);
-		transition: background-color .4s;
-	}
-
 	.b-contact {
-		border: solid 1px rgb(228, 0, 87);
-		background-color: rgb(228, 0, 87);
 		margin-right: .6vw;
-		transition: .4s;
-	}
-
-	.b-contact:hover {
-		border: solid 1px rgb(255, 0, 98);
-		background-color: rgb(255, 0, 98);
-		transition: .4s;
 	}
 
 	.devis {
-		border: solid 1px rgb(36, 122, 108); 
-		background-color: rgb(36, 122, 108);
 		float: left;
 		margin-left: 3vw;
-		transition: .4s;
-	}
-
-	.devis:hover {
-		border: solid 1px rgb(44, 151, 133);
-		background-color: rgb(44, 151, 133); 
-		transition: .4s;
 	}
 
 	.devis-hidden {

@@ -3,7 +3,7 @@ import { Link as GoTo} from 'react-router-dom'
 import { useState } from 'react'
 import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar, faPhoneFlip, faArrowCircleRight, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logoMutuactW from '../../assets/pictures/logo-mutuact-blanc.png'
+import logoMutuactW from '../../assets/pictures/logo-mutuact-blanc-solo.png'
 
 // styles
 import './m-header.css'
@@ -37,9 +37,9 @@ const Header = () => {
 							'navbar__logoMutuactW logo-hidden'
 						} 
 						src={logoMutuactW} 
-						width='2035px'
-						height='960px'
-						fetchpriority='high' 
+						width='577px'
+						height='564px'
+						loading='lazy' 
 						alt='logo Mutuact' 
 					/>
 				</GoTo>
@@ -61,7 +61,7 @@ const Header = () => {
 							icon={faLocationDot} 
 						/>
 					</div>
-				</Link>
+				</Link>	
 				
 				<Link to='contact'>
 					<div className={
@@ -76,8 +76,6 @@ const Header = () => {
 						/>
 					</div>
 				</Link>
-
-				<div className='navbar__separator'></div>	
 
 				<FontAwesomeIcon 
 					onClick={isOpenState} 
@@ -95,8 +93,6 @@ const Header = () => {
 						'navbar__button-x closed'} 
 					icon={faXmark} 
 				/>
-
-				<p className='nav__menu__bienvenue'>Bienvenue chez mutuact</p>
 
 				<menu className={
 						isOpen ?
