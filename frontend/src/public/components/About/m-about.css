@@ -46,6 +46,12 @@
     line-height: 5.5vw;
 }
 
+.containerAbout>p>div {
+    font-size: 2.1vw;
+    font-weight: bold;
+    color: rgb(8, 165, 131);
+}
+
 .containerAbout__text {
     width: auto;
     margin: 7vw 7vw 7vw 7vw;
@@ -65,8 +71,7 @@
 }
 
 .containerAbout__bloc__coupleSenior {
-    margin-right: -5vw;
-    width: 82vw;
+    width: 100%;
     height: auto;
     filter: brightness(50%);
 }
@@ -103,16 +108,16 @@
     /********************************************* about ******************************************/
     /**********************************************************************************************/
 
+    .about__logo {
+        width: 7vw;
+    }
+
     .button {
         padding: 1.777vw 1.777vw 1.777vw 1.777vw;
         margin-top: 2.963vw;
         margin-bottom: 4.74vw;
         font-size: 2.37vw;
         letter-spacing: .014vw;
-    }
-
-    .containerAbout {
-        height: 177.777vw;
     }
 
     .containerAbout>p {
@@ -131,26 +136,16 @@
         line-height: 4.444vw;
     }
     
-    .containerAbout__bloc {
-        margin-bottom: -0.529vw;
-    }
-    
-    .containerAbout__bloc__coupleSenior {
-        margin-right: -2.963vw;
-        width: 100%;
-    }
-    
     .containerAbout__bloc__square {
-        top: 58vw;
-        left: 1.777vw;
+        top: 8vw;
+        left: 6.777vw;
         height: 7.703vw;
         padding-right: 34.8vw;
-        border: .104vw solid rgb(255, 191, 0);
     }
 
     .containerAbout__bloc__pub {
-        top: 55vw;
-        margin-left: 5vw;
+        top: 5vw;
+        margin-left: 10vw;
         margin-right: 28vw;
         font-size: 3.259vw;
         line-height: 3.555vw;

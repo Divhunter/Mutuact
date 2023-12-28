@@ -25,10 +25,11 @@
 
 .navbar__logoMutuactW {
 	position: relative;
-	top: 8.3vw;
+	top: 1.6vw;
 	left: 5vw;
-	width: 35vw;
+	width: 6vw;
 	height: auto;
+	filter: brightness(130%)
 }
 
 .logo-hidden {
@@ -308,6 +309,87 @@ menu {
     /**********************************************************************************************/
     /********************************************* actu ******************************************/
     /**********************************************************************************************/
+	
+	.navbar-closed {
+		height: 8vw;
+	}
+	
+	.navbar-open {
+		height: 56.43vw;
+	}
+
+	.navbar__logoMutuactW {
+		top: 1.6vw;
+		width: 6vw;
+	}
+
+	.navbar__button-x {
+		top: 3vw;
+		right: 4.2vw;
+		font-size: 2.624vw;
+	}
+	
+	.navbar__button-bars {
+		top: 3.3vw;
+		right: 4.2vw;
+		font-size: 2.1vw;
+	}
+	
+	menu {
+		margin-top: 7vw;
+		width: 80vw;
+	}
+
+	.navbar__menu-open {
+		top: 3.5vw;
+		height: 20vw;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+	.nav__menu__link {
+		line-height: 0;
+		padding-top: 0;
+		padding-left: 0;
+		padding-bottom: 0;
+		letter-spacing: .175vw;
+		font-size: 3vw;
+	}
+
+	.nav__menu__link-header {
+        margin-top: 2.2vw;
+		font-size: 2vw;
+        letter-spacing: .087vw;
+    }
+	
+	.nav__menu__text {
+		font-size: 1.8vw;
+	}
+
+    .actu {
+        margin-right: 8vw;
+    }
+
+    .actu:hover {
+        text-decoration-thickness: .175vw;
+    }
+
+	.b-contact {
+		margin-right: .6vw;
+	}
+
+	.devis {
+		margin-left: 4vw;
+	}
+
+	.devis-hidden {
+		display: none;
+	}
+
+	.devis-visible {
+		display: block;
+	}
+
 	.actu-container {
         top: 150px;
         padding-left: 25px;
@@ -335,71 +417,4 @@ menu {
         line-height: 30px;
         letter-spacing: 1px;
     }
-
-	.navbar-closed {
-		height: 16vw;
-	}
-	
-	.navbar-open {
-		height: 75.874vw;
-	}
-
-	.navbar__logoMutuactW {
-		top: 4.740vw;
-		width: 20.740vw;
-	}
-
-	.navbar__button-x {
-		top: 8.035vw;
-		right: 2.488vw;
-		font-size: 2.607vw;
-	}
-	
-	.navbar__button-bars {
-		top: 8.035vw;
-		right: 2.488vw;
-		font-size: 2.607vw;
-	}
-	
-	menu {
-		width: 36.74vw;
-	}
-	
-	.navbar__menu-open {
-		top: 11.851vw;
-		height: 37.067vw;
-		padding-top: 3.14vw;
-		padding-bottom: 2.962vw;
-	}
-	
-	.nav__menu__link {
-		line-height: 1.185vw;
-		padding-top: 1.185vw;
-		padding-left: 1.777vw;
-		padding-bottom: 2.962vw;
-		letter-spacing: .045vw;
-		font-size: 2.37vw;
-	}
-
-	.nav__menu__link-header {
-        margin-top: 8.474vw;
-		font-size: 2.074vw;
-        letter-spacing: .059vw;
-    }
-
-	.actu {
-        margin-right: 7.111vw;
-    }
-
-    .actu:hover {
-        text-decoration-thickness: .175vw;
-    }
-
-	.devis-hidden {
-		display: none;
-	}
-
-	.devis-visible {
-		display: block;
-	}
 }
