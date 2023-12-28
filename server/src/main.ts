@@ -16,7 +16,7 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
   // app.setGlobalPrefix("api");
   app.enableCors({
-    origin: configService.get<string>('ORIGIN_URL'), // Remplacez par votre origine
+    origin: 'https://www.mutuact.fr', // Remplacez par votre origine
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
     credentials: true,

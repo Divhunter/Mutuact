@@ -14,7 +14,6 @@ import "react-activity/dist/Dots.css";
 import "./m-login.css"
 
 const Login = () => {
-    const navigate = useNavigate();
     const { setIsAuthenticated, isAuthenticated } = useContext(AuthContext)
     const [isLoading, setIsLoading] = useState(false);
 
@@ -76,7 +75,7 @@ const Login = () => {
             }
         } catch (error) {
             setErrorMessages([ERROR_MESSAGES.OTHER_ERROR]);
-            console.error(error);
+            // console.error(error);
         } finally {
             setIsLoading(false);
         }
@@ -132,7 +131,6 @@ const Login = () => {
         // logout()
     }, [errorMessages])
 
-    console.log("auth:", isAuthenticated)
     if (isAuthenticated) {
         return <Navigate to="/dashboard/costumers" />
     } else

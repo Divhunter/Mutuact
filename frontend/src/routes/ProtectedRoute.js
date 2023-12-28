@@ -13,12 +13,12 @@ const ProtectedRoute = ({ redirectPath = '/dashboard', children }) => {
   }
   if (!isAuthenticated) {
     // Si l'utilisateur n'est pas authentifié, redirigez-le vers le dashboard
-    return <Navigate to="/dashboard" replace />;
+    return <Navigate to={redirectPath} replace />;
   }
 
   if (isAuthenticated && user.role !== 'admin') {
     // Si l'utilisateur est authentifié mais n'est pas un admin, redirigez-le également vers le dashboard
-    return <Navigate to="/dashboard" replace />;
+    return <Navigate to={redirectPath} replace />;
   }
 
   return children;
