@@ -9,7 +9,7 @@ const PublicRouter = () => {
         <Routes>
             <Route element={<PublicContainer />}>
                 <Route index element={<PublicContainer />} />
-                <Route path='2br/*' element={<PublicContainer />} />
+                <Route path='mutuact/*' element={<PublicContainer />} />
             </Route>
             <Route path='*' element={<Error />} />
         </Routes>
