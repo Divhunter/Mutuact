@@ -132,7 +132,6 @@ const Login = () => {
         // logout()
     }, [errorMessages])
 
-    console.log("auth:", isAuthenticated)
     if (isAuthenticated) {
         return <Navigate to="/dashboard/costumers" />
     } else
