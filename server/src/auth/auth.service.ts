@@ -97,6 +97,9 @@ export class AuthService implements IAuthService {
                 const hashedPassword = await bcrypt.hash(createUserDdo.password, 10);
                 createUserDdo.password = hashedPassword;
 
+                const normaliseEmail = createUserDdo.email.toLowerCase()
+                createUserDdo.email = normaliseEmail;
+
                 const userCreated = await this.authRepository.createUser(createUserDdo);
 
                 const verificationTokenCreated = await this.createVerificationToken(userCreated, VerificationTokenTypeDto.initial_verification);
