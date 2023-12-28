@@ -49,12 +49,14 @@
 .footer__logo-mutuact {
     margin-top: 12vw;
     margin-bottom: 12vw;
-    width: 20vw;
+    width: 50vw;
     height: auto;
     cursor: pointer;
 }
 
 .footer > p {
+    margin-left: 5vw;
+    margin-right: 5vw;
     font-size: 4.2vw;
     line-height: 6vw;
 }
@@ -78,15 +80,15 @@
     padding-right: 30vw;
     background-color: white;
     margin-top: 10vw;
-    padding: 5vw 5vw 0 5vw;
+    padding: 10vw 5vw 2vw 5vw;
 }
 
 .footer__partenaires__logo {
-    height: 6vw;
+    height: 15vw;
     width: auto;
-    margin-bottom: 5vw;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
+    margin-bottom: 8vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .footer__copyright {
@@ -141,6 +143,17 @@
     .footer > p {
         font-size: 2.2vw;
         line-height: 3.555vw;
+    }
+
+    .footer__partenaires {
+        padding: 8vw 5vw 0vw 5vw;
+    }
+
+    .footer__partenaires__logo {
+        height: 8vw;
+        margin-bottom: 5vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
     }
     
     .footer__copyright {
