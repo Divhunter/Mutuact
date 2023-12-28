@@ -33,12 +33,12 @@
 
 .containerContact__text__form {
     position: absolute;
-    margin: 5.25vw 0 4.375vw 5.25vw;
+    margin-top: 5.25vw;
+    margin-bottom: 4.375vw;
+    margin-left: 2vw;
     padding-left: 0;
-    padding-right: 4.375vw;
+    padding-right: 0;
     top: 15vw;
-    left: -2vw;
-    width: 43.75vw;
     height: auto;
     background-color: black;
 }
