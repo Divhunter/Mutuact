@@ -53,16 +53,16 @@
 .containerContact__bloc__woman {
     width: 70vw;
     height: auto;
-    margin-right: -20vw;
-    margin-top: 280.8vw;
+    margin-right: 0;
+    margin-top: 254vw;
 }
 
 .containerContact__bloc__pub {
     position: absolute;
     display: inline-block;
-    top: 280vw;
-    margin-left: -5vw;
-    margin-right: 20vw;
+    top: 330vw;
+    margin-left: 15vw;
+    margin-right: 5vw;
     font-family: 'Helvetica';
     font-weight: 800;
     font-size: 6vw;

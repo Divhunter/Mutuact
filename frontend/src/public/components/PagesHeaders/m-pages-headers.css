@@ -31,18 +31,18 @@ h2 {
 }
 
 .header-logo {
-    width: 6vw;
+    width: 12vw;
     height: auto;
-    margin-top: 2vw;
-    margin-bottom: 1.5vw;
+    margin-top: 6vw;
+    margin-bottom: 0;
 }
 
 h3 {
     display: inline-block;
     width: 100%;
     margin-top: 6vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 9vw;
+    padding-bottom: 9vw;
     padding-left: 7vw;
     padding-right: 7vw;
     width: auto;
@@ -73,8 +73,8 @@ h4 {
     width: auto;
     height: auto;
     margin-top: 0;
-    margin-left: 9.45vw;
-    margin-right: 9.45vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-bottom: 4.8vw;
     font-weight: 300;
     font-size: 1.75vw;
@@ -105,8 +105,9 @@ h4 {
 .why>p {
     text-align: left;
     margin-top: .875vw;
-    margin-left: 1.75vw;
-    margin-right: 1.75vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 14vw;
     font-size: 4.5vw;
     font-weight: 500;
     line-height: 5.3vw;
@@ -116,16 +117,16 @@ h4 {
 .pagination {
     position: absolute;
     display: inline-block;
-    top: 5.3vw;
+    top: 9vw;
     padding: auto;
-    left: 48.7vw;
-    max-width: 6vw;
-    height: 6vw;
-    font-size: 4vw;
+    left: 72.6vw;
+    max-width: 12vw;
+    height: 12vw;
+    font-size: 8vw;
     font-weight: 800;
     background-color: rgb(80, 197, 178);
     color: white;
-    border-radius: 8px;
+    border-radius: 3px;
     z-index: -1;
 }
 
@@ -150,10 +151,18 @@ h4 {
 
     h3 {
         margin-top: 1.777vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
         padding-left: 4.148vw;
         padding-right: 4.148vw;
         font-size: 3.555vw;
         letter-spacing: .0259vw;
+    }
+
+    .header-logo {
+        width: 6vw;
+        margin-top: 2vw;
+        margin-bottom: 1.5vw;
     }
 
     h4 {

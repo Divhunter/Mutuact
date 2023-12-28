@@ -29,18 +29,20 @@
 
 .vowd__filtre__text {
     display: inline-block;
-    margin-top: 28vw;
-    width: 100%;
+    font-size: 6vw;
+    line-height: 7vw;
+    width: 50vw;
     height: auto;
+    margin-top: 30vw;
     color: rgb(0, 255, 221);
 }
 
 .vowd__logo {
     position: absolute;
-    top: 90px;
+    top: 13vw;
     left: 52%;
     transform: translate(-52%, 0);
-    width: 130px;
+    width: 14vw;
     height: auto;
     opacity: .2;
 }
@@ -54,14 +56,8 @@
     /********************************************* vowd *******************************************/
     /**********************************************************************************************/
 
-    .vowd__filtre {
-        font-size: 35px;
-        line-height: 45px;
-    } 
-    
     .vowd__filtre__text {
-        width: 40vw;
-        margin-top: 35vw;
+        line-height: 6.5vw;
     }
 
     .vowd__logo {
