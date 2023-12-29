@@ -63,12 +63,7 @@ const Header = () => {
 				</Link>	
 				
 				<Link to='contact'>
-					<div className={
-						isOpen?
-						'nav__menu__link-header devis devis-hidden':
-						'nav__menu__link-header devis devis-visible'
-						}
-					>
+					<div className='nav__menu__link-header devis'>
 						Devis 48h&nbsp;&nbsp;
 						<FontAwesomeIcon 
 							icon={faArrowCircleRight} 

@@ -99,12 +99,12 @@ menu {
 }
 
 .navbar__menu-open {
-	top: 25vw;
+	top: 23vw;
 	height: 75vw;
 	padding-top: 5.3vw;
-	padding-bottom: 5vw;
-	transition-delay: .2s;
-	transition-duration: .35s;
+	padding-bottom: 0;
+	transition-delay: .15s;
+	transition-duration: .13s;
 }
 
 .navbar__menu-closed {
@@ -171,14 +171,6 @@ menu {
 	border: solid 1px rgb(44, 151, 133);
 	background-color: rgb(44, 151, 133); 
 	transition: .4s;
-}
-
-.devis-hidden {
-	display: none;
-}
-
-.devis-visible {
-	display: block;
 }
 
 .b-contact {
