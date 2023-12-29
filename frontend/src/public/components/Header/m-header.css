@@ -25,11 +25,11 @@
 
 .navbar__logoMutuactW {
 	position: relative;
-	top: 1.6vw;
-	left: 5vw;
-	width: 6vw;
+	top: 5vw;
+	left: 7vw;
+	width: 9vw;
 	height: auto;
-	filter: brightness(130%)
+	filter: brightness(130%);
 }
 
 .logo-hidden {
@@ -82,7 +82,7 @@ menu {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
-	margin-top: 7vw;
+	margin-top: 8vw;
 	padding: 0;
 	right: 0;
 	left: 50%;
@@ -92,12 +92,14 @@ menu {
 }
 
 .navbar__menu {
-	margin-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	width: 70vw;
 }
 
 .navbar__menu-open {
-	top: 20vw;
-	height: 62.5vw;
+	top: 25vw;
+	height: 75vw;
 	padding-top: 5.3vw;
 	padding-bottom: 5vw;
 	transition-delay: .2s;
@@ -110,16 +112,19 @@ menu {
 
 .nav__menu__link {
 	position: relative;
-	width: auto;
 	line-height: 2vw;
-	padding-top: 2vw;
-	padding-left: 3vw;
-	padding-bottom: 5vw;
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 0;
 	letter-spacing: .076vw;
-	font-size: 4.5vw;
+	font-size: 7vw;
 	color: white;
 	cursor: pointer;
 	transition: all .3s;
+}
+
+.nav__menu__link {
+	width: 30vw;
 }
 
 .nav__menu__link:hover {
@@ -143,6 +148,8 @@ menu {
 }
 
 .nav__menu__text {
+	margin-top: 2vw;
+	font-size: 4vw;
 	cursor: pointer;
 }
 
@@ -190,7 +197,7 @@ menu {
 	border: solid 1px white;
 	background-color: transparent;
 	transition: background-color .4s;
-	margin-right: 8vw;
+	margin-right: 15.7vw;
 }
 
 .actu:hover {
@@ -293,6 +300,7 @@ menu {
 
 	.navbar__logoMutuactW {
 		top: 1.6vw;
+		left: 5vw;
 		width: 6vw;
 	}
 
@@ -313,6 +321,12 @@ menu {
 		width: 80vw;
 	}
 
+	.navbar__menu {
+		display: flex;
+		flex-wrap: wrap;
+		width: 90vw;
+	}
+
 	.navbar__menu-open {
 		top: 3.5vw;
 		height: 20vw;
@@ -321,10 +335,11 @@ menu {
 	}
 	
 	.nav__menu__link {
+		width: auto;
+		padding-top: 0vw;
+		padding-left: 0vw;
+		padding-bottom: 0vw;
 		line-height: 0;
-		padding-top: 0;
-		padding-left: 0;
-		padding-bottom: 0;
 		letter-spacing: .175vw;
 		font-size: 3vw;
 	}
@@ -336,6 +351,7 @@ menu {
     }
 	
 	.nav__menu__text {
+		margin-top: 1.4vw;
 		font-size: 1.8vw;
 	}
 

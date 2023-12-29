@@ -99,7 +99,6 @@ const Header = () => {
 						'navbar__menu navbar__menu-closed'
 					}
 				>
-					
 					<Link onClick={isOpenState} to='epargne'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
