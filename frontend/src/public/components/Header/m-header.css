@@ -24,6 +24,7 @@
 }
 
 .navbar__logoMutuactW {
+	display: none;
 	position: relative;
 	top: 5vw;
 	left: 7vw;

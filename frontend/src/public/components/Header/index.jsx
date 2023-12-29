@@ -99,42 +99,42 @@ const Header = () => {
 						'navbar__menu navbar__menu-closed'
 					}
 				>
-					<Link onClick={isOpenState} to='epargne-header-text'>
+					<Link onClick={isOpenState} to='epargne'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingDollar} 
 						/>
 						<p className='nav__menu__text'>Épargne</p>
 					</Link>
-					<Link onClick={isOpenState} to='prevoyance-header-text'>
+					<Link onClick={isOpenState} to='prevoyance'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingHand} 
 						/>
 						<p className='nav__menu__text'>Prévoyance</p>
 					</Link>
-					<Link onClick={isOpenState} to='sante-header-text'>
+					<Link onClick={isOpenState} to='sante'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingMedical} 
 						/>
 						<p className='nav__menu__text'>Santé</p>
 					</Link>
-					<Link onClick={isOpenState} to='pro-header-text'>
+					<Link onClick={isOpenState} to='pro'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faUserTie} 
 						/>
 						<p className='nav__menu__text'>Pro.</p>
 					</Link>
-					<Link onClick={isOpenState} to='pret-header-text'>
+					<Link onClick={isOpenState} to='pret'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faHandHoldingHeart} 
 						/>
 						<p className='nav__menu__text'>Prêt</p>
 					</Link>
-					<Link onClick={isOpenState} to='auto-header-text'>
+					<Link onClick={isOpenState} to='auto'>
 						<FontAwesomeIcon 
 							className='nav__menu__link'
 							icon={faCar} 

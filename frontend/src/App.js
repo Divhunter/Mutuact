@@ -4,7 +4,6 @@ import PublicRouter from './public/PublicRouter'
 import AdminRouter from './admin/AdminRouter'
 import Error from './_utils/Error'
 import CGU from './public/components/CGU'
-import ScrollToTop from './functions/ScrollToTop'
 
 // styles
 import './styles/m-app.css'
@@ -94,7 +93,6 @@ const App = () => {
                 <Route path='/CGU' element={ <CGU /> } />
                 <Route path='*' element={ <Error /> } />
             </Routes>
-            <ScrollToTop />
         </div>
     )
 }
