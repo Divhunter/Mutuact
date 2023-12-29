@@ -48,12 +48,11 @@ const Header = () => {
 					className='nav__menu__link-header actu'
 					onClick={isActuState}
 				>
-					Nos actualités
+					Actualités
 				</div>
 
 				<Link to='agences'>
 					<div className='nav__menu__link-header b-contact'>
-						Nous contacter&nbsp;&nbsp;
 						<FontAwesomeIcon 
 							icon={faPhoneFlip} 
 						/>&nbsp;&nbsp;
@@ -70,7 +69,7 @@ const Header = () => {
 						'nav__menu__link-header devis devis-visible'
 						}
 					>
-						Devis sous 48h&nbsp;&nbsp;
+						Devis 48h&nbsp;&nbsp;
 						<FontAwesomeIcon 
 							icon={faArrowCircleRight} 
 						/>
