@@ -26,7 +26,7 @@ const Epargne = () => {
                 <PagesHeaders 
                     key={index}
                     titleCol1={
-                        <div>
+                        <div id='epargne-header-text'>
                             {item.titleCol1}
                             <br/>
                             <img

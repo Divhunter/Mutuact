@@ -27,7 +27,7 @@ const Prof = () => {
                 <PagesHeaders 
                     key={index}
                     titleCol1={
-                        <div>
+                        <div id='pro-header-text'>
                             {item.titleCol1}
                             <br/>
                             <img

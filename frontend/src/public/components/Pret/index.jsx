@@ -26,7 +26,7 @@ const Pret = () => {
                 <PagesHeaders 
                     key={index}
                     titleCol1={
-                        <div>
+                        <div id='pret-header-text'>
                             {item.titleCol1}
                             <br/>
                             <img

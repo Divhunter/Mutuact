@@ -13,12 +13,12 @@ const Background = () => {
 	return (
 		<>
 			<div className='background'>
-				<Video  className='background__button' to='https://www.youtube.com/watch?v=7lTbwvRQAxE'>
+				<Video  className='link__button background__button' to='https://www.youtube.com/watch?v=7lTbwvRQAxE'>
 					<FontAwesomeIcon 
-						className='background__button__btn' 
+						className='link__button__btn' 
 						icon={faCirclePlay} 
 					/>
-					<p className='background__button__text'>
+					<p className='link__button__text'>
 						Réforme 2021
 						<br/>
 						le 100% santé
@@ -33,7 +33,6 @@ const Background = () => {
 					alt='famille' />
 				<Link to='about'>
 					<div className='background__plus'>
-						En savoir plus&nbsp;&nbsp;
 						<FontAwesomeIcon 
 							icon={faArrowCircleRight} 
 						/>

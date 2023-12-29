@@ -26,7 +26,7 @@ const Auto = () => {
                 <PagesHeaders 
                     key={index}
                     titleCol1={
-                        <div>
+                        <div id='auto-header-text'>
                             {item.titleCol1}
                             <br/>
                             <img

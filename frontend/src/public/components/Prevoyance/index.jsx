@@ -18,7 +18,7 @@ const Prevoyance = () => {
                 <PagesHeaders 
                     key={index}
                     titleCol1={
-                        <div>
+                        <div id='prevoyance-header-text'>
                             {item.titleCol1}
                             <br/>
                             <img

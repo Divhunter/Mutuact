@@ -13,19 +13,22 @@
         width: 105.6vw;
     }
 
-    .background__button {
-        top: -18.5vw;
+    .link__button {
         padding-left: .5vw;
         width: 20.2vw;
         height: 5vw;
     }
+
+    .background__button {
+        top: -18.5vw;
+    }
     
-    .background__button__btn {
+    .link__button__btn {
         margin-right: 1.2vw;
         font-size: 4vw;
     }
     
-    .background__button__text {
+    .link__button__text {
         font-size: 1.8vw;
         letter-spacing: .04vw;
     }
@@ -35,7 +38,7 @@
     }
 
     .background__plus {
-        font-size: 1.7vw;
+        font-size: 3vw;
     }
 }
 
@@ -52,19 +55,22 @@
         width: 103vw;
     }
 
-    .background__button {
-        top: -23vw;
+    .link__button {
         padding-left: .5vw;
         width: 15.5vw;
         height: 4vw;
     }
+
+    .background__button {
+        top: -23vw;
+    }
     
-    .background__button__btn {
+    .link__button__btn {
         margin-right: .8vw;
         font-size: 3vw;
     }
     
-    .background__button__text {
+    .link__button__text {
         font-size: 1.3vw;
         letter-spacing: .06vw;
         line-height: 1.6vw;
@@ -74,7 +80,7 @@
         margin-right: 8vw;
         top: 40vw;
         padding: .6vw 1vw .6vw 1vw;
-        font-size: 1.24vw;
+        font-size: 2vw;
         letter-spacing: .073vw;
     }
 }
