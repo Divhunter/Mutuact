@@ -300,6 +300,10 @@ menu {
     transition: filter .4s;
 }
 
+.solutions:active {
+	filter: brightness(200%);
+}
+
 .solutions-visible {
 	display: inline-block;
 }

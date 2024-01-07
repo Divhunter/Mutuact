@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import { Link as GoTo} from 'react-router-dom'
 import { useState } from 'react'
-import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar, faPhoneFlip, faArrowCircleRight, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faHandHoldingDollar, faHandHoldingHand, faHandHoldingMedical, faUserTie, faHandHoldingHeart, faCar, faPhoneFlip, faArrowCircleRight, faLocationDot, faList } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoMutuactW from '../../assets/pictures/logo-mutuact-blanc-solo.png'
 
@@ -153,7 +153,10 @@ const Header = () => {
 					'solutions solutions-visible'
 				}
 			>
-				Nos solutions
+				Nos solutions&nbsp;&nbsp;
+				<FontAwesomeIcon 
+					icon={faList} 
+				/>
 			</p>
 
 			<div 
@@ -171,7 +174,7 @@ const Header = () => {
 						<FontAwesomeIcon icon={faXmark} />
 					</div>
 					<header>
-						<h1>Actualités 2023</h1>
+						<h1>Actualités 2024</h1>
 					</header>
 					<h2>Bonjour à tous,</h2>
 					<p>
