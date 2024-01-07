@@ -19,7 +19,11 @@ const Contact = () => {
                 <PagesHeaders 
                     key={index}
                     titleCol1={item.titleCol1}
-                    subTitle1={item.subTitle1}
+                    subTitle1={
+                        <div id='titleContact'>
+                            {item.subTitle1}
+                        </div>
+                    }
                     subTitle2={item.subTitle2}
                     text1={
                         <>

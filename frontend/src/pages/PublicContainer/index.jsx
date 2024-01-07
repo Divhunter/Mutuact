@@ -48,35 +48,39 @@ const PublicContainer = () => {
     }
 
     useEffect(() => {
-        slideInTop('#about')
+        slideInTop('#titleAbout')
     }, [])
 
     useEffect(() => {
-        slideInTop('#epargne')
+        slideInTop('#titleEpargne')
     }, [])
 
     useEffect(() => {
-        slideInTop('#prevoyance')
+        slideInTop('#titlePrevoyance')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#sante')
+        slideInTop('#titleSante')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#pro')
+        slideInTop('#titlePro')
     }, [])
 
 	useEffect(() => {
-        slideInTop('#pret')
+        slideInTop('#titlePret')
     }, [])
 
     useEffect(() => {
-        slideInTop('#auto')
+        slideInTop('#titleAuto')
     }, [])
 
     useEffect(() => {
-        slideInTop('#contact')
+        slideInTop('#titleAgences')
+    }, [])
+
+    useEffect(() => {
+        slideInTop('#titleContact')
     }, [])
 
 	return (

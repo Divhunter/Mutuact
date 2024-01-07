@@ -51,7 +51,11 @@ const Agences = () => {
                 <PagesHeaders 
                     key={index}
                     titleCol1={item.titleCol1}
-                    subTitle1={item.subTitle1}
+                    subTitle1={
+                        <div id='titleAgences'>
+                            {item.subTitle1}
+                        </div>
+                    }
                     subTitle2={item.subTitle2}
                     text1={
                         <div 

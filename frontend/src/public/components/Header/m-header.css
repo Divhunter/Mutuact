@@ -279,14 +279,15 @@ menu {
 	margin: 0;
     width: auto;
     padding: 3vw;
-    background: linear-gradient(rgb(32, 102, 143),rgb(21, 44, 94));
+    background: linear-gradient(rgb(52, 190, 167), rgb(10, 86, 109));
     border-radius: 5vw;
+	border: solid 2px white;
     cursor: pointer;
     font-family: 'Open', sans-serif;
     letter-spacing: .3vw;
     font-size: 4vw;
     font-weight: bold;
-	top: 95vw;
+	top: 122vw;
 	left: 50%;
 	transform: translate(-50%, 0);
     filter: brightness(100%);

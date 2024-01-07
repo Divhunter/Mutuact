@@ -39,7 +39,11 @@ const Epargne = () => {
                             />
                         </div>
                     }
-                    subTitle1={item.subTitle1}
+                    subTitle1={
+                        <div id='titleEpargne'>
+                            {item.subTitle1}
+                        </div>
+                    }
                     subTitle2={item.subTitle2}
                     text1={
                         <>
