@@ -43,7 +43,7 @@ const Header = () => {
 						alt='logo Mutuact' 
 					/>
 				</GoTo>
-				
+	
 				<div
 					className='nav__menu__link-header actu'
 					onClick={isActuState}
@@ -94,50 +94,67 @@ const Header = () => {
 						'navbar__menu navbar__menu-closed'
 					}
 				>
-					<Link onClick={isOpenState} to='epargne'>
+					<Link to='epargne'>
 						<FontAwesomeIcon 
+							onClick={isOpenState}
 							className='nav__menu__link'
 							icon={faHandHoldingDollar} 
 						/>
-						<p className='nav__menu__text'>Épargne</p>
+						<p onClick={isOpenState} className='nav__menu__text'>Épargne</p>
 					</Link>
-					<Link onClick={isOpenState} to='prevoyance'>
+					<Link to='prevoyance'>
 						<FontAwesomeIcon 
+							onClick={isOpenState}
 							className='nav__menu__link'
 							icon={faHandHoldingHand} 
 						/>
-						<p className='nav__menu__text'>Prévoyance</p>
+						<p onClick={isOpenState} className='nav__menu__text'>Prévoyance</p>
 					</Link>
-					<Link onClick={isOpenState} to='sante'>
-						<FontAwesomeIcon 
+					<Link to='sante'>
+						<FontAwesomeIcon
+							onClick={isOpenState} 
 							className='nav__menu__link'
 							icon={faHandHoldingMedical} 
 						/>
-						<p className='nav__menu__text'>Santé</p>
+						<p onClick={isOpenState} className='nav__menu__text'>Santé</p>
 					</Link>
-					<Link onClick={isOpenState} to='pro'>
+					<Link to='pro'>
 						<FontAwesomeIcon 
+							onClick={isOpenState}
 							className='nav__menu__link'
 							icon={faUserTie} 
 						/>
-						<p className='nav__menu__text'>Pro.</p>
+						<p onClick={isOpenState} className='nav__menu__text'>Pro.</p>
 					</Link>
-					<Link onClick={isOpenState} to='pret'>
+					<Link to='pret'>
 						<FontAwesomeIcon 
+							onClick={isOpenState}
 							className='nav__menu__link'
 							icon={faHandHoldingHeart} 
 						/>
-						<p className='nav__menu__text'>Prêt</p>
+						<p onClick={isOpenState} className='nav__menu__text'>Prêt</p>
 					</Link>
-					<Link onClick={isOpenState} to='auto'>
+					<Link to='auto'>
 						<FontAwesomeIcon 
+							onClick={isOpenState}
 							className='nav__menu__link'
 							icon={faCar} 
 						/>
-						<p className='nav__menu__text'>Auto...</p>
+						<p onClick={isOpenState} className='nav__menu__text'>Auto...</p>
 					</Link>
 				</menu> 
 			</nav>
+
+			<p 
+				onClick={isOpenState} 
+				className={
+					isOpen ?
+					'solutions solutions-hidden':
+					'solutions solutions-visible'
+				}
+			>
+				Nos solutions
+			</p>
 
 			<div 
 				id='actu'

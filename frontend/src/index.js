@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
-import ScrollToTop from './functions/ScrollToTop'
 import { Notifications } from 'react-push-notification';
 
 import { ToastContainer } from 'react-toastify';
@@ -28,6 +27,5 @@ root.render(
                 </Router>
             </ProjectProvider>
         </AuthProvider>
-        <ScrollToTop />
     </React.StrictMode>
 )

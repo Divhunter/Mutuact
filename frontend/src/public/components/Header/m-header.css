@@ -274,6 +274,40 @@ menu {
 	text-underline-position: under;
 }
 
+.solutions {
+	position: absolute;
+	margin: 0;
+    width: auto;
+    padding: 3vw;
+    background: linear-gradient(rgb(32, 102, 143),rgb(21, 44, 94));
+    border-radius: 5vw;
+    cursor: pointer;
+    font-family: 'Open', sans-serif;
+    letter-spacing: .3vw;
+    font-size: 4vw;
+    font-weight: bold;
+	top: 95vw;
+	left: 50%;
+	transform: translate(-50%, 0);
+    filter: brightness(100%);
+    transition: filter .4s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	z-index: 8000;
+}
+
+.solutions:hover {
+    filter: brightness(120%);
+    transition: filter .4s;
+}
+
+.solutions-visible {
+	display: inline-block;
+}
+
+.solutions-hidden {
+	display: none;
+}
+
 /********************************************* media queries ************************************************/
 /************************** New rules if the screen is at more 450px ****************************************/
 
@@ -400,5 +434,12 @@ menu {
         font-size: 16px;
         line-height: 30px;
         letter-spacing: 1px;
+    }
+
+	.solutions {
+        padding: 1.7vw;
+        letter-spacing: .15vw;
+        font-size: 2.2vw;
+        top: 45vw;
     }
 }

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react'
+import ScrollToTop from './functions/ScrollToTop'
 import { Routes, Route } from 'react-router-dom'
 import PublicRouter from './public/PublicRouter'
 import AdminRouter from './admin/AdminRouter'
@@ -93,6 +94,7 @@ const App = () => {
                 <Route path='/CGU' element={ <CGU /> } />
                 <Route path='*' element={ <Error /> } />
             </Routes>
+            <ScrollToTop />
         </div>
     )
 }
