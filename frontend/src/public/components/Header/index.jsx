@@ -21,6 +21,10 @@ const Header = () => {
         setIsActu(!isActu)
     }
 
+	const scrollUp = () => {
+		window.scrollTo(0, 0)
+	}
+
 	return (
 		<>
 			<nav id='navbar' className={	
@@ -146,7 +150,7 @@ const Header = () => {
 			</nav>
 
 			<p 
-				onClick={isOpenState} 
+				onClick={(e) => { isOpenState(e); scrollUp(e) }} 
 				className={
 					isOpen ?
 					'solutions solutions-hidden':
