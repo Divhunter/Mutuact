@@ -139,7 +139,7 @@ const Login = () => {
                 <p className="login__header">
                     Cet espace est strictement réservé à l'administrateur du site.
                     <br />
-                    Veuillez retourner à la <a href="/2br">page d'accueil</a>.
+                    Veuillez retourner à la <a href="https://www.mutuact.fr/">page d'accueil</a>.
                 </p>
                 <h1 className="login__title">Connexion</h1>
                 <form
