@@ -10,14 +10,14 @@
         padding-bottom: 2vw;
         padding: 0 7vw;
         background-color: rgb(245, 245, 246);
-        color: rgb(18, 105, 92);
+        color: rgb(10, 86, 109);
     }
 
     .card__title {
         font-family: Open, sans-serif;
         font-weight: 400;
         text-align: center;
-        color: rgb(18, 105, 92);
+        color: rgb(10, 86, 109);
     }
 
     .card__container {
@@ -59,7 +59,7 @@
     .photo {
         width: 80px;
         height: 80px;
-        background-color: rgb(18, 105, 92);
+        background: linear-gradient(rgb(52, 190, 167), rgb(10, 86, 109));
         border-radius: 50%;
         display: flex;
         justify-content: center;

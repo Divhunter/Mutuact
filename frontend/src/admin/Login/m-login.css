@@ -6,7 +6,7 @@
     width: 100% !important;
     height: 100vh;
     background-color: white;
-    color: rgb(17, 92, 81);
+    color: rgb(10, 86, 109);
     z-index: 2000;
     display:flex;
     align-items: center;
@@ -28,7 +28,7 @@
     height: auto;
     padding: 5vw;
     margin: 0;
-    color: rgb(17, 92, 81);
+    color: rgb(10, 86, 109);
     font-family: Open, sans-serif;
     font-weight: 500;
     font-size: 4.5vw;
@@ -37,11 +37,11 @@
 }
 
 .login__header > a {
-    color: rgb(177, 148, 63)
+    color: rgb(52, 190, 167)
 }
 
 .login__header > a:hover {
-    border-bottom: 1px solid rgb(177, 148, 63)
+    border-bottom: 1px solid rgb(52, 190, 167)
 }
 
 .password {

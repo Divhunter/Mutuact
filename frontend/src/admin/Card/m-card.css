@@ -11,7 +11,7 @@
     padding-right: 7vw;
     font-family: Open, sans-serif;
     background-color: rgb(245, 245, 246);
-    color: rgb(18, 105, 92);
+    color: rgb(10, 86, 109);
 }
 
 .header-card {
@@ -67,7 +67,7 @@
 .photo {
     width: 80px;
     height: 80px;
-    background-color: rgb(18, 105, 92);
+    background-color: rgb(10, 86, 109);
     border-radius: 50%;
     display: flex;
     justify-content: center;
