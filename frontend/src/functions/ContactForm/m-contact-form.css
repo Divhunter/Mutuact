@@ -34,7 +34,7 @@
     line-height: 5vw;
     letter-spacing: .073vw;
     opacity: 1;
-    border: solid 2px rgb(29, 151, 131);
+    border: solid 2px rgb(10, 86, 109);
 }
 
 .form-group input {
@@ -52,14 +52,14 @@
 
 .form-group input:hover,
 .form-group textarea:hover {
-    border: solid 2px rgb(29, 151, 131);
+    border: solid 2px rgb(52, 190, 167);
 }
 
 .form-group input:focus,
 .form-group input:focus[type=password],
 .form-group textarea:focus {
     color: black;
-    border: solid 2px rgb(29, 151, 131);
+    border: solid 2px rgb(52, 190, 167);
 }
 
 .form-group input::placeholder,
@@ -141,13 +141,13 @@
 
 .contact-legal-content__text__link {
     font-weight: bold;
-    color: rgb(0, 187, 156);
+    color: rgb(52, 190, 167);
     text-decoration: none;
     cursor: pointer;
 }
 
 .contact-legal-content__text__link:hover {
-    border-bottom: 1px solid rgb(24, 226, 192);
+    border-bottom: 1px solid rgb(84, 240, 214);
 }
 
 .checkbox-container {
