@@ -56,7 +56,7 @@ textarea {
 
 .arrow-left {
 	font-size: 6.5vw;
-	color: rgb(18, 105, 92);
+	color: rgb(10, 86, 109);
 	transition: color .4s;
 	cursor: pointer;
 	z-index: 500;
@@ -64,7 +64,7 @@ textarea {
 
 .logout__btn {
 	font-size: 6vw;
-	color: rgb(18, 105, 92);
+	color: rgb(10, 86, 109);
 	transition: color .4s;
 	cursor: pointer;
 	z-index: 500;
@@ -72,19 +72,19 @@ textarea {
 
 .logout__btn:hover,
 .arrow-left:hover {
-	color: rgb(80, 173, 159);
+	color: rgb(52, 190, 167);
 	transition: color .4s;
 }
 
 .logout__btn:active,
 .arrow:active {
-	color: rgb(2, 113, 128);
+	color: rgb(17, 142, 180);
 }
 
 .x-delete {
     float: right;
     font-size: 4vw;
-    color: rgb(14, 78, 68);
+    color: rgb(10, 86, 109);
     opacity: 0.8;
     cursor: pointer;
 }
